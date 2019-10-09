@@ -29,13 +29,13 @@ class MyProgressController extends Controller
      $calorie[]=null;
 
     $exchart=\Charts::multi('areaspline', 'highcharts')
-     ->title('My Exercise Report')
+     ->title('Fuerza')
  ->colors(['#ff0000'])
  ->labels($exmydate)
  ->dataset($exercise[0],  $exvalue,[' ']);
 
   $exchart2=\Charts::multi('areaspline', 'highcharts')
-     ->title('My Exercise Report')
+     ->title('Fuerza')
  ->colors(['#ff0000'])
  ->labels($exmydate2)
  ->dataset($exercise[0],  $exvalue,[' ']);
@@ -181,7 +181,7 @@ array_shift($exvalue6);
 
  // exersice Chart
  $exchart = \Charts::multi('areaspline', 'highcharts')
- ->title('My Exercise Report')
+ ->title('Fuerza')
  ->colors(['#ff0000','#009432','#ff9f43','#192a56'])
  ->labels($exmydate)
 
@@ -192,7 +192,7 @@ array_shift($exvalue6);
 
  // exersice Chart
  $exchart2 = \Charts::multi('areaspline', 'highcharts')
- ->title('My Exercise Report')
+ ->title('Fuerza')
  ->colors(['#ff0000','#009432','#ff9f43','#192a56'])
  ->labels($exmydate)
 
@@ -210,7 +210,7 @@ $weight=array_filter($weight);
 $fat=array_filter($fat);
 $calorie=array_filter($calorie);
  $chart = \Charts::multi('areaspline', 'highcharts')
- ->title('My Weight Report')
+ ->title('Composicion corporal')
  ->colors(['#ff0000', '#01a3a4', '#ff9f43'])
  ->labels($mydate)
  ->dataset('Weight', $weight,['KG'])

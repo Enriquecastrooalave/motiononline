@@ -11,7 +11,7 @@
       <div class="col-sm-2">
         <h5>{{$header_translations->where('key', 'weight')->first->value->value}}</h5></div>
         <div class="col-sm-1">
-         <button class="btn btn-sm btn-primary"><a style="color: #fff;" type ="button" href="{{route('editchart')}}">Edit {{$header_translations->where('key', 'weight')->first->value->value}}</a></button> 
+         <button class="btn btn-sm btn-primary"><a style="color: #fff;" type ="button" href="{{route('editchart')}}">Edita {{$header_translations->where('key', 'weight')->first->value->value}}</a></button> 
        </div>
      </div>
      <div class="row">
@@ -27,24 +27,24 @@
           {!! Form::open(['method' => 'POST', 'action' => 'MyProgressController@store']) !!}
 
           <div id="weight" class="form-group{{ $errors->has('weight') ? ' has-error' : '' }}">
-            {!! Form::label('weight', 'Your Weight') !!}
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your current weight"></i>
-            {!! Form::text('weight', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Weight']) !!}
+            {!! Form::label('weight', 'Peso') !!}
+    
+            {!! Form::text('weight', null, ['class' => 'form-control', 'placeholder' => 'Ingresa tu peso ']) !!}
             <small class="text-danger">{{ $errors->first('weight') }}</small>
           </div>
           <div id="fat" class="form-group{{ $errors->has('fat') ? ' has-error' : '' }}">
-            {!! Form::label('fat', 'Your Fat %') !!}
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your current Fat%"></i>
-            {!! Form::text('fat', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Fat %']) !!}
+            {!! Form::label('fat', '% de Grasa') !!}
+         
+            {!! Form::text('fat', null, ['class' => 'form-control', 'placeholder' => 'Ingresa tu % de grasa']) !!}
             <small class="text-danger">{{ $errors->first('fat') }}</small>
           </div>
 <div id="fat" class="form-group{{ $errors->has('calorie') ? ' has-error' : '' }}">
-            {!! Form::label('calorie', 'Your Calories') !!}
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your Calories"></i>
-            {!! Form::text('calorie', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Calories']) !!}
+            {!! Form::label('calorie', 'Calorias diarias') !!}
+
+            {!! Form::text('calorie', null, ['class' => 'form-control', 'placeholder' => 'Ingresa tus calorias diarias']) !!}
             <small class="text-danger">{{ $errors->first('calorie') }}</small>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          <button type="submit" class="btn btn-primary btn-block">Registrar</button>
           
           {!! Form::close()!!}
         </div>
@@ -56,7 +56,7 @@
       <div class="col-sm-2">
         <h5>{{$header_translations->where('key', 'excercise')->first->value->value}}</h5></div>
         <div class="col-sm-1">
-         <button class="btn btn-sm btn-primary"><a style="color: #fff;" type ="button" href="{{route('editexercisechart')}}">Edit {{$header_translations->where('key', 'excercise')->first->value->value}}</a></button> 
+         <button class="btn btn-sm btn-primary"><a style="color: #fff;" type ="button" href="{{route('editexercisechart')}}">Edita {{$header_translations->where('key', 'excercise')->first->value->value}}</a></button> 
        </div>
      </div>
    
@@ -73,8 +73,8 @@
           {!! Form::open(['method' => 'POST', 'action' => 'MyProgressController@storeexcercise']) !!}
 
           <div id="exercise_id" class="form-group{{ $errors->has('exercise_id') ? ' has-error' : '' }}">
-            {!! Form::label('exercise_id', 'Select Exercise') !!}
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Select Exercise"></i><br>
+            {!! Form::label('exercise_id', 'Selecciona ejercicio') !!}
+
             <select class="form-control" id="exercise_id"  name="exercise_id" >
               @foreach($myexercise as $exer)
               <option style="color: black;" value="{{$exer->id}}">{{$exer->name}}</option>
@@ -85,13 +85,13 @@
 
 
           <div id="value" class="form-group{{ $errors->has('value') ? ' has-error' : '' }}">
-            {!! Form::label('value', 'Counts/Value') !!}
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your Exercise Count or Weight lifted."></i>
-            {!! Form::text('value', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Exercise Count or Weight lifted.']) !!}
+            {!! Form::label('value', 'Peso levantado') !!}
+
+            {!! Form::text('value', null, ['class' => 'form-control', 'placeholder' => 'Ingresa el peso levantado']) !!}
             <small class="text-danger">{{ $errors->first('value') }}</small>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          <button type="submit" class="btn btn-primary btn-block">Registrar</button>
           
           {!! Form::close()!!}
         </div>
@@ -115,7 +115,7 @@
 
           <div id="exercise_id" class="form-group{{ $errors->has('exercise_id') ? ' has-error' : '' }}">
             {!! Form::label('exercise_id', 'Select Exercise') !!}
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Select Exercise"></i><br>
+
             <select class="form-control" id="exercise_id"  name="exercise_id" >
               @foreach($myexercise2 as $exer)
               <option style="color: black;" value="{{$exer->id}}">{{$exer->name}}</option>
@@ -127,12 +127,12 @@
 
           <div id="value" class="form-group{{ $errors->has('value') ? ' has-error' : '' }}">
             {!! Form::label('value', 'Counts/Value') !!}
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your Exercise Count or Weight lifted."></i>
+ 
             {!! Form::text('value', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Exercise Count or Weight lifted.']) !!}
             <small class="text-danger">{{ $errors->first('value') }}</small>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          <button type="submit" class="btn btn-primary btn-block">Registrar</button>
           
           {!! Form::close()!!}
         </div>

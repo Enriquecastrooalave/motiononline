@@ -57,11 +57,11 @@
           
             <?php if(isset($allvideos)  && count($allvideos)>0): ?>
              <?php if($menid==1): ?>
-              <h5>lunes</h5>
+              <h5>Dia lunes</h5>
               <?php elseif($menid==2): ?>
                <h5> Introduccion</h5>
                <?php elseif($menid==3): ?>
-               <h5>tobillo</h5>
+               <h5>Articulacion del tobillo</h5>
               <?php endif; ?>
 
               <br>
@@ -138,11 +138,11 @@
            
             <?php if(isset($allvideos2) && count($allvideos2)>0): ?>
             <?php if($menid==1): ?>
-              <h5>martes</h5>
+              <h5>Dia martes</h5>
               <?php elseif($menid==2): ?>
-               <h5> desayuno</h5>
+               <h5> Desayuno</h5>
                <?php elseif($menid==3): ?>
-               <h5>rodilla </h5>
+               <h5>Articulacion de la rodilla </h5>
               <?php endif; ?>
               <br>
  <div class="genre-prime-slider owl-carousel">
@@ -215,11 +215,11 @@
           
             <?php if(isset($allvideos3) && count($allvideos3)>0): ?>
              <?php if($menid==1): ?>
-              <h5>miercoles</h5>
+              <h5>Dia miercoles</h5>
               <?php elseif($menid==2): ?>
-               <h5>colacion AM</h5>
+               <h5>Colacion AM</h5>
                <?php elseif($menid==3): ?>
-               <h5>cadera </h5>
+               <h5>Articulacion de la cadera </h5>
               <?php endif; ?>
               <br>
  <div class="genre-prime-slider owl-carousel">
@@ -294,11 +294,11 @@
            
             <?php if(isset($allvideos4) && count($allvideos4)>0): ?>
              <?php if($menid==1): ?>
-              <h5>jueves</h5>
+              <h5>Dia jueves</h5>
               <?php elseif($menid==2): ?>
-               <h5>almuerzo</h5>
+               <h5>Almuerzo</h5>
                <?php elseif($menid==3): ?>
-               <h5>columna </h5>
+               <h5>Articulacion de la columna </h5>
               <?php endif; ?>
               <br>
  <div class="genre-prime-slider owl-carousel">
@@ -371,11 +371,11 @@
             
             <?php if(isset($allvideos5) && count($allvideos5)>0): ?>
             <?php if($menid==1): ?>
-              <h5>viernes </h5>
+              <h5>Dia viernes </h5>
               <?php elseif($menid==2): ?>
-               <h5>colacion PM</h5>
+               <h5>Colacion PM</h5>
                <?php elseif($menid==3): ?>
-               <h5>hombro </h5>
+               <h5>Articulacion del hombro </h5>
               <?php endif; ?>
               <br>
  <div class="genre-prime-slider owl-carousel">
@@ -448,11 +448,11 @@
           
             <?php if(isset($allvideos6) && count($allvideos6)>0): ?>
                <?php if($menid==1): ?>
-              <h5>sabado </h5>
+              <h5>Dia sabado </h5>
               <?php elseif($menid==2): ?>
-               <h5>cena</h5>
+               <h5>Cena</h5>
                <?php elseif($menid==3): ?>
-               <h5>codo / muñeca</h5>
+               <h5>Articulacion del codo y muñeca</h5>
               <?php endif; ?>
               <br>
  <div class="genre-prime-slider owl-carousel">

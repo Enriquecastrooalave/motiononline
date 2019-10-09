@@ -10,7 +10,7 @@
       <div class="col-sm-2">
         <h5><?php echo e($header_translations->where('key', 'weight')->first->value->value); ?></h5></div>
         <div class="col-sm-1">
-         <button class="btn btn-sm btn-primary"><a style="color: #fff;" type ="button" href="<?php echo e(route('editchart')); ?>">Edit <?php echo e($header_translations->where('key', 'weight')->first->value->value); ?></a></button> 
+         <button class="btn btn-sm btn-primary"><a style="color: #fff;" type ="button" href="<?php echo e(route('editchart')); ?>">Edita <?php echo e($header_translations->where('key', 'weight')->first->value->value); ?></a></button> 
        </div>
      </div>
      <div class="row">
@@ -28,30 +28,30 @@
 
 
           <div id="weight" class="form-group<?php echo e($errors->has('weight') ? ' has-error' : ''); ?>">
-            <?php echo Form::label('weight', 'Your Weight'); ?>
+            <?php echo Form::label('weight', 'Peso'); ?>
 
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your current weight"></i>
-            <?php echo Form::text('weight', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Weight']); ?>
+    
+            <?php echo Form::text('weight', null, ['class' => 'form-control', 'placeholder' => 'Ingresa tu peso ']); ?>
 
             <small class="text-danger"><?php echo e($errors->first('weight')); ?></small>
           </div>
           <div id="fat" class="form-group<?php echo e($errors->has('fat') ? ' has-error' : ''); ?>">
-            <?php echo Form::label('fat', 'Your Fat %'); ?>
+            <?php echo Form::label('fat', '% de Grasa'); ?>
 
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your current Fat%"></i>
-            <?php echo Form::text('fat', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Fat %']); ?>
+         
+            <?php echo Form::text('fat', null, ['class' => 'form-control', 'placeholder' => 'Ingresa tu % de grasa']); ?>
 
             <small class="text-danger"><?php echo e($errors->first('fat')); ?></small>
           </div>
 <div id="fat" class="form-group<?php echo e($errors->has('calorie') ? ' has-error' : ''); ?>">
-            <?php echo Form::label('calorie', 'Your Calories'); ?>
+            <?php echo Form::label('calorie', 'Calorias diarias'); ?>
 
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your Calories"></i>
-            <?php echo Form::text('calorie', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Calories']); ?>
+
+            <?php echo Form::text('calorie', null, ['class' => 'form-control', 'placeholder' => 'Ingresa tus calorias diarias']); ?>
 
             <small class="text-danger"><?php echo e($errors->first('calorie')); ?></small>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          <button type="submit" class="btn btn-primary btn-block">Registrar</button>
           
           <?php echo Form::close(); ?>
 
@@ -64,7 +64,7 @@
       <div class="col-sm-2">
         <h5><?php echo e($header_translations->where('key', 'excercise')->first->value->value); ?></h5></div>
         <div class="col-sm-1">
-         <button class="btn btn-sm btn-primary"><a style="color: #fff;" type ="button" href="<?php echo e(route('editexercisechart')); ?>">Edit <?php echo e($header_translations->where('key', 'excercise')->first->value->value); ?></a></button> 
+         <button class="btn btn-sm btn-primary"><a style="color: #fff;" type ="button" href="<?php echo e(route('editexercisechart')); ?>">Edita <?php echo e($header_translations->where('key', 'excercise')->first->value->value); ?></a></button> 
        </div>
      </div>
    
@@ -83,9 +83,9 @@
 
 
           <div id="exercise_id" class="form-group<?php echo e($errors->has('exercise_id') ? ' has-error' : ''); ?>">
-            <?php echo Form::label('exercise_id', 'Select Exercise'); ?>
+            <?php echo Form::label('exercise_id', 'Selecciona ejercicio'); ?>
 
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Select Exercise"></i><br>
+
             <select class="form-control" id="exercise_id"  name="exercise_id" >
               <?php $__currentLoopData = $myexercise; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $exer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
               <option style="color: black;" value="<?php echo e($exer->id); ?>"><?php echo e($exer->name); ?></option>
@@ -96,15 +96,15 @@
 
 
           <div id="value" class="form-group<?php echo e($errors->has('value') ? ' has-error' : ''); ?>">
-            <?php echo Form::label('value', 'Counts/Value'); ?>
+            <?php echo Form::label('value', 'Peso levantado'); ?>
 
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your Exercise Count or Weight lifted."></i>
-            <?php echo Form::text('value', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Exercise Count or Weight lifted.']); ?>
+
+            <?php echo Form::text('value', null, ['class' => 'form-control', 'placeholder' => 'Ingresa el peso levantado']); ?>
 
             <small class="text-danger"><?php echo e($errors->first('value')); ?></small>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          <button type="submit" class="btn btn-primary btn-block">Registrar</button>
           
           <?php echo Form::close(); ?>
 
@@ -132,7 +132,7 @@
           <div id="exercise_id" class="form-group<?php echo e($errors->has('exercise_id') ? ' has-error' : ''); ?>">
             <?php echo Form::label('exercise_id', 'Select Exercise'); ?>
 
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Select Exercise"></i><br>
+
             <select class="form-control" id="exercise_id"  name="exercise_id" >
               <?php $__currentLoopData = $myexercise2; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $exer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
               <option style="color: black;" value="<?php echo e($exer->id); ?>"><?php echo e($exer->name); ?></option>
@@ -145,13 +145,13 @@
           <div id="value" class="form-group<?php echo e($errors->has('value') ? ' has-error' : ''); ?>">
             <?php echo Form::label('value', 'Counts/Value'); ?>
 
-            <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Enter your Exercise Count or Weight lifted."></i>
+ 
             <?php echo Form::text('value', null, ['class' => 'form-control', 'placeholder' => 'Please enter your Exercise Count or Weight lifted.']); ?>
 
             <small class="text-danger"><?php echo e($errors->first('value')); ?></small>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          <button type="submit" class="btn btn-primary btn-block">Registrar</button>
           
           <?php echo Form::close(); ?>
 
