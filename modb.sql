@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-10-2019 a las 21:48:56
+-- Tiempo de generación: 11-10-2019 a las 21:47:52
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.6
 
@@ -538,8 +538,8 @@ INSERT INTO `header_translations` (`id`, `key`, `value`, `created_at`, `updated_
 (9, 'register', '{\"en\":\"Registro\",\"nl\":\"Register\",\"de\":\"Registrieren\"}', NULL, '2019-09-03 08:42:30'),
 (10, 'report', '{\"en\":\"Mi Progreso\"}', NULL, '2019-09-23 16:07:27'),
 (11, 'question', '{\"en\":\"Mi Chat\"}', NULL, '2019-09-23 16:07:27'),
-(12, 'excercise', '{\"en\":\"Registro de fuerza\"}', NULL, '2019-09-23 16:34:51'),
-(13, 'weight', '{\"en\":\"Registro de peso,  % de grasa y calor\\u00edas\"}', NULL, '2019-09-23 16:34:51'),
+(12, 'excercise', '{\"en\":\"Mi fuerza\"}', NULL, '2019-10-08 15:16:39'),
+(13, 'weight', '{\"en\":\"Mi composici\\u00f3n corporal\"}', NULL, '2019-10-08 15:16:39'),
 (14, 'virtualcard', '{\"en\":\"Mi Tarjeta\"}', NULL, '2019-09-23 16:34:51');
 
 -- --------------------------------------------------------
@@ -1797,7 +1797,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `image`, `email`, `password`, `google_id`, `facebook_id`, `gitlab_id`, `dob`, `mobile`, `stripe_id`, `card_brand`, `card_last_four`, `trial_ends_at`, `is_admin`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', NULL, 'admin@mediacity.co.in', '$2y$10$1w2kbraQWFVkZVcyAwXmgeGhD4QYxTcg9Hx12KYtNN821CuOMtyda', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 'trQp3hD8syPFnnjkh37z5w99sF3dajpGb9PGA0hW5nrtcpFvKo7hk2CrEBDT', '2018-04-24 07:56:34', '2018-04-24 07:56:34'),
+(1, 'Admin', NULL, 'admin@mediacity.co.in', '$2y$10$1w2kbraQWFVkZVcyAwXmgeGhD4QYxTcg9Hx12KYtNN821CuOMtyda', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 'FJvwsOIfqY0gHuVgevlSBIZheuj6CBH9SAabM653nbRn34CDbZAx0kPLB0GG', '2018-04-24 07:56:34', '2018-04-24 07:56:34'),
 (24, 'Jorge Caca', NULL, 'jorge@caca.com', '$2y$10$AnaSIa0OtRknN.pC17mY8e8yreDNk/aqB/ebDfPa2eyOuXqyQSvVa', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'rTsjc0ZvoQpvTdLIimgfsGppKJ7EYVxFj4Dd69HKqoat2J1OPGGf3335m6o9', '2019-08-27 21:29:37', '2019-08-28 00:00:17'),
 (25, 'Martina Dovic Z.', NULL, 'martinadzaf@uolmail.com', '$2y$10$EEyjTuuwup6tfCVRRxd3WuLNw9twH.guNPpIMAAIHuVGgHsC2fLGm', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'OgkBxh2HriMbSzJivllGE4TnkMsRCvHE8qtMobBofwA5NBkNuQzDRLJwg4qS', '2019-08-27 21:30:03', '2019-10-01 20:15:54'),
 (26, 'Diosito Borges', NULL, 'diosito@caca.com', '$2y$10$5dS7IbOvX3vjHxUxSlLbDOdG0fTK..sR2uCwhABstQcDs7KSbtO8.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'FBUiQtumBIrp6XTYBmBh8obPDtpA99VErMLc1fkvhfXwIho4I2zgr5ICFHjQ', '2019-08-27 21:30:31', '2019-08-28 00:00:46'),
@@ -1806,7 +1806,7 @@ INSERT INTO `users` (`id`, `name`, `image`, `email`, `password`, `google_id`, `f
 (29, 'Enrique Castro Olave', NULL, 'enriquecastroolave@gmail.com', '$2y$10$c3z9wPKFfFHUbmNFLDcvyeHjGHVvVfn6OQor9SLa3fhpDZiweJXVa', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'vPMqQCtCIt01Qngpm4inOzaOCs3vFruQJqdW9Mvv5TFmxoZXChh16U0KB0Kx', '2019-09-23 20:49:25', '2019-09-23 20:49:25'),
 (30, 'JOSE MANUEL GOMEZ L.', NULL, 'JGOMEZ@MOTIONCENTER.CL', '$2y$10$m8JPqz78GSDlFB.qDoldNOr4/7ZYZbW8NiVshXKjEjZlPNqmL.Q/i', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'SgdUtPp6Tzb9oyMnmsnxQFxv6d9h0ZS410OIWQWrOl3FHUHhavSvkxSIUQOL', '2019-09-24 21:55:57', '2019-09-24 21:55:57'),
 (31, 'Juan Jose Zunino', NULL, 'jjzunino@underarmour.cl', '$2y$10$6uHUDfsLWagqycTJ7W0UG.HYc5amIoDaUltoI1X5eWzvDdXPyVpWy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, '7GYPugzVFHL5CAMcUufktzZJq4YOPUGCb94zCtQbwjzrbuqdXDHrmNqUESI6', '2019-09-26 16:19:51', '2019-09-26 16:19:51'),
-(32, 'Josefina Hernandez Z.', NULL, 'jherndzaf@uolmail.com', '$2y$10$YaHAxQQ2PXZLdiuZYyShnuyRFjJtkwJOpxrxIO6pVdO32c0.XAhc2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 's1p2nrX14gamtWZZYZG8NkltNp5ujOdCBlViYEBcvwi0vK1zoB8UJUgjAnsA', '2019-09-29 19:44:25', '2019-09-29 19:44:25');
+(32, 'Josefina Hernandez Z.', NULL, 'jherndzaf@uolmail.com', '$2y$10$YaHAxQQ2PXZLdiuZYyShnuyRFjJtkwJOpxrxIO6pVdO32c0.XAhc2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, '9tCCuc5rFdgTGqSU69zEzT4UVAlG4PvxYE7SkriNKxm8kYZqA8e3ISP9njwE', '2019-09-29 19:44:25', '2019-09-29 19:44:25');
 
 -- --------------------------------------------------------
 
@@ -2110,7 +2110,8 @@ INSERT INTO `views` (`id`, `viewable_type`, `viewable_id`, `visitor`, `collectio
 (204, 'App\\Movie', 145, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-02 23:40:08'),
 (205, 'App\\Movie', 29, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-04 22:31:28'),
 (206, 'App\\Movie', 144, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-04 22:32:23'),
-(207, 'App\\Movie', 144, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-04 22:32:54');
+(207, 'App\\Movie', 144, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-04 22:32:54'),
+(208, 'App\\Movie', 138, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-06 01:35:23');
 
 -- --------------------------------------------------------
 
@@ -2891,7 +2892,7 @@ ALTER TABLE `videolinks`
 -- AUTO_INCREMENT de la tabla `views`
 --
 ALTER TABLE `views`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=208;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=209;
 
 --
 -- AUTO_INCREMENT de la tabla `wishlists`

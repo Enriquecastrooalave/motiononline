@@ -41,7 +41,7 @@
           <div class="slider-image">
             <?php if($slide->movie_id != null): ?>
            
-            <a href="<?php echo e(url('movie/detail', $slide->movie->id)); ?>">
+            <a href="#">
               <?php if($slide->slide_image != null): ?>
               <img src="<?php echo e(asset('images/home_slider/movies/'. $slide->slide_image)); ?>" class="img-responsive" alt="slider-image">
               <?php elseif($slide->movie->poster != null): ?>
@@ -51,7 +51,7 @@
            
           
            <?php elseif($slide->tv_series_id != null && isset($slide->tvseries->seasons[0])): ?>
-           <a href="<?php echo e(url('show/detail', $slide->tvseries->seasons[0]->id)); ?>">
+           <a href="#">
             <?php if($slide->slide_image != null): ?>
             <img src="<?php echo e(asset('images/home_slider/shows/'. $slide->slide_image)); ?>" class="img-responsive" alt="slider-image">
             <?php elseif($slide->tvseries->poster != null): ?>

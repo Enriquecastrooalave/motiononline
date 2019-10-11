@@ -42,7 +42,7 @@
           <div class="slider-image">
             @if($slide->movie_id != null)
            
-            <a href="{{url('movie/detail', $slide->movie->id)}}">
+            <a href="#">
               @if ($slide->slide_image != null)
               <img src="{{asset('images/home_slider/movies/'. $slide->slide_image)}}" class="img-responsive" alt="slider-image">
               @elseif ($slide->movie->poster != null)
@@ -52,7 +52,7 @@
            
           
            @elseif($slide->tv_series_id != null && isset($slide->tvseries->seasons[0]))
-           <a href="{{url('show/detail', $slide->tvseries->seasons[0]->id)}}">
+           <a href="#">
             @if ($slide->slide_image != null)
             <img src="{{asset('images/home_slider/shows/'. $slide->slide_image)}}" class="img-responsive" alt="slider-image">
             @elseif ($slide->tvseries->poster != null)
