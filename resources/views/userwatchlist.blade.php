@@ -39,7 +39,7 @@
                  
                   @foreach ($nav as $menu)
                  
-                    <a class="{{isset($menu) ? 'active' : ''}}" href="{{url('myaccount/userwatchlist', $menu->slug)}}" title="{{$menu->name}}">{{$menu->name}}</a>
+                    <a class="{{isset($menu) ? 'active' : ''}}" href="{{url('profiles/userwatchlist', $menu->slug)}}" title="{{$menu->name}}">{{$menu->name}}</a>
                    @endforeach
               @endif
           </div>
@@ -58,7 +58,7 @@
           
             @if(isset($allvideos)  && count($allvideos)>0)
              @if($menid==1)
-              <h5>Dia lunes</h5>
+              <h5>Dia 1</h5>
               @elseif($menid==2)
                <h5> Introduccion</h5>
                @elseif($menid==3)
@@ -139,7 +139,7 @@
            
             @if(isset($allvideos2) && count($allvideos2)>0)
             @if($menid==1)
-              <h5>Dia martes</h5>
+              <h5>Dia 2</h5>
               @elseif($menid==2)
                <h5> Desayuno</h5>
                @elseif($menid==3)
@@ -216,7 +216,7 @@
           
             @if(isset($allvideos3) && count($allvideos3)>0)
              @if($menid==1)
-              <h5>Dia miercoles</h5>
+              <h5>Dia 3</h5>
               @elseif($menid==2)
                <h5>Colacion AM</h5>
                @elseif($menid==3)
@@ -295,7 +295,7 @@
            
             @if(isset($allvideos4) && count($allvideos4)>0)
              @if($menid==1)
-              <h5>Dia jueves</h5>
+              <h5>Dia 4</h5>
               @elseif($menid==2)
                <h5>Almuerzo</h5>
                @elseif($menid==3)
@@ -372,7 +372,7 @@
             
             @if(isset($allvideos5) && count($allvideos5)>0)
             @if($menid==1)
-              <h5>Dia viernes </h5>
+              <h5>Dia 5 </h5>
               @elseif($menid==2)
                <h5>Colacion PM</h5>
                @elseif($menid==3)
@@ -449,7 +449,7 @@
           
             @if(isset($allvideos6) && count($allvideos6)>0)
                @if($menid==1)
-              <h5>Dia sabado </h5>
+              <h5>Dia 6 </h5>
               @elseif($menid==2)
                <h5>Cena</h5>
                @elseif($menid==3)

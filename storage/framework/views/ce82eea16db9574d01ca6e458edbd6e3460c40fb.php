@@ -293,7 +293,7 @@ Author: Media City
       }
       ?>
       <div id="notification_id" onclick="readed('<?php echo e($n->id); ?>')" class="card" style="padding: 6px;" >
-        <p style="color: #F00; font-size: 17px; padding: 3px;"><b> <?php echo e($n->title); ?></b></p>
+        <p style="color: #2980b9; font-size: 17px; padding: 3px;"><b> <?php echo e($n->title); ?></b></p>
         <p style="margin-top: -6px; font-size: 16px;"> <?php echo e($n->data['data']); ?> &nbsp 
           <?php if(isset($tvname)): ?>
       <a type="button" href="<?php echo e(url('show/detail',$n->tv_id)); ?>" style="font-size: 16px; color:  #a9ea81">
@@ -326,7 +326,7 @@ Author: Media City
                     <?php if(isset($nav_menus)): ?>
                     <?php if($subscribed == 1): ?>
                      <li><a href="<?php echo e(url('account/virtualcard')); ?>" class="active"><?php echo e($header_translations->where('key', 'virtualcard')->first->value->value); ?></a></li>
-                      <li><a href="<?php echo e(url('myaccount/userwatchlist', $menu->slug)); ?>" class="active"><?php echo e($header_translations->where('key', 'watchlist')->first->value->value); ?></a></li>
+                      <li><a href="<?php echo e(url('profiles/userwatchlist', $menu->slug)); ?>" class="active"><?php echo e($header_translations->where('key', 'watchlist')->first->value->value); ?></a></li>
                       <li><a href="<?php echo e(url('account/myprogress')); ?>" class="active"><?php echo e($header_translations->where('key', 'report')->first->value->value); ?></a></li>
                        <li><a href="<?php echo e(url('account/askquestion')); ?>" class="active"><?php echo e($header_translations->where('key', 'question')->first->value->value); ?></a></li>
                     <?php else: ?>
@@ -520,7 +520,7 @@ Author: Media City
 <script type="text/javascript" src="<?php echo e(asset('js/theme.js')); ?>"></script> <!-- custom js -->
 <script type="text/javascript" src="<?php echo e(asset('js/custom-js.js')); ?>"></script>
 <script type="text/javascript" src="<?php echo e(url('js/colorbox.js')); ?>"></script>
-
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 <!-- end jquery -->
 <?php echo $__env->yieldContent('custom-script'); ?>
 <script>
@@ -643,6 +643,7 @@ $(document).ready(function() {
   }
  
 </script>
+
 <?php echo $__env->yieldContent('script'); ?>
 </body>
 <!--body end -->

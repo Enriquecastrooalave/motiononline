@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-10-2019 a las 21:47:52
+-- Tiempo de generación: 15-10-2019 a las 13:40:41
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.6
 
@@ -312,7 +312,8 @@ CREATE TABLE `excersices` (
 INSERT INTO `excersices` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (8, 'Peso muerto convencional', '2019-09-12 15:08:58', '2019-09-20 12:13:54'),
 (9, 'Sentadilla con barra', '2019-09-12 15:10:37', '2019-09-20 12:13:38'),
-(12, 'Hip Thrust barra', '2019-09-20 12:13:00', '2019-09-20 12:13:00');
+(12, 'Hip Thrust barra', '2019-09-20 12:13:00', '2019-09-20 12:13:00'),
+(13, 'Press banca', '2019-10-14 13:51:12', '2019-10-14 13:51:12');
 
 -- --------------------------------------------------------
 
@@ -509,7 +510,8 @@ INSERT INTO `genres` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (30, '{\"en\":\"Ejemplos de desayunos, once o te...\"}', '2019-09-21 05:54:30', '2019-09-21 06:01:51'),
 (31, '{\"en\":\"Aprende sobre suplementos...\"}', '2019-09-21 06:32:03', '2019-09-21 06:32:03'),
 (32, '{\"en\":\"Tips y datos importantes!, aprende a cuidar tu cuerpo con nosotros...\"}', '2019-09-21 07:16:50', '2019-09-21 07:16:50'),
-(33, '{\"en\":\"Aprende sobre tu cuerpo mujer...\"}', '2019-09-21 07:22:14', '2019-09-21 07:22:14');
+(33, '{\"en\":\"Aprende sobre tu cuerpo mujer...\"}', '2019-09-21 07:22:14', '2019-09-21 07:22:14'),
+(34, '{\"en\":\"Planificaciones\"}', '2019-10-14 17:54:36', '2019-10-14 17:54:36');
 
 -- --------------------------------------------------------
 
@@ -826,7 +828,7 @@ INSERT INTO `menu_videos` (`id`, `menu_id`, `movie_id`, `tv_series_id`, `created
 (189, 2, 162, NULL, '2019-09-25 05:09:29', '2019-09-25 05:09:29'),
 (190, 2, 163, NULL, '2019-09-25 05:10:35', '2019-09-25 05:10:35'),
 (191, 2, 164, NULL, '2019-09-25 05:11:12', '2019-09-25 05:11:12'),
-(196, 2, 169, NULL, '2019-09-25 06:16:46', '2019-09-25 06:16:46');
+(197, 1, 170, NULL, '2019-10-14 17:54:57', '2019-10-14 17:54:57');
 
 -- --------------------------------------------------------
 
@@ -1107,7 +1109,7 @@ INSERT INTO `movies` (`id`, `tmdb_id`, `title`, `keyword`, `description`, `durat
 (162, NULL, 'Almuerzo o cena de 500 cals (4)', NULL, NULL, NULL, 'thumb_1569377369Diapositiva12.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-25 05:09:29', '2019-09-25 05:09:29'),
 (163, NULL, 'Almuerzo o cena de 400 cals (3)', NULL, NULL, NULL, 'thumb_1569377435Diapositiva9.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-25 05:10:35', '2019-09-25 05:10:35'),
 (164, NULL, 'Almuerzo o cena de 400 cals (4)', NULL, NULL, NULL, 'thumb_1569377472Diapositiva10.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-25 05:11:12', '2019-09-25 05:11:12'),
-(169, NULL, 'PUSH PULL', NULL, NULL, NULL, 'thumb_1569381406perform-2.png', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":\"<h1>Puente de gluteos<\\/h1>\\r\\n\\r\\n<hr \\/>\\r\\n<p>POSICION: Pies al ancho de las caderas, rodillas y caderas flectadas.<\\/p>\\r\\n\\r\\n<hr \\/>\\r\\n<p>MOVIMIENTO: Mantener tensi&oacute;n abdominal constante durante todo el movimiento. Empujar fuerte, mantener 2 segundos arriba generado una buena contracci&oacute;n gl&uacute;tea y bajar suave. Apena discos tocan el suelo empujar de nuevo. Al llegar arriba las caderas deben estar completamente extendidas y las rodillas en un &aacute;ngulo de 90&ordm; de flexi&oacute;n.<\\/p>\\r\\n\\r\\n<hr \\/>\\r\\n<ol>\\r\\n\\t<li>SASSDDAS<\\/li>\\r\\n\\t<li>DADASDAASSDD<\\/li>\\r\\n\\t<li>SADASASDADADS<\\/li>\\r\\n\\t<li>DASDAASSADADA<\\/li>\\r\\n\\t<li>DADASDASADADSS<\\/li>\\r\\n<\\/ol>\"}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-25 06:16:46', '2019-09-25 06:16:46');
+(170, NULL, 'Rutina PP, dia 2  de 3, mujer.', NULL, NULL, NULL, 'thumb_1571064897Rutina PP, dia 2  de 3, mujer..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-14 17:54:57', '2019-10-14 17:54:57');
 
 -- --------------------------------------------------------
 
@@ -1797,7 +1799,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `image`, `email`, `password`, `google_id`, `facebook_id`, `gitlab_id`, `dob`, `mobile`, `stripe_id`, `card_brand`, `card_last_four`, `trial_ends_at`, `is_admin`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', NULL, 'admin@mediacity.co.in', '$2y$10$1w2kbraQWFVkZVcyAwXmgeGhD4QYxTcg9Hx12KYtNN821CuOMtyda', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 'FJvwsOIfqY0gHuVgevlSBIZheuj6CBH9SAabM653nbRn34CDbZAx0kPLB0GG', '2018-04-24 07:56:34', '2018-04-24 07:56:34'),
+(1, 'Admin', NULL, 'admin@mediacity.co.in', '$2y$10$1w2kbraQWFVkZVcyAwXmgeGhD4QYxTcg9Hx12KYtNN821CuOMtyda', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 'mopvdeHmKQ0Dm6ANO6UvSJNKVm0cE7Xz8tf80tQuN8Y1Rc4BfqKjHeEaSMhX', '2018-04-24 07:56:34', '2018-04-24 07:56:34'),
 (24, 'Jorge Caca', NULL, 'jorge@caca.com', '$2y$10$AnaSIa0OtRknN.pC17mY8e8yreDNk/aqB/ebDfPa2eyOuXqyQSvVa', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'rTsjc0ZvoQpvTdLIimgfsGppKJ7EYVxFj4Dd69HKqoat2J1OPGGf3335m6o9', '2019-08-27 21:29:37', '2019-08-28 00:00:17'),
 (25, 'Martina Dovic Z.', NULL, 'martinadzaf@uolmail.com', '$2y$10$EEyjTuuwup6tfCVRRxd3WuLNw9twH.guNPpIMAAIHuVGgHsC2fLGm', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'OgkBxh2HriMbSzJivllGE4TnkMsRCvHE8qtMobBofwA5NBkNuQzDRLJwg4qS', '2019-08-27 21:30:03', '2019-10-01 20:15:54'),
 (26, 'Diosito Borges', NULL, 'diosito@caca.com', '$2y$10$5dS7IbOvX3vjHxUxSlLbDOdG0fTK..sR2uCwhABstQcDs7KSbtO8.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'FBUiQtumBIrp6XTYBmBh8obPDtpA99VErMLc1fkvhfXwIho4I2zgr5ICFHjQ', '2019-08-27 21:30:31', '2019-08-28 00:00:46'),
@@ -1958,7 +1960,7 @@ INSERT INTO `videolinks` (`id`, `movie_id`, `episode_id`, `iframeurl`, `ready_ur
 (207, 162, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-09-25 05:09:29', '2019-09-25 05:09:29'),
 (208, 163, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-09-25 05:10:35', '2019-09-25 05:10:35'),
 (209, 164, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-09-25 05:11:12', '2019-09-25 05:11:12'),
-(214, 169, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-09-25 06:16:46', '2019-09-25 06:16:46');
+(215, 170, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-14 17:54:57', '2019-10-14 17:54:57');
 
 -- --------------------------------------------------------
 
@@ -2100,7 +2102,6 @@ INSERT INTO `views` (`id`, `viewable_type`, `viewable_id`, `visitor`, `collectio
 (188, 'App\\Movie', 151, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-09-25 04:35:27'),
 (189, 'App\\Movie', 85, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-09-25 04:35:33'),
 (190, 'App\\Movie', 144, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-09-25 05:32:09'),
-(197, 'App\\Movie', 169, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-09-25 06:17:02'),
 (198, 'App\\Movie', 43, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-09-25 13:43:16'),
 (199, 'App\\Movie', 144, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-09-26 15:38:01'),
 (200, 'App\\Movie', 29, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-09-26 15:43:14'),
@@ -2149,20 +2150,7 @@ CREATE TABLE `wishlist_admins` (
 --
 
 INSERT INTO `wishlist_admins` (`id`, `user_group_id`, `video_group_id`, `day`, `created_at`, `updated_at`) VALUES
-(104, 6, '[\"38\"]', 3, '2019-09-26 13:21:13', '2019-09-26 13:21:13'),
-(107, 6, '[\"39\"]', 6, '2019-09-26 13:21:23', '2019-09-26 13:21:23'),
-(109, 6, '[\"47\",\"10\"]', 1, '2019-09-26 13:24:33', '2019-09-26 13:24:33'),
-(110, 6, '[\"40\",\"16\"]', 2, '2019-09-26 13:24:38', '2019-09-26 13:24:38'),
-(111, 6, '[\"45\",\"10\"]', 4, '2019-09-26 13:24:43', '2019-09-26 13:24:43'),
-(112, 6, '[\"43\",\"16\"]', 5, '2019-09-26 13:24:47', '2019-09-26 13:24:47'),
-(117, 7, '[\"10\",\"47\"]', 1, '2019-09-29 18:25:12', '2019-09-29 18:25:12'),
-(118, 7, '[\"16\",\"40\"]', 2, '2019-09-29 18:25:18', '2019-09-29 18:25:18'),
-(119, 7, '[\"38\"]', 3, '2019-09-29 18:25:28', '2019-09-29 18:25:28'),
-(120, 7, '[\"10\",\"39\"]', 4, '2019-09-29 18:25:39', '2019-09-29 18:25:39'),
-(121, 7, '[\"16\",\"43\"]', 5, '2019-09-29 18:25:45', '2019-09-29 18:25:45'),
-(122, 7, '[\"39\"]', 6, '2019-09-29 18:26:02', '2019-09-29 18:26:02'),
-(124, 4, '[\"10\",\"47\"]', 1, '2019-10-02 10:47:47', '2019-10-02 10:47:47'),
-(126, 4, '[\"16\",\"40\"]', 2, '2019-10-02 10:48:00', '2019-10-02 10:48:00');
+(141, 4, '[\"48\"]', 1, '2019-10-15 09:39:03', '2019-10-15 09:39:03');
 
 -- --------------------------------------------------------
 
@@ -2183,10 +2171,7 @@ CREATE TABLE `wishlist_user_groups` (
 --
 
 INSERT INTO `wishlist_user_groups` (`id`, `title`, `user_id`, `created_At`, `updated_At`) VALUES
-(2, 'Kimi linda', '[\"27\"]', '2019-08-29 13:06:30', '2019-08-29 13:32:20'),
-(4, 'Admin', '[\"1\"]', '2019-08-30 13:43:03', '2019-08-30 13:43:03'),
-(6, 'JJZunino', '[\"31\"]', '2019-09-26 13:20:53', '2019-09-26 13:20:53'),
-(7, 'J.HER.Z', '[\"32\"]', '2019-09-29 18:24:22', '2019-09-29 18:24:22');
+(4, 'Admin', '[\"1\"]', '2019-08-30 13:43:03', '2019-08-30 13:43:03');
 
 -- --------------------------------------------------------
 
@@ -2251,7 +2236,8 @@ INSERT INTO `wishlist_video_groups` (`id`, `title`, `movie_id`, `tv_id`, `create
 (44, 'Colaciones de 300 cals', '[\"155\",\"156\",\"157\",\"158\",\"159\",\"160\"]', NULL, '2019-09-25 02:05:21', '2019-09-25 02:05:21'),
 (45, 'Almuerzos o cenas de 500 cals', '[\"94\",\"95\",\"161\",\"162\"]', NULL, '2019-09-25 02:12:53', '2019-09-25 02:12:53'),
 (46, 'Desayunos de 300 cals', '[\"91\",\"93\",\"149\",\"150\"]', NULL, '2019-09-25 02:15:58', '2019-09-25 02:15:58'),
-(47, 'Capsulas nutricion', '[\"138\",\"139\",\"145\"]', NULL, '2019-09-26 13:21:57', '2019-09-26 13:21:57');
+(47, 'Capsulas nutricion', '[\"138\",\"139\",\"145\"]', NULL, '2019-09-26 13:21:57', '2019-09-26 13:21:57'),
+(48, 'Rutina PP, dia 2  de 3, mujer.', '[\"51\",\"170\"]', NULL, '2019-10-14 14:55:22', '2019-10-14 14:55:22');
 
 --
 -- Índices para tablas volcadas
@@ -2676,7 +2662,7 @@ ALTER TABLE `episodes`
 -- AUTO_INCREMENT de la tabla `excersices`
 --
 ALTER TABLE `excersices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `exercise_reports`
@@ -2706,7 +2692,7 @@ ALTER TABLE `front_slider_updates`
 -- AUTO_INCREMENT de la tabla `genres`
 --
 ALTER TABLE `genres`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT de la tabla `header_translations`
@@ -2748,7 +2734,7 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT de la tabla `menu_videos`
 --
 ALTER TABLE `menu_videos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=197;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=198;
 
 --
 -- AUTO_INCREMENT de la tabla `migrations`
@@ -2760,7 +2746,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT de la tabla `movies`
 --
 ALTER TABLE `movies`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=171;
 
 --
 -- AUTO_INCREMENT de la tabla `movie_series`
@@ -2886,7 +2872,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `videolinks`
 --
 ALTER TABLE `videolinks`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=215;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=216;
 
 --
 -- AUTO_INCREMENT de la tabla `views`
@@ -2904,7 +2890,7 @@ ALTER TABLE `wishlists`
 -- AUTO_INCREMENT de la tabla `wishlist_admins`
 --
 ALTER TABLE `wishlist_admins`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=142;
 
 --
 -- AUTO_INCREMENT de la tabla `wishlist_user_groups`
@@ -2916,7 +2902,7 @@ ALTER TABLE `wishlist_user_groups`
 -- AUTO_INCREMENT de la tabla `wishlist_video_groups`
 --
 ALTER TABLE `wishlist_video_groups`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- Restricciones para tablas volcadas

@@ -314,9 +314,10 @@ Route::group(['middleware' => ['web', 'auth', 'is_subscriber', 'switch_languages
     Route::get('account/watchlist/shows', 'WishListController@showWishListTvShows');
     Route::get('account/watchlist', 'WishListController@wishlistshow');
     Route::get('account/watchlist/{slug}', 'WishListController@showWishLists')->name('watchlist');
-    Route::get('myaccount/userwatchlist/{slug}', 'WishListController@userwishlistshow')->name('userwishlistshow');
+    Route::get('profiles/userwatchlist/{slug}', 'WishListController@userwishlistshow')->name('userwishlistshow');
     Route::resource('account/myprogress', 'MyProgressController');
      Route::resource('account/virtualcard', 'CardController');
+      Route::get('account/virtualcard/add', 'CardController@add');
      Route::get('myprogress/editchart', 'MyProgressController@editchart')->name('editchart'); 
     Route::post('account/myprogress/exercise', 'MyProgressController@storeexcercise');
     Route::resource('account/askquestion', 'AskQuestionController');

@@ -38,7 +38,7 @@
                  
                   <?php $__currentLoopData = $nav; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $menu): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                  
-                    <a class="<?php echo e(isset($menu) ? 'active' : ''); ?>" href="<?php echo e(url('myaccount/userwatchlist', $menu->slug)); ?>" title="<?php echo e($menu->name); ?>"><?php echo e($menu->name); ?></a>
+                    <a class="<?php echo e(isset($menu) ? 'active' : ''); ?>" href="<?php echo e(url('profiles/userwatchlist', $menu->slug)); ?>" title="<?php echo e($menu->name); ?>"><?php echo e($menu->name); ?></a>
                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               <?php endif; ?>
           </div>
@@ -57,7 +57,7 @@
           
             <?php if(isset($allvideos)  && count($allvideos)>0): ?>
              <?php if($menid==1): ?>
-              <h5>Dia lunes</h5>
+              <h5>Dia 1</h5>
               <?php elseif($menid==2): ?>
                <h5> Introduccion</h5>
                <?php elseif($menid==3): ?>
@@ -138,7 +138,7 @@
            
             <?php if(isset($allvideos2) && count($allvideos2)>0): ?>
             <?php if($menid==1): ?>
-              <h5>Dia martes</h5>
+              <h5>Dia 2</h5>
               <?php elseif($menid==2): ?>
                <h5> Desayuno</h5>
                <?php elseif($menid==3): ?>
@@ -215,7 +215,7 @@
           
             <?php if(isset($allvideos3) && count($allvideos3)>0): ?>
              <?php if($menid==1): ?>
-              <h5>Dia miercoles</h5>
+              <h5>Dia 3</h5>
               <?php elseif($menid==2): ?>
                <h5>Colacion AM</h5>
                <?php elseif($menid==3): ?>
@@ -294,7 +294,7 @@
            
             <?php if(isset($allvideos4) && count($allvideos4)>0): ?>
              <?php if($menid==1): ?>
-              <h5>Dia jueves</h5>
+              <h5>Dia 4</h5>
               <?php elseif($menid==2): ?>
                <h5>Almuerzo</h5>
                <?php elseif($menid==3): ?>
@@ -371,7 +371,7 @@
             
             <?php if(isset($allvideos5) && count($allvideos5)>0): ?>
             <?php if($menid==1): ?>
-              <h5>Dia viernes </h5>
+              <h5>Dia 5 </h5>
               <?php elseif($menid==2): ?>
                <h5>Colacion PM</h5>
                <?php elseif($menid==3): ?>
@@ -448,7 +448,7 @@
           
             <?php if(isset($allvideos6) && count($allvideos6)>0): ?>
                <?php if($menid==1): ?>
-              <h5>Dia sabado </h5>
+              <h5>Dia 6 </h5>
               <?php elseif($menid==2): ?>
                <h5>Cena</h5>
                <?php elseif($menid==3): ?>

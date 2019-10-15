@@ -293,7 +293,7 @@ Author: Media City
       }
       @endphp
       <div id="notification_id" onclick="readed('{{$n->id}}')" class="card" style="padding: 6px;" >
-        <p style="color: #F00; font-size: 17px; padding: 3px;"><b> {{$n->title}}</b></p>
+        <p style="color: #2980b9; font-size: 17px; padding: 3px;"><b> {{$n->title}}</b></p>
         <p style="margin-top: -6px; font-size: 16px;"> {{$n->data['data']}} &nbsp 
           @if(isset($tvname))
       <a type="button" href="{{url('show/detail',$n->tv_id)}}" style="font-size: 16px; color:  #a9ea81">
@@ -326,7 +326,7 @@ Author: Media City
                     @if(isset($nav_menus))
                     @if($subscribed == 1)
                      <li><a href="{{url('account/virtualcard')}}" class="active">{{$header_translations->where('key', 'virtualcard')->first->value->value}}</a></li>
-                      <li><a href="{{url('myaccount/userwatchlist', $menu->slug)}}" class="active">{{$header_translations->where('key', 'watchlist')->first->value->value}}</a></li>
+                      <li><a href="{{url('profiles/userwatchlist', $menu->slug)}}" class="active">{{$header_translations->where('key', 'watchlist')->first->value->value}}</a></li>
                       <li><a href="{{url('account/myprogress')}}" class="active">{{$header_translations->where('key', 'report')->first->value->value}}</a></li>
                        <li><a href="{{url('account/askquestion')}}" class="active">{{$header_translations->where('key', 'question')->first->value->value}}</a></li>
                     @else
@@ -520,7 +520,7 @@ Author: Media City
 <script type="text/javascript" src="{{asset('js/theme.js')}}"></script> <!-- custom js -->
 <script type="text/javascript" src="{{asset('js/custom-js.js')}}"></script>
 <script type="text/javascript" src="{{ url('js/colorbox.js') }}"></script>
-
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 <!-- end jquery -->
 @yield('custom-script')
 <script>
@@ -643,6 +643,7 @@ $(document).ready(function() {
   }
  
 </script>
+
 @yield('script')
 </body>
 <!--body end -->
