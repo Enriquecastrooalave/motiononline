@@ -38,7 +38,7 @@
                  
                   <?php $__currentLoopData = $nav; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $menu): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                  
-                    <a class="<?php echo e(isset($menu) ? 'active' : ''); ?>" href="<?php echo e(url('profiles/userwatchlist', $menu->slug)); ?>" title="<?php echo e($menu->name); ?>"><?php echo e($menu->name); ?></a>
+                    <a class="<?php echo e(isset($menu) ? 'active' : ''); ?>" href="<?php echo e(route('userwishlistshow', $menu->slug)); ?>" title="<?php echo e($menu->name); ?>"><?php echo e($menu->name); ?></a>
                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               <?php endif; ?>
           </div>
@@ -452,7 +452,7 @@
               <?php elseif($menid==2): ?>
                <h5>Cena</h5>
                <?php elseif($menid==3): ?>
-               <h5>Articulacion del codo y muñeca</h5>
+               <h5>Articulacion del codo y la muñeca</h5>
               <?php endif; ?>
               <br>
  <div class="genre-prime-slider owl-carousel">

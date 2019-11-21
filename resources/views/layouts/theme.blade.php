@@ -326,7 +326,7 @@ Author: Media City
                     @if(isset($nav_menus))
                     @if($subscribed == 1)
                      <li><a href="{{url('account/virtualcard')}}" class="active">{{$header_translations->where('key', 'virtualcard')->first->value->value}}</a></li>
-                      <li><a href="{{url('perfil/listadedeseos', $menu->slug)}}" class="active">{{$header_translations->where('key', 'watchlist')->first->value->value}}</a></li>
+                      <li><a href="{{route('userwishlistshow', $menu->slug)}}" class="active">{{$header_translations->where('key', 'watchlist')->first->value->value}}</a></li>
                       <li><a href="{{url('account/myprogress')}}" class="active">{{$header_translations->where('key', 'report')->first->value->value}}</a></li>
                        <li><a href="{{url('account/askquestion')}}" class="active">{{$header_translations->where('key', 'question')->first->value->value}}</a></li>
                     @else

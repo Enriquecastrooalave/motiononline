@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-10-2019 a las 13:40:41
+-- Tiempo de generación: 21-11-2019 a las 12:49:48
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.6
 
@@ -165,7 +165,7 @@ CREATE TABLE `buttons` (
 --
 
 INSERT INTO `buttons` (`id`, `rightclick`, `inspect`, `goto`, `color`, `created_at`, `updated_at`) VALUES
-(1, 0, 0, 0, 0, '2018-07-31 06:00:00', '2019-09-24 13:47:23');
+(1, 1, 1, 0, 0, '2018-07-31 06:00:00', '2019-10-16 13:34:10');
 
 -- --------------------------------------------------------
 
@@ -208,7 +208,7 @@ CREATE TABLE `configs` (
 --
 
 INSERT INTO `configs` (`id`, `logo`, `favicon`, `title`, `w_email`, `stripe_pub_key`, `stripe_secret_key`, `paypal_mar_email`, `currency_code`, `currency_symbol`, `invoice_add`, `prime_main_slider`, `prime_genre_slider`, `prime_footer`, `prime_movie_single`, `terms_condition`, `privacy_pol`, `refund_pol`, `copyright`, `stripe_payment`, `paypal_payment`, `payu_payment`, `paytm_payment`, `preloader`, `wel_eml`, `created_at`, `updated_at`) VALUES
-(1, 'logo_1569247053LOGO MO LARGO chico 2.png.png', 'favicon.png', '{\"en\":\"Motion Online\"}', 'online@motioncenter.cl', '', '', '', 'CLP', 'fa fa-dollar', '{\"en\":null}', 0, 1, 1, 1, '{\"en\":null,\"nl\":\"<p>newvious&nbsp;goodesioanos<\\/p>\"}', NULL, NULL, '{\"en\":\"<p>&copy; 2019&nbsp;Motion Online&nbsp;| All Rights Reserved.<\\/p>\"}', 0, 0, 0, 1, 1, 0, NULL, '2019-09-23 16:57:33');
+(1, 'logo_1569247053LOGO MO LARGO chico 2.png.png', 'favicon.png', '{\"en\":\"Motion Online\"}', 'online@motioncenter.cl', '', '', '', 'CLP', 'fa fa-dollar', '{\"en\":null}', 0, 1, 1, 1, '{\"en\":null,\"nl\":\"<p>newvious&nbsp;goodesioanos<\\/p>\"}', NULL, NULL, '{\"en\":\"<p>&copy; 2019&nbsp;Motion Online&nbsp;| All Rights Reserved.<\\/p>\"}', 0, 0, 0, 1, 0, 0, NULL, '2019-10-16 13:39:00');
 
 -- --------------------------------------------------------
 
@@ -398,7 +398,16 @@ INSERT INTO `exercise_reports` (`id`, `exercise_id`, `value`, `created_at`, `upd
 (61, 8, 100, '2019-10-04 19:29:54', '2019-10-04 19:29:54', 30),
 (62, 8, 150, '2019-10-04 19:30:09', '2019-10-04 19:30:09', 30),
 (63, 9, 85, '2019-10-04 19:30:21', '2019-10-04 19:30:21', 30),
-(64, 9, 110, '2019-10-04 19:30:30', '2019-10-04 19:30:30', 30);
+(64, 9, 110, '2019-10-04 19:30:30', '2019-10-04 19:30:30', 30),
+(65, 12, 60, '2019-10-20 20:29:43', '2019-10-20 20:29:43', 38),
+(66, 8, 50, '2019-10-20 20:30:00', '2019-10-20 20:30:00', 38),
+(67, 9, 50, '2019-10-20 20:31:13', '2019-10-20 20:31:13', 38),
+(68, 13, 30, '2019-10-20 20:31:27', '2019-10-20 20:31:27', 38),
+(69, 8, 20, '2019-11-07 19:13:17', '2019-11-07 19:13:17', 37),
+(70, 8, 30, '2019-11-07 19:13:55', '2019-11-07 19:13:55', 37),
+(71, 12, 10, '2019-11-07 19:14:15', '2019-11-07 19:14:15', 37),
+(72, 13, 10, '2019-11-07 19:14:27', '2019-11-07 19:14:27', 37),
+(73, 9, 45, '2019-11-07 19:14:49', '2019-11-07 19:14:49', 37);
 
 -- --------------------------------------------------------
 
@@ -433,9 +442,9 @@ CREATE TABLE `footer_translations` (
 --
 
 INSERT INTO `footer_translations` (`id`, `key`, `value`, `created_at`, `updated_at`) VALUES
-(1, 'terms and condition', '{\"en\":\"termin\",\"nl\":\"Terms and condition2\",\"de\":\"Gesch\\u00e4ftsbedingung\"}', NULL, '2019-09-23 19:05:19'),
-(2, 'privacy policy', '{\"en\":\"dweded\",\"nl\":\"Privacy policy2\",\"de\":\"Datenschutz-Bestimmungen\"}', NULL, '2019-09-23 19:05:19'),
-(3, 'refund policy', '{\"en\":\"dede\",\"nl\":\"Refund policy2\",\"de\":\"R\\u00fcckgaberecht\"}', NULL, '2019-09-23 19:05:19'),
+(1, 'terms and condition', '{\"en\":\"Terminos y condiciones\",\"nl\":\"Terms and condition2\",\"de\":\"Gesch\\u00e4ftsbedingung\"}', NULL, '2019-10-17 14:31:43'),
+(2, 'privacy policy', '{\"en\":\"Politica de privacidad\",\"nl\":\"Privacy policy2\",\"de\":\"Datenschutz-Bestimmungen\"}', NULL, '2019-10-17 14:31:43'),
+(3, 'refund policy', '{\"en\":\"Ubicaci\\u00f3n\",\"nl\":\"Refund policy2\",\"de\":\"R\\u00fcckgaberecht\"}', NULL, '2019-10-17 14:31:43'),
 (4, 'help', '{\"en\":\"Ayuda\",\"nl\":\"Help2\",\"de\":\"Hilfe\"}', NULL, '2019-09-23 21:29:14'),
 (5, 'corporate', '{\"en\":\"corp\",\"nl\":\"Corporate2\",\"de\":\"Unternehmen\"}', NULL, '2019-09-23 19:05:19'),
 (6, 'sitemap', '{\"en\":\"deded\",\"nl\":\"Sitemap2\",\"de\":\"Seitenverzeichnis\"}', NULL, '2019-09-23 19:05:19'),
@@ -501,8 +510,6 @@ INSERT INTO `genres` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (21, '{\"en\":\"Aprende sobre los aceites y las grasas...\"}', '2019-09-19 01:57:43', '2019-09-21 03:20:44'),
 (22, '{\"en\":\"Aprende sobre los carbohidratos y cereales...\"}', '2019-09-19 01:58:09', '2019-09-21 03:21:23'),
 (23, '{\"en\":\"Aprende sobre las proteinas...\"}', '2019-09-19 01:58:17', '2019-09-21 03:22:59'),
-(24, '{\"en\":\"Aprende sobre las frutas y verduras...\"}', '2019-09-19 01:58:39', '2019-09-21 03:21:56'),
-(25, '{\"en\":\"Aprende sobre la hidratacion...\"}', '2019-09-19 01:58:54', '2019-09-21 03:22:21'),
 (26, '{\"en\":\"Ejercicios de core y abdomen...\"}', '2019-09-20 15:20:28', '2019-09-21 03:28:40'),
 (27, '{\"en\":\"Tips y datos importantes!, aprende a entrenar con nosotros...\"}', '2019-09-21 03:25:30', '2019-09-21 03:25:49'),
 (28, '{\"en\":\"Ejemplos de colaciones...\"}', '2019-09-21 05:53:57', '2019-09-21 05:53:57'),
@@ -510,8 +517,13 @@ INSERT INTO `genres` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (30, '{\"en\":\"Ejemplos de desayunos, once o te...\"}', '2019-09-21 05:54:30', '2019-09-21 06:01:51'),
 (31, '{\"en\":\"Aprende sobre suplementos...\"}', '2019-09-21 06:32:03', '2019-09-21 06:32:03'),
 (32, '{\"en\":\"Tips y datos importantes!, aprende a cuidar tu cuerpo con nosotros...\"}', '2019-09-21 07:16:50', '2019-09-21 07:16:50'),
-(33, '{\"en\":\"Aprende sobre tu cuerpo mujer...\"}', '2019-09-21 07:22:14', '2019-09-21 07:22:14'),
-(34, '{\"en\":\"Planificaciones\"}', '2019-10-14 17:54:36', '2019-10-14 17:54:36');
+(34, '{\"en\":\"Planificaciones\"}', '2019-10-14 17:54:36', '2019-10-14 17:54:36'),
+(35, '{\"en\":\"Ejercicios para tu hombro y escapula..\"}', '2019-10-18 19:37:26', '2019-10-18 19:37:26'),
+(36, '{\"en\":\"Ejercicios para tu rodilla...\"}', '2019-10-18 21:16:19', '2019-10-18 21:21:42'),
+(37, '{\"en\":\"Ejercicios para tu cadera y pelvis...\"}', '2019-10-18 21:17:38', '2019-10-18 21:17:38'),
+(38, '{\"en\":\"Ejercicios para tu columna...\"}', '2019-10-18 21:17:51', '2019-10-18 21:17:51'),
+(39, '{\"en\":\"Ejercicios para tu tobillo...\"}', '2019-10-18 21:21:58', '2019-10-18 21:21:58'),
+(40, '{\"en\":\"Ejercicios para tu codo y mu\\u00f1eca...\"}', '2019-10-18 21:22:30', '2019-10-18 21:22:30');
 
 -- --------------------------------------------------------
 
@@ -566,8 +578,10 @@ CREATE TABLE `home_sliders` (
 --
 
 INSERT INTO `home_sliders` (`id`, `movie_id`, `tv_series_id`, `slide_image`, `active`, `position`, `created_at`, `updated_at`) VALUES
-(4, 29, NULL, 'slide_1569328541motio educa2.jpg', 1, 1, '2019-09-21 06:59:15', '2019-09-24 15:35:41'),
-(6, 43, NULL, 'slide_1569328558grimalt entrenando 2.jpg', 1, 3, '2019-09-21 07:06:23', '2019-09-24 15:35:58');
+(8, 42, NULL, 'slide_1571232913certf nsca cscs.png', 1, 3, '2019-10-16 13:35:13', '2019-10-25 21:55:24'),
+(10, 29, NULL, 'slide_1571232957grimalt.png', 1, 4, '2019-10-16 13:35:57', '2019-10-25 21:55:24'),
+(11, 29, NULL, 'slide_1572040461Anotación 2019-10-25 185101.jpg', 1, 2, '2019-10-25 21:54:21', '2019-10-25 21:55:24'),
+(12, 29, NULL, 'slide_1572040471Anotación 2019-10-25 185156.jpg', 1, 1, '2019-10-25 21:54:31', '2019-10-25 21:55:20');
 
 -- --------------------------------------------------------
 
@@ -635,8 +649,7 @@ CREATE TABLE `landing_pages` (
 --
 
 INSERT INTO `landing_pages` (`id`, `image`, `heading`, `detail`, `button`, `button_text`, `button_link`, `left`, `position`, `created_at`, `updated_at`) VALUES
-(1, 'landing_page_1569267161hiclipart.png', '{\"en\":\"Bienvenidos!  Unete a Motion online\",\"de\":\"Herzlich willkommen! Beitreten Next Hour\"}', '{\"en\":\"Evaluate presencialmente con nosotros y recibe nuestro exclusivo contenido y asesoramiento!\",\"de\":\"Nehmen Sie an der Next Hour teil und schauen Sie sich die neuesten Filme an, das Elite-TV-Programm erscheint und gew\\u00e4hrt Ihnen die beste Mitgliedschaft in der n\\u00e4chsten Stunde zu den niedrigsten Kosten.\"}', 1, '{\"en\":\"Ingresa a Motion online\",\"de\":\"Join Next Hour\"}', 'login', 0, 1, '2018-04-24 02:18:44', '2019-09-23 22:32:41'),
-(2, 'landing_page_1569256270perform-2-2.png', '{\"en\":\"Plan Black\",\"de\":\"Vermisse Fernsehserien nicht\"}', '{\"en\":\"- Evaluaci\\u00f3n presencial en MOTION gratis.\\r\\n- Asesoramiento en entrenamiento, nutricion y prevencion de lesiones.\\r\\n- Chat con nuestros mejores trainers.\\r\\n- Descuentos en suplementos alimenticios, implementos y accesorios MOTION.\\r\\n- Se uno mas de nuestra comunidad, subiremos tus historias a nuestra cuenta de Instgram!.\",\"de\":\"Mit Ihrer Mitgliedschaft bei der n\\u00e4chsten Stunde n\\u00e4hern Sie sich ausgew\\u00e4hlten US- und allen TV-Shows, gewinnen Next-Hour-Serien und Kinder- und Kindershows.\"}', 1, '{\"en\":\"Ingresa a Motion online\",\"de\":\"Register Now\"}', 'login', 1, 2, '2018-04-24 02:19:42', '2019-09-23 19:31:10');
+(1, 'landing_page_1569267161hiclipart.png', '{\"en\":\"Bienvenidos!  Unete a Motion online\",\"de\":\"Herzlich willkommen! Beitreten Next Hour\"}', '{\"en\":\"Evaluate presencialmente con nosotros y recibe nuestro exclusivo contenido y asesoramiento!\",\"de\":\"Nehmen Sie an der Next Hour teil und schauen Sie sich die neuesten Filme an, das Elite-TV-Programm erscheint und gew\\u00e4hrt Ihnen die beste Mitgliedschaft in der n\\u00e4chsten Stunde zu den niedrigsten Kosten.\"}', 1, '{\"en\":\"Ingresa a Motion online\",\"de\":\"Join Next Hour\"}', 'login', 0, 1, '2018-04-24 02:18:44', '2019-09-23 22:32:41');
 
 -- --------------------------------------------------------
 
@@ -764,7 +777,6 @@ INSERT INTO `menu_videos` (`id`, `menu_id`, `movie_id`, `tv_series_id`, `created
 (120, 2, 44, NULL, '2019-09-21 06:32:35', '2019-09-21 06:32:35'),
 (121, 2, 45, NULL, '2019-09-21 06:33:47', '2019-09-21 06:33:47'),
 (122, 2, 42, NULL, '2019-09-21 06:34:15', '2019-09-21 06:34:15'),
-(123, 2, 29, NULL, '2019-09-21 06:34:49', '2019-09-21 06:34:49'),
 (124, 2, 43, NULL, '2019-09-21 06:35:10', '2019-09-21 06:35:10'),
 (125, 2, 46, NULL, '2019-09-21 06:35:32', '2019-09-21 06:35:32'),
 (126, 2, 47, NULL, '2019-09-21 06:35:54', '2019-09-21 06:35:54'),
@@ -828,7 +840,118 @@ INSERT INTO `menu_videos` (`id`, `menu_id`, `movie_id`, `tv_series_id`, `created
 (189, 2, 162, NULL, '2019-09-25 05:09:29', '2019-09-25 05:09:29'),
 (190, 2, 163, NULL, '2019-09-25 05:10:35', '2019-09-25 05:10:35'),
 (191, 2, 164, NULL, '2019-09-25 05:11:12', '2019-09-25 05:11:12'),
-(197, 1, 170, NULL, '2019-10-14 17:54:57', '2019-10-14 17:54:57');
+(198, 1, 170, NULL, '2019-10-17 13:23:33', '2019-10-17 13:23:33'),
+(199, 1, 171, NULL, '2019-10-17 13:24:43', '2019-10-17 13:24:43'),
+(201, 1, 173, NULL, '2019-10-17 13:26:04', '2019-10-17 13:26:04'),
+(203, 1, 175, NULL, '2019-10-17 13:27:35', '2019-10-17 13:27:35'),
+(204, 1, 176, NULL, '2019-10-17 13:28:00', '2019-10-17 13:28:00'),
+(205, 1, 177, NULL, '2019-10-17 13:28:28', '2019-10-17 13:28:28'),
+(206, 1, 178, NULL, '2019-10-17 13:28:58', '2019-10-17 13:28:58'),
+(207, 1, 179, NULL, '2019-10-17 13:45:05', '2019-10-17 13:45:05'),
+(208, 1, 180, NULL, '2019-10-17 13:50:28', '2019-10-17 13:50:28'),
+(209, 1, 181, NULL, '2019-10-17 13:59:09', '2019-10-17 13:59:09'),
+(210, 1, 182, NULL, '2019-10-17 13:59:40', '2019-10-17 13:59:40'),
+(211, 1, 183, NULL, '2019-10-17 14:07:19', '2019-10-17 14:07:19'),
+(212, 1, 184, NULL, '2019-10-17 14:14:10', '2019-10-17 14:14:10'),
+(213, 1, 185, NULL, '2019-10-17 14:17:57', '2019-10-17 14:17:57'),
+(214, 1, 186, NULL, '2019-10-17 14:20:35', '2019-10-17 14:20:35'),
+(215, 1, 187, NULL, '2019-10-17 14:22:34', '2019-10-17 14:22:34'),
+(216, 2, 188, NULL, '2019-10-18 11:26:17', '2019-10-18 11:26:17'),
+(217, 2, 189, NULL, '2019-10-18 11:28:09', '2019-10-18 11:28:09'),
+(218, 2, 190, NULL, '2019-10-18 11:28:55', '2019-10-18 11:28:55'),
+(219, 2, 191, NULL, '2019-10-18 11:29:37', '2019-10-18 11:29:37'),
+(220, 2, 192, NULL, '2019-10-18 11:30:08', '2019-10-18 11:30:08'),
+(221, 2, 193, NULL, '2019-10-18 11:30:58', '2019-10-18 11:30:58'),
+(222, 2, 194, NULL, '2019-10-18 11:31:23', '2019-10-18 11:31:23'),
+(223, 2, 195, NULL, '2019-10-18 11:32:07', '2019-10-18 11:32:07'),
+(224, 2, 196, NULL, '2019-10-18 11:32:37', '2019-10-18 11:32:37'),
+(225, 2, 197, NULL, '2019-10-18 11:32:57', '2019-10-18 11:32:57'),
+(226, 2, 198, NULL, '2019-10-18 11:33:21', '2019-10-18 11:33:21'),
+(227, 1, 199, NULL, '2019-10-18 18:27:35', '2019-10-18 18:27:35'),
+(228, 1, 200, NULL, '2019-10-18 18:27:59', '2019-10-18 18:27:59'),
+(229, 1, 201, NULL, '2019-10-18 18:49:48', '2019-10-18 18:49:48'),
+(230, 3, 202, NULL, '2019-10-18 19:39:33', '2019-10-18 19:39:33'),
+(231, 3, 203, NULL, '2019-10-18 19:41:27', '2019-10-18 19:41:27'),
+(232, 3, 204, NULL, '2019-10-18 19:42:37', '2019-10-18 19:42:37'),
+(233, 3, 205, NULL, '2019-10-18 19:44:36', '2019-10-18 19:44:36'),
+(234, 3, 206, NULL, '2019-10-18 19:46:16', '2019-10-18 19:46:16'),
+(235, 3, 207, NULL, '2019-10-18 19:47:35', '2019-10-18 19:47:35'),
+(236, 3, 208, NULL, '2019-10-18 19:48:04', '2019-10-18 19:48:04'),
+(237, 3, 209, NULL, '2019-10-18 21:14:06', '2019-10-18 21:14:06'),
+(238, 3, 210, NULL, '2019-10-18 21:25:46', '2019-10-18 21:25:46'),
+(239, 3, 211, NULL, '2019-10-18 21:26:09', '2019-10-18 21:26:09'),
+(240, 3, 212, NULL, '2019-10-18 21:27:35', '2019-10-18 21:27:35'),
+(241, 3, 213, NULL, '2019-10-18 21:29:41', '2019-10-18 21:29:41'),
+(242, 3, 214, NULL, '2019-10-18 21:30:33', '2019-10-18 21:30:33'),
+(243, 3, 215, NULL, '2019-10-18 21:31:25', '2019-10-18 21:31:25'),
+(244, 3, 216, NULL, '2019-10-18 21:39:16', '2019-10-18 21:39:16'),
+(245, 3, 217, NULL, '2019-10-18 21:41:12', '2019-10-18 21:41:12'),
+(246, 3, 218, NULL, '2019-10-18 21:43:07', '2019-10-18 21:43:07'),
+(247, 3, 219, NULL, '2019-10-18 21:52:36', '2019-10-18 21:52:36'),
+(256, 1, 226, NULL, '2019-10-22 15:12:31', '2019-10-22 15:12:31'),
+(257, 1, 227, NULL, '2019-10-22 15:13:42', '2019-10-22 15:13:42'),
+(258, 1, 228, NULL, '2019-10-22 15:35:01', '2019-10-22 15:35:01'),
+(260, 1, 229, NULL, '2019-10-22 15:46:18', '2019-10-22 15:46:18'),
+(261, 2, 230, NULL, '2019-10-24 19:32:53', '2019-10-24 19:32:53'),
+(262, 2, 231, NULL, '2019-10-24 19:33:14', '2019-10-24 19:33:14'),
+(263, 2, 232, NULL, '2019-10-24 19:33:35', '2019-10-24 19:33:35'),
+(264, 2, 233, NULL, '2019-10-24 19:33:53', '2019-10-24 19:33:53'),
+(265, 2, 234, NULL, '2019-10-24 19:34:14', '2019-10-24 19:34:14'),
+(266, 2, 235, NULL, '2019-10-24 19:34:30', '2019-10-24 19:34:30'),
+(267, 2, 29, NULL, '2019-10-24 19:36:28', '2019-10-24 19:36:28'),
+(268, 3, 236, NULL, '2019-10-24 19:39:40', '2019-10-24 19:39:40'),
+(269, 3, 237, NULL, '2019-10-24 19:40:35', '2019-10-24 19:40:35'),
+(270, 3, 238, NULL, '2019-10-24 19:41:03', '2019-10-24 19:41:03'),
+(271, 3, 239, NULL, '2019-10-24 19:42:00', '2019-10-24 19:42:00'),
+(272, 3, 240, NULL, '2019-10-24 19:42:23', '2019-10-24 19:42:23'),
+(273, 3, 241, NULL, '2019-10-24 19:42:52', '2019-10-24 19:42:52'),
+(274, 1, 242, NULL, '2019-10-25 16:42:52', '2019-10-25 16:42:52'),
+(275, 1, 243, NULL, '2019-10-25 16:43:16', '2019-10-25 16:43:16'),
+(276, 1, 244, NULL, '2019-10-25 16:43:40', '2019-10-25 16:43:40'),
+(277, 1, 245, NULL, '2019-10-25 16:44:01', '2019-10-25 16:44:01'),
+(279, 1, 246, NULL, '2019-10-25 18:09:05', '2019-10-25 18:09:05'),
+(280, 1, 247, NULL, '2019-10-25 18:09:55', '2019-10-25 18:09:55'),
+(283, 1, 250, NULL, '2019-10-26 12:20:20', '2019-10-26 12:20:20'),
+(284, 1, 172, NULL, '2019-10-28 02:15:19', '2019-10-28 02:15:19'),
+(285, 1, 174, NULL, '2019-10-28 02:15:45', '2019-10-28 02:15:45'),
+(286, 1, 251, NULL, '2019-10-28 02:16:30', '2019-10-28 02:16:30'),
+(287, 1, 252, NULL, '2019-10-28 02:16:55', '2019-10-28 02:16:55'),
+(288, 1, 253, NULL, '2019-10-28 02:17:17', '2019-10-28 02:17:17'),
+(289, 1, 254, NULL, '2019-10-29 23:05:18', '2019-10-29 23:05:18'),
+(290, 1, 255, NULL, '2019-10-29 23:05:41', '2019-10-29 23:05:41'),
+(291, 1, 256, NULL, '2019-10-29 23:06:09', '2019-10-29 23:06:09'),
+(292, 1, 248, NULL, '2019-10-29 23:15:33', '2019-10-29 23:15:33'),
+(293, 1, 249, NULL, '2019-10-29 23:15:54', '2019-10-29 23:15:54'),
+(296, 1, 259, NULL, '2019-11-06 01:08:58', '2019-11-06 01:08:58'),
+(297, 1, 260, NULL, '2019-11-06 01:09:21', '2019-11-06 01:09:21'),
+(298, 1, 258, NULL, '2019-11-06 01:09:48', '2019-11-06 01:09:48'),
+(299, 1, 257, NULL, '2019-11-06 01:10:03', '2019-11-06 01:10:03'),
+(302, 3, 225, NULL, '2019-11-06 11:34:34', '2019-11-06 11:34:34'),
+(303, 3, 261, NULL, '2019-11-06 11:35:46', '2019-11-06 11:35:46'),
+(304, 3, 262, NULL, '2019-11-06 11:36:25', '2019-11-06 11:36:25'),
+(305, 3, 224, NULL, '2019-11-06 11:37:22', '2019-11-06 11:37:22'),
+(306, 3, 223, NULL, '2019-11-06 11:37:42', '2019-11-06 11:37:42'),
+(307, 1, 263, NULL, '2019-11-06 11:38:54', '2019-11-06 11:38:54'),
+(308, 1, 264, NULL, '2019-11-06 11:40:03', '2019-11-06 11:40:03'),
+(309, 1, 265, NULL, '2019-11-06 11:40:51', '2019-11-06 11:40:51'),
+(310, 1, 266, NULL, '2019-11-06 11:42:15', '2019-11-06 11:42:15'),
+(311, 1, 267, NULL, '2019-11-06 11:43:12', '2019-11-06 11:43:12'),
+(312, 1, 268, NULL, '2019-11-14 23:46:21', '2019-11-14 23:46:21'),
+(313, 1, 269, NULL, '2019-11-15 02:28:30', '2019-11-15 02:28:30'),
+(314, 1, 270, NULL, '2019-11-15 02:52:58', '2019-11-15 02:52:58'),
+(315, 1, 271, NULL, '2019-11-18 02:59:16', '2019-11-18 02:59:16'),
+(316, 3, 220, NULL, '2019-11-18 02:59:35', '2019-11-18 02:59:35'),
+(317, 3, 221, NULL, '2019-11-18 03:00:18', '2019-11-18 03:00:18'),
+(318, 1, 272, NULL, '2019-11-18 03:00:48', '2019-11-18 03:00:48'),
+(319, 3, 222, NULL, '2019-11-18 03:01:26', '2019-11-18 03:01:26'),
+(320, 1, 273, NULL, '2019-11-18 03:02:05', '2019-11-18 03:02:05'),
+(321, 1, 274, NULL, '2019-11-18 21:53:41', '2019-11-18 21:53:41'),
+(322, 1, 275, NULL, '2019-11-18 21:54:01', '2019-11-18 21:54:01'),
+(324, 1, 277, NULL, '2019-11-18 21:54:51', '2019-11-18 21:54:51'),
+(325, 1, 276, NULL, '2019-11-18 22:00:41', '2019-11-18 22:00:41'),
+(326, 1, 278, NULL, '2019-11-19 18:36:28', '2019-11-19 18:36:28'),
+(327, 1, 279, NULL, '2019-11-19 18:36:55', '2019-11-19 18:36:55'),
+(328, 1, 280, NULL, '2019-11-19 18:37:20', '2019-11-19 18:37:20');
 
 -- --------------------------------------------------------
 
@@ -986,7 +1109,7 @@ CREATE TABLE `movies` (
 --
 
 INSERT INTO `movies` (`id`, `tmdb_id`, `title`, `keyword`, `description`, `duration`, `thumbnail`, `poster`, `tmdb`, `fetch_by`, `director_id`, `actor_id`, `genre_id`, `trailer_url`, `detail`, `rating`, `maturity_rating`, `subtitle`, `subtitle_list`, `subtitle_files`, `publish_year`, `released`, `featured`, `series`, `a_language`, `audio_files`, `type`, `created_at`, `updated_at`) VALUES
-(29, NULL, 'info 18 hidratacion', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1569035550Diapositiva1.JPG', NULL, 'N', NULL, NULL, NULL, '25', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-17 03:00:12', '2019-09-21 06:34:49'),
+(29, NULL, 'info 18 hidratacion', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1569035550Diapositiva1.JPG', NULL, 'N', NULL, NULL, NULL, '13', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-17 03:00:12', '2019-10-24 19:36:28'),
 (42, NULL, 'info 17 tips', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1568844943Captura.JPG', NULL, 'N', NULL, NULL, NULL, '13', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-19 01:15:43', '2019-09-21 06:34:14'),
 (43, NULL, 'info 1 tips', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1568847266Captura8.JPG', NULL, 'N', NULL, NULL, NULL, '13', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-19 01:54:26', '2019-09-21 06:35:10'),
 (44, NULL, 'info 2 suplementos', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1568847319Captura28.JPG', NULL, 'N', NULL, NULL, NULL, '31', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-19 01:55:20', '2019-09-21 06:32:35'),
@@ -995,7 +1118,6 @@ INSERT INTO `movies` (`id`, `tmdb_id`, `title`, `keyword`, `description`, `durat
 (47, NULL, 'info 5 proteinas', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1568847591Captura 2.JPG', NULL, 'N', NULL, NULL, NULL, '23', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-19 01:59:51', '2019-09-21 06:35:54'),
 (48, NULL, 'info 6 proteinas', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1568847629Captura 3.JPG', NULL, 'N', NULL, NULL, NULL, '23', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-19 02:00:29', '2019-09-21 06:36:11'),
 (49, NULL, 'info 7 proteina', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1568847657Captura29.JPG', NULL, 'N', NULL, NULL, NULL, '23', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-19 02:00:57', '2019-09-21 06:30:46'),
-(50, NULL, 'info 8 platanos', NULL, NULL, NULL, 'thumb_1568847685Captura24.JPG', NULL, 'N', NULL, NULL, NULL, '24', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-19 02:01:25', '2019-09-19 02:01:25'),
 (51, NULL, 'Sentadilla con mancuerna', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1568982433SENTADILLA MANCUERNA.gif', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":\"POSICION: a) Pies al ancho de los hombro y puntas de los pies ligeramente abiertas. b) Escapulas juntas y codos cerrados. \\r\\n\\r\\nMOVIMIENTO: a) Tomar aire con el abdomen y tensar musculo abdominal (sin acortar musculo). b) Bajar llevando las caderas hacia atras e inclinando ligeramente el tronco hacia adelante. c) Rodillas se van abriendo en la misma linea que proyectan la punta de los pies. d) Bajar hasta que caderas lleguen a la altura de las rodillas. e) Mantener siempre tension abdominal y realizar fuerte contracci\\u00f3n glutea llegar arriba.\"}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-20 15:27:13', '2019-09-20 15:29:28'),
 (52, NULL, 'Abdominales con balon', NULL, NULL, NULL, 'thumb_1568983712ABS CON BALON.gif', NULL, 'N', NULL, NULL, NULL, '26', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-20 15:48:32', '2019-09-20 15:48:32'),
 (53, NULL, 'Biceps martillo', NULL, NULL, NULL, 'thumb_1568983808BICEP MARTILLO.gif', NULL, 'N', NULL, NULL, NULL, '4', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-20 15:50:08', '2019-09-20 15:50:08'),
@@ -1065,7 +1187,6 @@ INSERT INTO `movies` (`id`, `tmdb_id`, `title`, `keyword`, `description`, `durat
 (118, NULL, 'info 30 carbos', NULL, NULL, NULL, 'thumb_1569037882Captura27.JPG', NULL, 'N', NULL, NULL, NULL, '22', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-21 06:51:22', '2019-09-21 06:51:22'),
 (119, NULL, 'info 31 grasas', NULL, NULL, NULL, 'thumb_1569037923Captura30.JPG', NULL, 'N', NULL, NULL, NULL, '21', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-21 06:52:03', '2019-09-21 06:52:03'),
 (120, NULL, 'info 32 tips', NULL, NULL, NULL, 'thumb_1569037955Captura31.JPG', NULL, 'N', NULL, NULL, NULL, '13', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-21 06:52:35', '2019-09-21 06:52:35'),
-(121, NULL, 'info 33 mujer', NULL, NULL, NULL, 'thumb_15690397622.JPG', NULL, 'N', NULL, NULL, NULL, '33', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-21 07:22:42', '2019-09-21 07:22:42'),
 (122, NULL, 'info 34 tips', NULL, NULL, NULL, 'thumb_15690398193.JPG', NULL, 'N', NULL, NULL, NULL, '27', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-21 07:23:39', '2019-09-21 07:23:39'),
 (123, NULL, 'info 35 tips', NULL, NULL, NULL, 'thumb_15690398654.JPG', NULL, 'N', NULL, NULL, NULL, '27', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-21 07:24:25', '2019-09-21 07:24:25'),
 (124, NULL, 'info 36 tips', NULL, NULL, NULL, 'thumb_15690399065.JPG', NULL, 'N', NULL, NULL, NULL, '27', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-21 07:25:06', '2019-09-21 07:25:06'),
@@ -1109,7 +1230,118 @@ INSERT INTO `movies` (`id`, `tmdb_id`, `title`, `keyword`, `description`, `durat
 (162, NULL, 'Almuerzo o cena de 500 cals (4)', NULL, NULL, NULL, 'thumb_1569377369Diapositiva12.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-25 05:09:29', '2019-09-25 05:09:29'),
 (163, NULL, 'Almuerzo o cena de 400 cals (3)', NULL, NULL, NULL, 'thumb_1569377435Diapositiva9.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-25 05:10:35', '2019-09-25 05:10:35'),
 (164, NULL, 'Almuerzo o cena de 400 cals (4)', NULL, NULL, NULL, 'thumb_1569377472Diapositiva10.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-09-25 05:11:12', '2019-09-25 05:11:12'),
-(170, NULL, 'Rutina PP, dia 2  de 3, mujer.', NULL, NULL, NULL, 'thumb_1571064897Rutina PP, dia 2  de 3, mujer..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-14 17:54:57', '2019-10-14 17:54:57');
+(170, NULL, 'Rutina PP, dia 2 de 3, mujer.', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1571318613Rutina PP, dia 2  de 3, mujer..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-14 17:54:57', '2019-10-17 13:23:33'),
+(171, NULL, 'Rutina PP, dia 1 de 3, mujer.', NULL, NULL, NULL, 'thumb_1571318683Rutina PP, dia 1  de 3, mujer..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:24:43', '2019-10-17 13:24:43'),
+(172, NULL, 'Rutina PP, dia 3 de 3, mujer.', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1572228919Rutina PP, dia 3  de 3, mujer..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:25:20', '2019-10-28 02:15:19'),
+(173, NULL, 'Rutina PP, dia 1 de 3, mujer(sin estocadas).', NULL, NULL, NULL, 'thumb_1571318764Rutina PP, dia 1  de 3, mujer(sin estocadas)..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:26:04', '2019-10-17 13:26:04'),
+(174, NULL, 'Rutina PP, dia 3 de 3, mujer(sin estocadas).', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1572228945Rutina PP, dia 3  de 3, mujer(sin estocadas)..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:26:43', '2019-10-28 02:15:45'),
+(175, NULL, 'Rutina PP, dia 1 de 4, hombre.', NULL, NULL, NULL, 'thumb_1571318855Rutina PP, dia 1 de 4, hombre..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:27:35', '2019-10-17 13:27:35'),
+(176, NULL, 'Rutina PP, dia 2 de 4, hombre.', NULL, NULL, NULL, 'thumb_1571318880Rutina PP, dia 2 de 4, hombre..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:28:00', '2019-10-17 13:28:00'),
+(177, NULL, 'Rutina PP, dia 3 de 4, hombre.', NULL, NULL, NULL, 'thumb_1571318908Rutina PP, dia 3 de 4, hombre..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:28:28', '2019-10-17 13:28:28'),
+(178, NULL, 'Rutina PP, dia 4 de 4, hombre.', NULL, NULL, NULL, 'thumb_1571318938Rutina PP, dia 4 de 4, hombre..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:28:58', '2019-10-17 13:28:58'),
+(179, NULL, 'Remo unilateral polea', NULL, NULL, NULL, 'thumb_15713199055da86ffc2fd5e916522245.gif', NULL, 'N', NULL, NULL, NULL, '4', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:45:05', '2019-10-17 13:45:05'),
+(180, NULL, 'Pecho plano barra', NULL, NULL, NULL, 'thumb_15713202285da8714da3900317023845.gif', NULL, 'N', NULL, NULL, NULL, '7', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:50:28', '2019-10-17 13:50:28'),
+(181, NULL, 'Pecho inclinado barra', NULL, NULL, NULL, 'thumb_15713207495da873102ba7f408569436.gif', NULL, 'N', NULL, NULL, NULL, '7', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:59:09', '2019-10-17 13:59:09'),
+(182, NULL, 'Press hombro maquina', NULL, NULL, NULL, 'thumb_15713207805da8733904ea2905067257.gif', NULL, 'N', NULL, NULL, NULL, '7', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 13:59:40', '2019-10-17 13:59:40'),
+(183, NULL, 'Apertura de pecho mancuernas', NULL, NULL, NULL, 'thumb_15713212395da8754485d44034083202.gif', NULL, 'N', NULL, NULL, NULL, '7', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 14:07:19', '2019-10-17 14:07:19'),
+(184, NULL, 'Puente isquiotibial bilat.', NULL, NULL, NULL, 'thumb_15713216505da876e50eac3496245591.gif', NULL, 'N', NULL, NULL, NULL, '6', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 14:14:10', '2019-10-17 14:14:10'),
+(185, NULL, 'Core supino 2', NULL, NULL, NULL, 'thumb_15713218775da877c073360718040410.gif', NULL, 'N', NULL, NULL, NULL, '26', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 14:17:57', '2019-10-17 14:17:57'),
+(186, NULL, 'Aduccion de caderas', NULL, NULL, NULL, 'thumb_15713220355da8785cd4324366719157.gif', NULL, 'N', NULL, NULL, NULL, '6', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 14:20:35', '2019-10-17 14:20:35'),
+(187, NULL, 'Abduccion de caderas maquina', NULL, NULL, NULL, 'thumb_15713221545da878cf0bbf9598567382.gif', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-17 14:22:34', '2019-10-17 14:22:34'),
+(188, NULL, 'Colación de 400 cals (1)', NULL, NULL, NULL, 'thumb_1571397977Diapositiva1.JPG', NULL, 'N', NULL, NULL, NULL, '28', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:26:17', '2019-10-18 11:26:17'),
+(189, NULL, 'Colacion de 400 cals (2)', NULL, NULL, NULL, 'thumb_1571398089Diapositiva2.JPG', NULL, 'N', NULL, NULL, NULL, '28', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:28:09', '2019-10-18 11:28:09'),
+(190, NULL, 'Colación de 400 cals (3)', NULL, NULL, NULL, 'thumb_1571398135Diapositiva3.JPG', NULL, 'N', NULL, NULL, NULL, '28', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:28:55', '2019-10-18 11:28:55'),
+(191, NULL, 'Almuerzo o cena de 600 cals (1)', NULL, NULL, NULL, 'thumb_1571398177Diapositiva8.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:29:37', '2019-10-18 11:29:37'),
+(192, NULL, 'Almuerzo o cena de 600 cals (2)', NULL, NULL, NULL, 'thumb_1571398208Diapositiva9.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:30:08', '2019-10-18 11:30:08'),
+(193, NULL, 'Almuerzo o cena de 600 cals (3)', NULL, NULL, NULL, 'thumb_1571398258Diapositiva10.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:30:58', '2019-10-18 11:30:58'),
+(194, NULL, 'Almuerzo o cena de 600 cals (4)', NULL, NULL, NULL, 'thumb_1571398283Diapositiva11.JPG', NULL, 'N', NULL, NULL, NULL, '29', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:31:23', '2019-10-18 11:31:23'),
+(195, NULL, 'Desayuno de 500 cals (1)', NULL, NULL, NULL, 'thumb_1571398327Diapositiva4.JPG', NULL, 'N', NULL, NULL, NULL, '30', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:32:07', '2019-10-18 11:32:07'),
+(196, NULL, 'Desayuno de 500 cals (2)', NULL, NULL, NULL, 'thumb_1571398357Diapositiva5.JPG', NULL, 'N', NULL, NULL, NULL, '30', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:32:37', '2019-10-18 11:32:37'),
+(197, NULL, 'Desayuno de 500 cals (3)', NULL, NULL, NULL, 'thumb_1571398377Diapositiva6.JPG', NULL, 'N', NULL, NULL, NULL, '30', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:32:57', '2019-10-18 11:32:57'),
+(198, NULL, 'Desayuno de 500 cals (4)', NULL, NULL, NULL, 'thumb_1571398401Diapositiva7.JPG', NULL, 'N', NULL, NULL, NULL, '30', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 11:33:21', '2019-10-18 11:33:21');
+INSERT INTO `movies` (`id`, `tmdb_id`, `title`, `keyword`, `description`, `duration`, `thumbnail`, `poster`, `tmdb`, `fetch_by`, `director_id`, `actor_id`, `genre_id`, `trailer_url`, `detail`, `rating`, `maturity_rating`, `subtitle`, `subtitle_list`, `subtitle_files`, `publish_year`, `released`, `featured`, `series`, `a_language`, `audio_files`, `type`, `created_at`, `updated_at`) VALUES
+(199, NULL, 'Rutina PP, dia 1 de 4, hombre. CASA', NULL, NULL, NULL, 'thumb_1571423255Rutina PP, dia 1 de 4, hombre. CASA.jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 18:27:35', '2019-10-18 18:27:35'),
+(200, NULL, 'Rutina PP, dia 2 de 4, hombre. CASA', NULL, NULL, NULL, 'thumb_1571423279Rutina PP, dia 2 de 4, hombre. CASA.jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 18:27:59', '2019-10-18 18:27:59'),
+(201, NULL, 'Remo barra de pie', NULL, NULL, NULL, 'thumb_1571424588REMO BARRA DE PIE.gif', NULL, 'N', NULL, NULL, NULL, '4', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 18:49:48', '2019-10-18 18:49:48'),
+(202, NULL, 'Rotadores de hombro (1)', NULL, NULL, NULL, 'thumb_15714275735daa14a19c7be921226311.gif', NULL, 'N', NULL, NULL, NULL, '35', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 19:39:33', '2019-10-18 19:39:33'),
+(203, NULL, 'Rotadores de hombro (2)', NULL, NULL, NULL, 'thumb_15714276875daa151346345246874975.gif', NULL, 'N', NULL, NULL, NULL, '35', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 19:41:27', '2019-10-18 19:41:27'),
+(204, NULL, 'Rotadores de hombro (3)', NULL, NULL, NULL, 'thumb_15714277575daa155cce38f515479084.gif', NULL, 'N', NULL, NULL, NULL, '35', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 19:42:37', '2019-10-18 19:42:37'),
+(205, NULL, 'Serrato (1)', NULL, NULL, NULL, 'thumb_15714278765daa15d55610e148686160.gif', NULL, 'N', NULL, NULL, NULL, '35', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 19:44:36', '2019-10-18 19:44:36'),
+(206, NULL, 'Serrato (2)', NULL, NULL, NULL, 'thumb_15714279765daa16402151d763461370.gif', NULL, 'N', NULL, NULL, NULL, '35', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 19:46:16', '2019-10-18 19:46:16'),
+(207, NULL, 'Trapecio inferior (1)', NULL, NULL, NULL, 'thumb_1571428055FORT TRAP INF.gif', NULL, 'N', NULL, NULL, NULL, '35', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 19:47:35', '2019-10-18 19:47:35'),
+(208, NULL, 'Trapecio inferior (2)', NULL, NULL, NULL, 'thumb_1571428084FORT TRAP INF 2.gif', NULL, 'N', NULL, NULL, NULL, '35', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 19:48:04', '2019-10-18 19:48:04'),
+(209, NULL, 'Movilidad de hombro (1)', NULL, NULL, NULL, 'thumb_15714332465daa2ab23956f673310610.gif', NULL, 'N', NULL, NULL, NULL, '35', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:14:06', '2019-10-18 21:14:06'),
+(210, NULL, 'Estabilidad core prono (1)', NULL, NULL, NULL, 'thumb_1571433946ESTAB CORE 1.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:25:46', '2019-10-18 21:25:46'),
+(211, NULL, 'Estabilidad core prono (2)', NULL, NULL, NULL, 'thumb_1571433969ESTAB CORE 2.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:26:09', '2019-10-18 21:26:09'),
+(212, NULL, 'Anti rotacion plancha', NULL, NULL, NULL, 'thumb_15714340555daa2dd630f87676952991.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:27:35', '2019-10-18 21:27:35'),
+(213, NULL, 'Estabilidad core supino (1)', NULL, NULL, NULL, 'thumb_15714341815daa2e66152b0854067104.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:29:41', '2019-10-18 21:29:41'),
+(214, NULL, 'Estabilidad core supino (2)', NULL, NULL, NULL, 'thumb_15714342335daa2eadacbb6167598975.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:30:33', '2019-10-18 21:30:33'),
+(215, NULL, 'Estabilidad core supino (3)', NULL, NULL, NULL, 'thumb_15714342855daa2edf5cab9792278122.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:31:25', '2019-10-18 21:31:25'),
+(216, NULL, 'Movilidad columna en banca (1)', NULL, NULL, NULL, 'thumb_15714347565daa30b74ace6399675480.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:39:16', '2019-10-18 21:39:16'),
+(217, NULL, 'Movilidad columna en banca (2)', NULL, NULL, NULL, 'thumb_15714348725daa312e85294565350510.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:41:12', '2019-10-18 21:41:12'),
+(218, NULL, 'Movilidad columna decubito lateral (1)', NULL, NULL, NULL, 'thumb_15714349875daa317c5e5f6253221996.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:43:07', '2019-10-18 21:43:07'),
+(219, NULL, 'Movilidad columna decubito lateral (2)', NULL, NULL, NULL, 'thumb_15714355565daa33d1528d7534091742.gif', NULL, 'N', NULL, NULL, NULL, '38', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 21:52:36', '2019-10-18 21:52:36'),
+(220, NULL, 'Abduccion cadera decubito lateral HB', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1571436565ABD CAD ACOS.gif', NULL, 'N', NULL, NULL, NULL, '37', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 22:09:25', '2019-11-18 02:59:35'),
+(221, NULL, 'Abducción caderas sentado HB', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1571436610ABD CAD SENTADO.gif', NULL, 'N', NULL, NULL, NULL, '37', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 22:10:10', '2019-11-18 03:00:18'),
+(222, NULL, 'Abduccion cadera unilateral de pie HB', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1571436667ABD CADERA DE PIE.gif', NULL, 'N', NULL, NULL, NULL, '37', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 22:11:07', '2019-11-18 03:01:26'),
+(223, NULL, 'Estabilidad tobillo de pie (HB)', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1571438170ESTAB TOB.JPG', NULL, 'N', NULL, NULL, NULL, '39', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 22:36:10', '2019-11-06 11:37:42'),
+(224, NULL, 'Movilidad de tobillo (HB)', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_15714383015daa3e6a0c486200459245.gif', NULL, 'N', NULL, NULL, NULL, '39', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 22:38:21', '2019-11-06 11:37:22'),
+(225, NULL, 'Fortalecimiento gastrocnemio de pie (HB)', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1571438363FORT GASTR 2.gif', NULL, 'N', NULL, NULL, NULL, '39', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-18 22:39:23', '2019-11-06 11:34:34'),
+(226, NULL, 'Rutina PP, dia 1 de 4, hombre (sin estocadas).', NULL, NULL, NULL, 'thumb_1571757151Rutina PP, dia 1 de 4, hombre (sin estocadas)..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-22 15:12:31', '2019-10-22 15:12:31'),
+(227, NULL, 'Rutina PP, dia 3 de 4, hombre (sin estocadas).', NULL, NULL, NULL, 'thumb_1571757222Rutina PP, dia 3 de 4, hombre (sin estocadas)..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-22 15:13:42', '2019-10-22 15:13:42'),
+(228, NULL, 'Rutina PP, dia 3 de 4, hombre. CASA', NULL, NULL, NULL, 'thumb_1571758501Rutina PP, dia 3 de 4, hombre. CASA.jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-22 15:35:01', '2019-10-22 15:35:01'),
+(229, NULL, 'Rutina PP, dia 4 de 4, hombre. CASA', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1571759178Rutina PP, dia 4 de 4, hombre. CASA.jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-22 15:35:59', '2019-10-22 15:46:18'),
+(230, NULL, 'info suplementos 1', NULL, NULL, NULL, 'thumb_1571945573Anotación 2019-10-24 162933.jpg', NULL, 'N', NULL, NULL, NULL, '31', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:32:53', '2019-10-24 19:32:53'),
+(231, NULL, 'info suplementos 3', NULL, NULL, NULL, 'thumb_1571945594Anotación 2019-10-24 162900.jpg', NULL, 'N', NULL, NULL, NULL, '31', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:33:14', '2019-10-24 19:33:14'),
+(232, NULL, 'info suplementos 4', NULL, NULL, NULL, 'thumb_1571945615Anotación 2019-10-24 162836.jpg', NULL, 'N', NULL, NULL, NULL, '31', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:33:35', '2019-10-24 19:33:35'),
+(233, NULL, 'info suplementos 5', NULL, NULL, NULL, 'thumb_1571945633Anotación 2019-10-24 162813.jpg', NULL, 'N', NULL, NULL, NULL, '31', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:33:53', '2019-10-24 19:33:53'),
+(234, NULL, 'info suplementos 6', NULL, NULL, NULL, 'thumb_1571945654Anotación 2019-10-24 162754.jpg', NULL, 'N', NULL, NULL, NULL, '31', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:34:14', '2019-10-24 19:34:14'),
+(235, NULL, 'info suplementos 7', NULL, NULL, NULL, 'thumb_1571945670Anotación 2019-10-24 162726.jpg', NULL, 'N', NULL, NULL, NULL, '31', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:34:30', '2019-10-24 19:34:30'),
+(236, NULL, 'info mujer', NULL, NULL, NULL, 'thumb_15719459802.JPG', NULL, 'N', NULL, NULL, NULL, '32', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:39:40', '2019-10-24 19:39:40'),
+(237, NULL, 'info emb 1', NULL, NULL, NULL, 'thumb_1571946035emb 1.JPG', NULL, 'N', NULL, NULL, NULL, '32', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:40:35', '2019-10-24 19:40:35'),
+(238, NULL, 'info emb 2', NULL, NULL, NULL, 'thumb_1571946063emb 2.JPG', NULL, 'N', NULL, NULL, NULL, '32', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:41:03', '2019-10-24 19:41:03'),
+(239, NULL, 'info adulto 1', NULL, NULL, NULL, 'thumb_1571946120Anotación 2019-10-24 161814.jpg', NULL, 'N', NULL, NULL, NULL, '32', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:42:00', '2019-10-24 19:42:00'),
+(240, NULL, 'info adulto 2', NULL, NULL, NULL, 'thumb_1571946143Anotación 2019-10-24 162003.jpg', NULL, 'N', NULL, NULL, NULL, '32', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:42:23', '2019-10-24 19:42:23'),
+(241, NULL, 'info adulto 3', NULL, NULL, NULL, 'thumb_1571946172Anotación 2019-10-24 162043.jpg', NULL, 'N', NULL, NULL, NULL, '32', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-24 19:42:52', '2019-10-24 19:42:52'),
+(242, NULL, 'Rutina PP, dia 1 de 4, mujer, fitness.', NULL, NULL, NULL, 'thumb_1572021772Rutina PP, dia 1  de 4, mujer, fitness..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-25 16:42:52', '2019-10-25 16:42:52'),
+(243, NULL, 'Rutina PP, dia 2 de 4, mujer, fitness.', NULL, NULL, NULL, 'thumb_1572021796Rutina PP, dia 2 de 4, mujer, fitness..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-25 16:43:16', '2019-10-25 16:43:16'),
+(244, NULL, 'Rutina PP, dia 3 de 4, mujer, fitness.', NULL, NULL, NULL, 'thumb_1572021820Rutina PP, dia 3 de 4, mujer, fitness..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-25 16:43:40', '2019-10-25 16:43:40'),
+(245, NULL, 'Rutina PP, dia 4 de 4, mujer, fitness.', NULL, NULL, NULL, 'thumb_1572021841Rutina PP, dia 4 de 4, mujer, fitness..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-25 16:44:01', '2019-10-25 16:44:01'),
+(246, NULL, 'Plancha con balon (lateral)', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1572026898PLANCHA BALON 1.gif', NULL, 'N', NULL, NULL, NULL, '26', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-25 18:08:18', '2019-10-25 18:09:05'),
+(247, NULL, 'Plancha con balon (frontal)', NULL, NULL, NULL, 'thumb_1572026995PLANCHA BALON 2.gif', NULL, 'N', NULL, NULL, NULL, '26', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-25 18:09:55', '2019-10-25 18:09:55'),
+(248, NULL, 'Rutina FB, dia 1 de 2, mujer.', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1572390933Rutina FB, dia 1  de 2, mujer..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-26 12:14:23', '2019-10-29 23:15:33'),
+(249, NULL, 'Rutina FB, dia 2 de 2, mujer.', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1572390954Rutina FB, dia 2 de 2, mujer..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-26 12:14:47', '2019-10-29 23:15:54'),
+(250, NULL, 'Pecho mancuerna unilateral', NULL, NULL, NULL, 'thumb_15720924205db439ddccfbb177526542.gif', NULL, 'N', NULL, NULL, NULL, '7', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-26 12:20:20', '2019-10-26 12:20:20'),
+(251, NULL, 'Rutina PP, dia 1 de 3, hombre.', NULL, NULL, NULL, 'thumb_1572228990Rutina PP, dia 1 de 3, hombre. .jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-28 02:16:30', '2019-10-28 02:16:30'),
+(252, NULL, 'Rutina PP, dia 2 de 3, hombre.', NULL, NULL, NULL, 'thumb_1572229015Rutina PP, dia 2 de 3, hombre. .jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-28 02:16:55', '2019-10-28 02:16:55'),
+(253, NULL, 'Rutina PP, dia 3 de 3, hombre.', NULL, NULL, NULL, 'thumb_1572229037Rutina PP, dia 3 de 3, hombre. .jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-28 02:17:17', '2019-10-28 02:17:17'),
+(254, NULL, 'Rutina PP, dia 1 de 3, hombre (2).', NULL, NULL, NULL, 'thumb_1572390318Rutina PP, dia 1 de 3, hombre (2)..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-29 23:05:18', '2019-10-29 23:05:18'),
+(255, NULL, 'Rutina PP, dia 2 de 3, hombre (2).', NULL, NULL, NULL, 'thumb_1572390341Rutina PP, dia 2 de 3, hombre (2)..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-29 23:05:41', '2019-10-29 23:05:41'),
+(256, NULL, 'Rutina PP, dia 3 de 3, hombre (2).', NULL, NULL, NULL, 'thumb_1572390369Rutina PP, dia 3 de 3, hombre (2)..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-10-29 23:06:09', '2019-10-29 23:06:09'),
+(257, NULL, 'Rutina Gemelos, dia 1  de 4.', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1573002489Rutina Gemelos, dia 1  de 4..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 01:08:09', '2019-11-06 01:10:03'),
+(258, NULL, 'Rutina Gemelos, dia 2  de 4.', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1573002510Rutina Gemelos, dia 2 de 4..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 01:08:30', '2019-11-06 01:09:48'),
+(259, NULL, 'Rutina Gemelos, dia 3  de 4.', NULL, NULL, NULL, 'thumb_1573002538Rutina Gemelos, dia 3 de 4..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 01:08:58', '2019-11-06 01:08:58'),
+(260, NULL, 'Rutina Gemelos, dia 4  de 4.', NULL, NULL, NULL, 'thumb_1573002561Rutina Gemelos, dia 4 de 4..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 01:09:21', '2019-11-06 01:09:21'),
+(261, NULL, 'Fortalecimiento gastrocnemio en prensa (HB)', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1573002758FORT GASTR 1.gif', NULL, 'N', NULL, NULL, NULL, '39', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 01:12:38', '2019-11-06 11:35:46'),
+(262, NULL, 'Soleo en maquina (HB)', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_15730034575dc2208b65be6241714495.gif', NULL, 'N', NULL, NULL, NULL, '39', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 01:24:17', '2019-11-06 11:36:25'),
+(263, NULL, 'Soleo en maquina (TR)', NULL, NULL, NULL, 'thumb_15730403345dc2208b65be6241714495.gif', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 11:38:54', '2019-11-06 11:38:54'),
+(264, NULL, 'Fortalecimiento gastrocnemio en prensa (TR)', NULL, NULL, NULL, 'thumb_1573040403FORT GASTR 1.gif', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 11:40:03', '2019-11-06 11:40:03'),
+(265, NULL, 'Fortalecimiento gastrocnemio de pie (TR)', NULL, NULL, NULL, 'thumb_1573040451FORT GASTR 2.gif', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 11:40:51', '2019-11-06 11:40:51'),
+(266, NULL, 'Movilidad de tobillo (TR)', NULL, NULL, NULL, 'thumb_15730405355daa3e6a0c486200459245.gif', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 11:42:15', '2019-11-06 11:42:15'),
+(267, NULL, 'Estabilidad tobillo de pie (TR)', NULL, NULL, NULL, 'thumb_1573040592ESTAB TOB.JPG', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-06 11:43:12', '2019-11-06 11:43:12'),
+(268, NULL, 'Rutina CORE y Gluteos Metabolico.', NULL, NULL, NULL, 'thumb_1573775181Rutina CORE y Gluteos Metabolico..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-14 23:46:21', '2019-11-14 23:46:21'),
+(269, NULL, 'Elevacion de piernas', NULL, NULL, NULL, 'thumb_15737849105dce0d28b055e393189152.gif', NULL, 'N', NULL, NULL, NULL, '26', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-15 02:28:30', '2019-11-15 02:28:30'),
+(270, NULL, 'Anti rotacional de pie', NULL, NULL, NULL, 'thumb_1573786378ANTI ROT 1.gif', NULL, 'N', NULL, NULL, NULL, '26', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-15 02:52:58', '2019-11-15 02:52:58'),
+(271, NULL, 'Abduccion cadera decubito lateral TR', NULL, NULL, NULL, 'thumb_1574045956ABD CAD ACOS.gif', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-18 02:59:16', '2019-11-18 02:59:16'),
+(272, NULL, 'Abducción caderas sentado TR', NULL, NULL, NULL, 'thumb_1574046048ABD CAD SENTADO.gif', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-18 03:00:48', '2019-11-18 03:00:48'),
+(273, NULL, 'Abduccion cadera unilateral de pie TR', NULL, NULL, NULL, 'thumb_1574046125ABD CADERA DE PIE.gif', NULL, 'N', NULL, NULL, NULL, '1', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-18 03:02:05', '2019-11-18 03:02:05'),
+(274, NULL, 'Rutina PP, dia 1 de 4, hombre, menor carga axial.', NULL, NULL, NULL, 'thumb_1574114021Rutina PP, dia 1 de 4, hombre, menor carga axial..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-18 21:53:41', '2019-11-18 21:53:41'),
+(275, NULL, 'Rutina PP, dia 2 de 4, hombre, menor carga axial.', NULL, NULL, NULL, 'thumb_1574114041Rutina PP, dia 2 de 4, hombre, menor carga axial..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-18 21:54:01', '2019-11-18 21:54:01'),
+(276, NULL, 'Rutina PP, dia 3 de 4, hombre, menor carga axial.', '{\"en\":null}', '{\"en\":null}', NULL, 'thumb_1574114441Rutina PP, dia 3 de 4, hombre, menor carga axial..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, 'all age', 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-18 21:54:29', '2019-11-18 22:00:41'),
+(277, NULL, 'Rutina PP, dia 4 de 4, hombre, menor carga axial.', NULL, NULL, NULL, 'thumb_1574114091Rutina PP, dia 4 de 4, hombre, menor carga axial..jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-18 21:54:51', '2019-11-18 21:54:51'),
+(278, NULL, 'Rutina PP, dia 1  de 3, mujer. MES 2', NULL, NULL, NULL, 'thumb_1574188588Rutina PP, dia 1  de 3, mujer. MES 2.jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-19 18:36:28', '2019-11-19 18:36:28'),
+(279, NULL, 'Rutina PP, dia 2  de 3, mujer. MES 2', NULL, NULL, NULL, 'thumb_1574188615Rutina PP, dia 2 de 3, mujer. MES 2.jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-19 18:36:55', '2019-11-19 18:36:55'),
+(280, NULL, 'Rutina PP, dia 3 de 3, mujer. MES 2', NULL, NULL, NULL, 'thumb_1574188640Rutina PP, dia 3 de 3, mujer. MES 2.jpg', NULL, 'N', NULL, NULL, NULL, '34', NULL, '{\"en\":null}', NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, 'M', '2019-11-19 18:37:20', '2019-11-19 18:37:20');
 
 -- --------------------------------------------------------
 
@@ -1218,7 +1450,78 @@ INSERT INTO `multiplescreens` (`id`, `screen1`, `screen2`, `screen3`, `screen4`,
 (65, 'Josefina Hernandez Z.', NULL, NULL, NULL, NULL, NULL, 32, NULL, 1, '2019-09-29 20:55:47', '2019-09-29 20:55:47'),
 (66, 'Josefina Hernandez Z.', NULL, NULL, NULL, NULL, NULL, 32, NULL, 1, '2019-09-30 03:48:28', '2019-09-30 03:48:28'),
 (67, 'Josefina Hernandez Z.', NULL, NULL, NULL, NULL, NULL, 32, NULL, 1, '2019-09-30 04:16:09', '2019-09-30 04:16:09'),
-(68, 'Kimi Linda', NULL, NULL, NULL, NULL, NULL, 27, NULL, 2, '2019-09-30 15:47:15', '2019-09-30 15:47:15');
+(68, 'Kimi Linda', NULL, NULL, NULL, NULL, NULL, 27, NULL, 2, '2019-09-30 15:47:15', '2019-09-30 15:47:15'),
+(69, 'Diego Carrillo', NULL, NULL, NULL, NULL, NULL, 44, NULL, 2, '2019-10-17 15:05:55', '2019-10-17 15:05:55'),
+(70, 'Diego Carrillo', NULL, NULL, NULL, NULL, NULL, 44, NULL, 2, '2019-10-17 15:40:29', '2019-10-17 15:40:29'),
+(71, 'M.Angeles Rodriguez', NULL, NULL, NULL, NULL, NULL, 33, NULL, 2, '2019-10-17 16:08:26', '2019-10-17 16:08:26'),
+(72, 'M.Angeles Rodriguez', NULL, NULL, NULL, NULL, NULL, 33, NULL, 2, '2019-10-17 16:30:25', '2019-10-17 16:30:25'),
+(73, 'Diego Carrillo', NULL, NULL, NULL, NULL, NULL, 44, NULL, 2, '2019-10-17 16:37:12', '2019-10-17 16:37:12'),
+(74, 'M.Angeles Rodriguez', NULL, NULL, NULL, NULL, NULL, 33, NULL, 2, '2019-10-17 18:48:00', '2019-10-17 18:48:00'),
+(75, 'Raimundo Salazar', NULL, NULL, NULL, NULL, NULL, 43, NULL, 1, '2019-10-17 20:54:41', '2019-10-17 20:54:41'),
+(76, 'M.Angeles Rodriguez', NULL, NULL, NULL, NULL, NULL, 33, NULL, 2, '2019-10-18 16:28:56', '2019-10-18 16:28:56'),
+(77, 'Maria Jesus Roman', NULL, NULL, NULL, NULL, NULL, 34, NULL, 1, '2019-10-18 19:34:52', '2019-10-18 19:34:52'),
+(78, 'Rosemarie Flores', NULL, NULL, NULL, NULL, NULL, 38, NULL, 2, '2019-10-21 13:52:13', '2019-10-21 13:52:13'),
+(79, 'Herman Orellana', NULL, NULL, NULL, NULL, NULL, 45, NULL, 1, '2019-10-22 10:15:29', '2019-10-22 10:15:29'),
+(80, 'Claudio Araneda', NULL, NULL, NULL, NULL, NULL, 39, NULL, 2, '2019-10-22 23:35:31', '2019-10-22 23:35:31'),
+(81, 'Herman Orellana', NULL, NULL, NULL, NULL, NULL, 45, NULL, 1, '2019-10-23 10:51:52', '2019-10-23 10:51:52'),
+(82, 'Rosemarie Flores', NULL, NULL, NULL, NULL, NULL, 38, NULL, 2, '2019-10-23 21:27:33', '2019-10-23 21:27:33'),
+(83, 'Claudio Araneda', NULL, NULL, NULL, NULL, NULL, 39, NULL, 2, '2019-10-24 02:20:55', '2019-10-24 02:20:55'),
+(84, 'Claudio Araneda', NULL, NULL, NULL, NULL, NULL, 39, NULL, 2, '2019-10-24 12:21:24', '2019-10-24 12:21:24'),
+(85, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-10-26 14:37:16', '2019-10-26 14:37:16'),
+(86, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-10-26 14:52:38', '2019-10-26 14:52:38'),
+(87, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-10-26 14:57:07', '2019-10-26 14:57:07'),
+(88, 'M.Angeles Rodriguez', NULL, NULL, NULL, NULL, NULL, 33, NULL, 2, '2019-10-28 17:37:20', '2019-10-28 17:37:20'),
+(89, 'Rosemarie Flores', NULL, NULL, NULL, NULL, NULL, 38, NULL, 2, '2019-10-29 23:37:11', '2019-10-29 23:37:11'),
+(90, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-11-01 17:45:40', '2019-11-01 17:45:40'),
+(91, 'Gunther Preisler', NULL, NULL, NULL, NULL, NULL, 47, NULL, 3, '2019-11-04 16:44:47', '2019-11-04 16:44:47'),
+(92, 'Alejandra Riesco', NULL, NULL, NULL, NULL, NULL, 48, NULL, 3, '2019-11-06 01:16:08', '2019-11-06 01:16:08'),
+(93, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-11-06 12:13:37', '2019-11-06 12:13:37'),
+(94, 'Enrique Castro O.', NULL, NULL, NULL, NULL, NULL, 50, NULL, 4, '2019-11-06 19:36:15', '2019-11-06 19:36:15'),
+(95, 'Enrique Castro O.', NULL, NULL, NULL, NULL, NULL, 50, NULL, 4, '2019-11-06 21:32:50', '2019-11-06 21:32:50'),
+(96, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-11-06 22:21:33', '2019-11-06 22:21:33'),
+(97, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-11-07 20:25:23', '2019-11-07 20:25:23'),
+(98, 'Maria Jesus Roman', NULL, NULL, NULL, NULL, NULL, 34, NULL, 1, '2019-11-08 19:00:38', '2019-11-08 19:00:38'),
+(99, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-11-09 16:51:00', '2019-11-09 16:51:00'),
+(100, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-11-10 23:06:28', '2019-11-10 23:06:28'),
+(101, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-11-12 17:17:36', '2019-11-12 17:17:36'),
+(102, 'M.Angeles Rodriguez', NULL, NULL, NULL, NULL, NULL, 33, NULL, 2, '2019-11-13 21:30:59', '2019-11-13 21:30:59'),
+(103, 'Barbara Carrasquel', NULL, NULL, NULL, NULL, NULL, 42, NULL, 1, '2019-11-14 14:59:21', '2019-11-14 14:59:21'),
+(104, 'M.Angeles Rodriguez', NULL, NULL, NULL, NULL, NULL, 33, NULL, 2, '2019-11-14 20:50:44', '2019-11-14 20:50:44'),
+(105, 'Vanessa Ventura', NULL, NULL, NULL, NULL, NULL, 51, NULL, 2, '2019-11-14 21:05:44', '2019-11-14 21:05:44'),
+(106, 'Angie Harlowe', NULL, NULL, NULL, NULL, NULL, 52, NULL, 1, '2019-11-15 01:48:41', '2019-11-15 01:48:41'),
+(107, 'Vanessa Ventura', NULL, NULL, NULL, NULL, NULL, 51, NULL, 2, '2019-11-16 12:13:43', '2019-11-16 12:13:43'),
+(108, 'Herman Orellana', NULL, NULL, NULL, NULL, NULL, 45, NULL, 1, '2019-11-16 19:38:42', '2019-11-16 19:38:42'),
+(109, 'M.Angeles Rodriguez', NULL, NULL, NULL, NULL, NULL, 33, NULL, 2, '2019-11-17 20:28:23', '2019-11-17 20:28:23'),
+(110, 'Matias Jimenez', NULL, NULL, NULL, NULL, NULL, 62, NULL, 4, '2019-11-18 13:47:49', '2019-11-18 13:47:49'),
+(111, 'Paula Jara', NULL, NULL, NULL, NULL, NULL, 54, NULL, 2, '2019-11-18 14:41:36', '2019-11-18 14:41:36'),
+(112, 'Paula Jara', NULL, NULL, NULL, NULL, NULL, 54, NULL, 2, '2019-11-18 15:55:29', '2019-11-18 15:55:29'),
+(113, 'Paula Jara', NULL, NULL, NULL, NULL, NULL, 54, NULL, 2, '2019-11-18 15:55:55', '2019-11-18 15:55:55'),
+(114, 'Tomas Zaror', NULL, NULL, NULL, NULL, NULL, 53, NULL, 3, '2019-11-18 16:38:22', '2019-11-18 16:38:22'),
+(115, 'Tomas Zaror', NULL, NULL, NULL, NULL, NULL, 53, NULL, 3, '2019-11-18 16:39:29', '2019-11-18 16:39:29'),
+(116, 'Camila Crisostomo', NULL, NULL, NULL, NULL, NULL, 65, NULL, 1, '2019-11-19 12:52:07', '2019-11-19 12:52:07'),
+(117, 'Camila Crisostomo', NULL, NULL, NULL, NULL, NULL, 65, NULL, 1, '2019-11-19 12:52:37', '2019-11-19 12:52:37'),
+(118, 'Yennifer Ignao M.', NULL, NULL, NULL, NULL, NULL, 68, NULL, 1, '2019-11-19 15:16:41', '2019-11-19 15:16:41'),
+(119, 'Javiera Anabalon', NULL, NULL, NULL, NULL, NULL, 69, NULL, 1, '2019-11-19 15:42:35', '2019-11-19 15:42:35'),
+(120, 'Javiera Anabalon', NULL, NULL, NULL, NULL, NULL, 69, NULL, 1, '2019-11-19 17:04:00', '2019-11-19 17:04:00'),
+(121, 'Claudio Araneda', NULL, NULL, NULL, NULL, NULL, 39, NULL, 2, '2019-11-19 19:33:55', '2019-11-19 19:33:55'),
+(122, 'Claudio Araneda', NULL, NULL, NULL, NULL, NULL, 39, NULL, 2, '2019-11-19 19:38:11', '2019-11-19 19:38:11'),
+(123, 'Rosemarie Flores', NULL, NULL, NULL, NULL, NULL, 38, NULL, 2, '2019-11-19 19:39:07', '2019-11-19 19:39:07'),
+(124, 'Denise Konsens', NULL, NULL, NULL, NULL, NULL, 61, NULL, 1, '2019-11-19 20:48:53', '2019-11-19 20:48:53'),
+(125, 'Carlos Saez', NULL, NULL, NULL, NULL, NULL, 57, NULL, 3, '2019-11-19 21:04:45', '2019-11-19 21:04:45'),
+(126, 'Vanessa Ventura', NULL, NULL, NULL, NULL, NULL, 51, NULL, 2, '2019-11-19 22:06:06', '2019-11-19 22:06:06'),
+(127, 'Vanessa Ventura', NULL, NULL, NULL, NULL, NULL, 51, NULL, 2, '2019-11-19 22:06:24', '2019-11-19 22:06:24'),
+(128, 'Denise Konsens', NULL, NULL, NULL, NULL, NULL, 61, NULL, 1, '2019-11-19 22:09:05', '2019-11-19 22:09:05'),
+(129, 'Denise Konsens', NULL, NULL, NULL, NULL, NULL, 61, NULL, 1, '2019-11-19 22:29:12', '2019-11-19 22:29:12'),
+(130, 'Rocio Ubiergo', NULL, NULL, NULL, NULL, NULL, 66, NULL, 3, '2019-11-19 23:56:39', '2019-11-19 23:56:39'),
+(131, 'Denise Konsens', NULL, NULL, NULL, NULL, NULL, 61, NULL, 1, '2019-11-20 00:08:31', '2019-11-20 00:08:31'),
+(132, 'Yennifer Ignao M.', NULL, NULL, NULL, NULL, NULL, 68, NULL, 1, '2019-11-20 00:44:40', '2019-11-20 00:44:40'),
+(133, 'Josefina Linetzky', NULL, NULL, NULL, NULL, NULL, 70, NULL, 1, '2019-11-20 01:25:20', '2019-11-20 01:25:20'),
+(134, 'Josefina Linetzky', NULL, NULL, NULL, NULL, NULL, 70, NULL, 1, '2019-11-20 01:27:22', '2019-11-20 01:27:22'),
+(135, 'Yennifer Ignao M.', NULL, NULL, NULL, NULL, NULL, 68, NULL, 1, '2019-11-20 01:30:01', '2019-11-20 01:30:01'),
+(136, 'Yennifer Ignao M.', NULL, NULL, NULL, NULL, NULL, 68, NULL, 1, '2019-11-20 02:03:36', '2019-11-20 02:03:36'),
+(137, 'Angie Harlowe', NULL, NULL, NULL, NULL, NULL, 52, NULL, 1, '2019-11-20 12:46:06', '2019-11-20 12:46:06'),
+(138, 'Angie Harlowe', NULL, NULL, NULL, NULL, NULL, 52, NULL, 1, '2019-11-20 12:46:22', '2019-11-20 12:46:22'),
+(139, 'Yennifer Ignao M.', NULL, NULL, NULL, NULL, NULL, 68, NULL, 1, '2019-11-20 17:35:31', '2019-11-20 17:35:31');
 
 -- --------------------------------------------------------
 
@@ -1307,7 +1610,17 @@ INSERT INTO `my_progresses` (`id`, `user_id`, `weight`, `fat`, `calorie`, `creat
 (79, 1, NULL, NULL, '2400', '2019-10-02 10:23:49', '2019-10-02 10:23:49'),
 (80, 1, NULL, NULL, '2000', '2019-10-02 10:24:13', '2019-10-02 10:24:13'),
 (81, 1, '85', '16', NULL, '2019-10-02 10:24:24', '2019-10-02 10:24:24'),
-(82, 1, '85', '15', NULL, '2019-10-02 10:24:36', '2019-10-02 10:24:36');
+(82, 1, '85', '15', NULL, '2019-10-02 10:24:36', '2019-10-02 10:24:36'),
+(83, 1, '56', '18', '1850', '2019-10-16 17:57:22', '2019-10-16 17:57:22'),
+(84, 33, '53.3', '27.3', '1200', '2019-10-17 16:44:50', '2019-10-17 16:44:50'),
+(86, 39, NULL, NULL, NULL, '2019-10-24 02:21:46', '2019-10-24 02:22:14'),
+(89, 42, '62,1', '30,7', '1301', '2019-10-27 21:09:25', '2019-10-27 21:09:25'),
+(90, 39, '88,6', '21,1', '2500', '2019-11-04 05:03:04', '2019-11-04 05:03:04'),
+(91, 42, '63,1', '31,6', '1312', '2019-11-05 11:53:56', '2019-11-05 11:53:56'),
+(92, 37, '64', '30.2', '1300', '2019-11-07 19:12:37', '2019-11-07 19:12:37'),
+(93, 40, '88,4', '19', '2500', '2019-11-18 03:03:31', '2019-11-18 03:03:31'),
+(94, 54, '77', '38', '1850', '2019-11-18 14:43:48', '2019-11-18 14:43:48'),
+(95, 65, '62', NULL, NULL, '2019-11-19 12:51:35', '2019-11-19 12:51:35');
 
 -- --------------------------------------------------------
 
@@ -1334,25 +1647,77 @@ CREATE TABLE `notifications` (
 --
 
 INSERT INTO `notifications` (`id`, `type`, `notifiable_id`, `notifiable_type`, `data`, `movie_id`, `tv_id`, `title`, `read_at`, `created_at`, `updated_at`) VALUES
+('0a614c29-3804-476c-8a81-451b72fb45c7', 'App\\Notifications\\MyNotification', 43, 'App\\User', '{\"title\":\"Recuerda !\",\"data\":\"Raimundo, recuerda ir progresando de a poco en ejercicios de hombro y pecho.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"43\"]]}', 0, 0, 'Recuerda !', NULL, '2019-10-17 19:40:36', '2019-10-17 19:40:36'),
+('100d33d3-196e-4706-ba57-799777008392', 'App\\Notifications\\MyNotification', 34, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
+('11a2d8ee-e7bf-4e63-be9f-f139ba12aaf6', 'App\\Notifications\\MyNotification', 45, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-PLATINUM\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"34\",\"36\",\"41\",\"42\",\"43\",\"45\",\"46\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:42:28', '2019-10-29 23:42:28'),
 ('11de1773-c7d0-4eaa-bdd6-bd8e218f27ff', 'App\\Notifications\\MyNotification', 1, 'App\\User', '{\"title\":\"sasa\",\"data\":\"sasassasasa\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"1\"]]}', 0, 0, 'sasa', '2019-10-02 14:00:54', '2019-10-02 13:21:26', '2019-10-02 14:00:54'),
 ('131c1207-16b7-4c23-9c1c-4763f5451e5c', 'App\\Notifications\\MyNotification', 1, 'App\\User', '{\"title\":\"Pre kine rodilla\",\"data\":\"Tienes alguna duda?, consultanos en \\\"Mi chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"1\"]]}', 0, 0, 'Pre kine rodilla', '2019-10-04 22:35:55', '2019-10-03 16:24:03', '2019-10-04 22:35:55'),
+('17003341-c53a-40d6-bcec-293c7d7dc562', 'App\\Notifications\\MyNotification', 41, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
 ('1ce127d1-22af-433c-ac56-9b5c2d91fbeb', 'App\\Notifications\\MyNotification', 1, 'App\\User', '{\"title\":\"Pre kine rodilla\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"1\"]]}', 0, 0, 'Pre kine rodilla', '2019-10-02 14:04:46', '2019-10-02 14:03:38', '2019-10-02 14:04:46'),
 ('1d99bf34-e072-4bfb-9a96-57e07330bcaa', 'App\\Notifications\\MyNotification', 32, 'App\\User', '{\"title\":\"Dudas\",\"data\":\"Tienes alguna duda?, consultanos en \\\"Mi chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"32\"]]}', 0, 0, 'Dudas', NULL, '2019-09-30 03:53:40', '2019-09-30 03:53:40'),
+('1eacc474-391e-4b7f-ac9c-de6d44eb7f2f', 'App\\Notifications\\MyNotification', 37, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-GOLD\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"35\",\"37\",\"47\",\"48\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:43:41', '2019-10-29 23:43:41'),
 ('230aa2fb-b4af-4c8f-93af-1e5cde684326', 'App\\Notifications\\MyNotification', 1, 'App\\User', '{\"title\":\"Toca evaluarte\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"29\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1]}', 29, 0, 'Toca evaluarte', '2019-09-17 16:37:27', '2019-09-17 16:36:58', '2019-09-17 16:37:27'),
+('2e0c2b13-45e6-4735-a6b5-adaf9ac3b186', 'App\\Notifications\\MyNotification', 46, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-PLATINUM\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"34\",\"36\",\"41\",\"42\",\"43\",\"45\",\"46\"]]}', 0, 0, 'Descuentos exclusivos', '2019-10-31 12:37:31', '2019-10-29 23:42:28', '2019-10-31 12:37:31'),
+('3163a36d-1314-4157-ab20-8f492127dad4', 'App\\Notifications\\MyNotification', 39, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-BLACK\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"33\",\"38\",\"39\",\"40\",\"44\"]]}', 0, 0, 'Descuentos exclusivos', '2019-11-19 00:51:49', '2019-10-29 23:40:43', '2019-11-19 00:51:49'),
 ('326d7489-1f10-4c69-9a0d-4478da27fac6', 'App\\Notifications\\MyNotification', 28, 'App\\User', '{\"title\":\"Toca evaluarte\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"29\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24,25,26,27,28]}', 29, 0, 'Toca evaluarte', NULL, '2019-09-17 16:36:58', '2019-09-17 16:36:58'),
+('375ab217-9659-4418-8d94-36074ee00d9c', 'App\\Notifications\\MyNotification', 44, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-BLACK\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"33\",\"38\",\"39\",\"40\",\"44\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:40:43', '2019-10-29 23:40:43'),
+('3acb22c9-002a-496c-93c2-c0c4c20f0bb0', 'App\\Notifications\\MyNotification', 42, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-PLATINUM\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"34\",\"36\",\"41\",\"42\",\"43\",\"45\",\"46\"]]}', 0, 0, 'Descuentos exclusivos', '2019-11-05 11:52:13', '2019-10-29 23:42:28', '2019-11-05 11:52:13'),
 ('3ad3436e-45a4-4335-b827-c30c114836d0', 'App\\Notifications\\MyNotification', 1, 'App\\User', '{\"title\":\"my new notification\",\"data\":\"Just an example,,go and create notification from admin\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"1\"]]}', 0, 0, 'my new notification', '2019-09-17 16:30:19', '2019-09-17 15:30:14', '2019-09-17 16:30:19'),
+('3b7d023b-492d-4d44-83f3-0ce50e314d0e', 'App\\Notifications\\MyNotification', 41, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-PLATINUM\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"34\",\"36\",\"41\",\"42\",\"43\",\"45\",\"46\"]]}', 0, 0, 'Descuentos exclusivos', '2019-11-05 22:09:34', '2019-10-29 23:42:28', '2019-11-05 22:09:34'),
+('4416e5e2-eab6-4e85-a0e8-ba7922f32d83', 'App\\Notifications\\MyNotification', 1, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
+('445a3de9-e187-4654-9a7d-756424a04aab', 'App\\Notifications\\MyNotification', 38, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38]}', 0, 0, 'Consultame', '2019-10-26 14:02:21', '2019-10-26 13:13:14', '2019-10-26 14:02:21'),
+('4936a5a1-0687-45ff-9363-99d8f86a4043', 'App\\Notifications\\MyNotification', 40, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-BLACK\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"33\",\"38\",\"39\",\"40\",\"44\"]]}', 0, 0, 'Descuentos exclusivos', '2019-11-18 03:15:02', '2019-10-29 23:40:43', '2019-11-18 03:15:02'),
+('4bc3f72c-c334-47f5-8815-c471c4a69ba9', 'App\\Notifications\\MyNotification', 37, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('4d3177f4-4477-41ee-bd30-d9a2b253b3f6', 'App\\Notifications\\MyNotification', 47, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('4fcd248f-9ebe-491f-be02-762dffec42a1', 'App\\Notifications\\MyNotification', 50, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,50]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('50d64c6e-d0f1-4667-a77f-72ce53a2b96b', 'App\\Notifications\\MyNotification', 34, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-PLATINUM\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"34\",\"36\",\"41\",\"42\",\"43\",\"45\",\"46\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:42:28', '2019-10-29 23:42:28'),
+('5165c8a0-a2f9-4e2c-968b-d5bf7d04a7df', 'App\\Notifications\\MyNotification', 46, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43,44,45,46]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
 ('60785e09-4cf8-4d1d-9ad6-5d251ad9e9dc', 'App\\Notifications\\MyNotification', 32, 'App\\User', '{\"title\":\"Bienvenido a Motion Online\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"32\"]]}', 0, 0, 'Bienvenido a Motion Online', NULL, '2019-09-30 03:52:44', '2019-09-30 03:52:44'),
+('620e2e60-11eb-4e7a-8910-4a9cbc74014d', 'App\\Notifications\\MyNotification', 46, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43,44,45,46]}', 0, 0, 'Recuerda', '2019-11-17 22:54:59', '2019-11-09 20:43:31', '2019-11-17 22:54:59'),
+('6697228c-20e8-41be-9ae7-c508fdb7ffe4', 'App\\Notifications\\MyNotification', 33, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
+('747a9eba-8784-4f9f-8a94-ba4d50eafe56', 'App\\Notifications\\MyNotification', 33, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-BLACK\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"33\",\"38\",\"39\",\"40\",\"44\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:40:43', '2019-10-29 23:40:43'),
+('7498000a-5289-4a54-a2b2-3bcc08f95fea', 'App\\Notifications\\MyNotification', 43, 'App\\User', '{\"title\":\"Intercambio\",\"data\":\"Puedes intercambiar las aceitunas por cualquiera de las otras opciones de aceites\\/grasas.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"43\"]]}', 0, 0, 'Intercambio', NULL, '2019-10-17 19:43:29', '2019-10-17 19:43:29'),
 ('7f13988e-f833-49cb-b9c8-29c75609d46b', 'App\\Notifications\\MyNotification', 28, 'App\\User', '{\"title\":\"Entrenaste ?\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24,25,26,27,28]}', 0, 0, 'Entrenaste ?', NULL, '2019-09-17 16:29:08', '2019-09-17 16:29:08'),
+('7f961212-610e-4426-9577-fe2ee61ceef4', 'App\\Notifications\\MyNotification', 48, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('7fc9f83a-58a1-4f40-a17b-ef7678796793', 'App\\Notifications\\MyNotification', 35, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
 ('82ebb86a-0c4a-429d-a5af-49a73599fe59', 'App\\Notifications\\MyNotification', 1, 'App\\User', '{\"title\":\"Pre kine rodilla\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"1\"]]}', 0, 0, 'Pre kine rodilla', '2019-10-03 16:21:50', '2019-10-02 18:29:46', '2019-10-03 16:21:50'),
 ('82ed4268-eeb5-4045-a577-de978a03509b', 'App\\Notifications\\MyNotification', 24, 'App\\User', '{\"title\":\"Toca evaluarte\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"29\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24]}', 29, 0, 'Toca evaluarte', NULL, '2019-09-17 16:36:58', '2019-09-17 16:36:58'),
+('83a3bb9b-adce-493e-a319-81f36cafeca6', 'App\\Notifications\\MyNotification', 40, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
+('898ee2b4-6a93-4336-8d56-46daaaf8ab58', 'App\\Notifications\\MyNotification', 41, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
+('8dea8ff4-2da8-4a3e-85e9-2b72ec90866d', 'App\\Notifications\\MyNotification', 44, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43,44]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
 ('9a7b9059-ee4c-4e9d-a0cf-6ae022c5c4f1', 'App\\Notifications\\MyNotification', 24, 'App\\User', '{\"title\":\"Entrenaste ?\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24]}', 0, 0, 'Entrenaste ?', NULL, '2019-09-17 16:29:08', '2019-09-17 16:29:08'),
+('9ea507f1-2ff6-462d-8c1e-183be657b19c', 'App\\Notifications\\MyNotification', 43, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-PLATINUM\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"34\",\"36\",\"41\",\"42\",\"43\",\"45\",\"46\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:42:28', '2019-10-29 23:42:28'),
 ('a1909518-493a-442d-88f9-365a887fce8e', 'App\\Notifications\\MyNotification', 27, 'App\\User', '{\"title\":\"Entrenaste ?\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24,25,26,27]}', 0, 0, 'Entrenaste ?', '2019-09-17 16:40:39', '2019-09-17 16:29:08', '2019-09-17 16:40:39'),
+('a1fa0efc-520e-4e92-8cc4-7ba60abebbd7', 'App\\Notifications\\MyNotification', 42, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42]}', 0, 0, 'Consultame', '2019-10-26 14:57:14', '2019-10-26 13:13:14', '2019-10-26 14:57:14'),
+('a65afbff-81eb-48d4-bd88-07494318f838', 'App\\Notifications\\MyNotification', 36, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('a9191174-120b-41fb-a7dc-1c47d37dff93', 'App\\Notifications\\MyNotification', 38, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38]}', 0, 0, 'Recuerda', '2019-11-18 10:59:50', '2019-11-09 20:43:31', '2019-11-18 10:59:50'),
 ('b1568471-6076-45d8-85cb-c3eca937d9df', 'App\\Notifications\\MyNotification', 26, 'App\\User', '{\"title\":\"Entrenaste ?\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24,25,26]}', 0, 0, 'Entrenaste ?', NULL, '2019-09-17 16:29:08', '2019-09-17 16:29:08'),
+('b4d1f5ee-9bfa-4504-9671-0abe1dbc3a50', 'App\\Notifications\\MyNotification', 47, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-GOLD\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"35\",\"37\",\"47\",\"48\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:43:41', '2019-10-29 23:43:41'),
+('b50c147e-87db-4133-a5c2-7a125ed2cfac', 'App\\Notifications\\MyNotification', 1, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
 ('b7aaecda-165f-440e-acad-a623acd6af99', 'App\\Notifications\\MyNotification', 27, 'App\\User', '{\"title\":\"Toca evaluarte\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"29\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24,25,26,27]}', 29, 0, 'Toca evaluarte', '2019-09-17 16:40:31', '2019-09-17 16:36:58', '2019-09-17 16:40:31'),
+('baf81627-fb8a-4598-a599-432d433d6610', 'App\\Notifications\\MyNotification', 36, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-PLATINUM\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"34\",\"36\",\"41\",\"42\",\"43\",\"45\",\"46\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:42:28', '2019-10-29 23:42:28'),
 ('c37535f3-fc29-43ff-b9e4-02459ba50af8', 'App\\Notifications\\MyNotification', 25, 'App\\User', '{\"title\":\"Toca evaluarte\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"29\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24,25]}', 29, 0, 'Toca evaluarte', NULL, '2019-09-17 16:36:58', '2019-09-17 16:36:58'),
+('c598f7f0-5f04-48a3-97b3-405a49b62c16', 'App\\Notifications\\MyNotification', 39, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39]}', 0, 0, 'Consultame', '2019-11-19 00:45:20', '2019-10-26 13:13:14', '2019-11-19 00:45:20'),
+('c77c8af9-e16f-4d9a-8522-e67b5f6ffa71', 'App\\Notifications\\MyNotification', 37, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37]}', 0, 0, 'Consultame', '2019-10-28 20:18:28', '2019-10-26 13:13:14', '2019-10-28 20:18:28'),
+('cd36669e-1dfe-4f0b-8aa0-2a72df86f133', 'App\\Notifications\\MyNotification', 44, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43,44]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('ce2e901a-c97f-4f57-ad1c-e6a705acf625', 'App\\Notifications\\MyNotification', 35, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('cf5d6695-e296-4290-b06e-f56edfca36cb', 'App\\Notifications\\MyNotification', 33, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('d6d33feb-c1b7-4954-a290-e3e289259361', 'App\\Notifications\\MyNotification', 43, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('d74cbec7-1f28-43c6-8e14-c7bb9329f828', 'App\\Notifications\\MyNotification', 43, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
+('d75a16ff-e79d-4759-9f39-9a8be6deffd5', 'App\\Notifications\\MyNotification', 43, 'App\\User', '{\"title\":\"Recuerda !\",\"data\":\"Raimundo, recuerda ir progresando de a poco en ejercicios de hombro y pecho.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"43\"]]}', 0, 0, 'Recuerda !', '2019-10-17 19:39:52', '2019-10-17 19:38:24', '2019-10-17 19:39:52'),
+('d8c9cfe6-874d-4040-bd3d-51bab9d0e507', 'App\\Notifications\\MyNotification', 38, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-BLACK\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"33\",\"38\",\"39\",\"40\",\"44\"]]}', 0, 0, 'Descuentos exclusivos', '2019-10-30 01:10:56', '2019-10-29 23:40:43', '2019-10-30 01:10:56'),
+('d99e56e4-0fba-4615-b57a-c52330b1b27d', 'App\\Notifications\\MyNotification', 34, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('dd299a6f-9f9a-4337-8f34-722a79ec0940', 'App\\Notifications\\MyNotification', 40, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('e1e6871d-a1af-4401-8af4-fdb54deb3258', 'App\\Notifications\\MyNotification', 48, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-GOLD\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"35\",\"37\",\"47\",\"48\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:43:41', '2019-10-29 23:43:41'),
+('e2a4579e-4b2d-46f9-8bc0-efef433f39ae', 'App\\Notifications\\MyNotification', 45, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43,44,45]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
 ('e9a624eb-1964-483d-8147-eb44f043676c', 'App\\Notifications\\MyNotification', 26, 'App\\User', '{\"title\":\"Toca evaluarte\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"29\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24,25,26]}', 29, 0, 'Toca evaluarte', NULL, '2019-09-17 16:36:58', '2019-09-17 16:36:58'),
+('ed0dbbc8-9278-4c50-b437-4f3ac1711e26', 'App\\Notifications\\MyNotification', 35, 'App\\User', '{\"title\":\"Descuentos exclusivos\",\"data\":\"Tu cupon de descuento en www.underarmour.cl es \\\"MOTION-GOLD\\\", aprovechalo!!!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"35\",\"37\",\"47\",\"48\"]]}', 0, 0, 'Descuentos exclusivos', NULL, '2019-10-29 23:43:41', '2019-10-29 23:43:41'),
 ('ee553a5a-788a-4f67-9bdd-1b5ee0cbed50', 'App\\Notifications\\MyNotification', 1, 'App\\User', '{\"title\":\"Entrenaste ?\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1]}', 0, 0, 'Entrenaste ?', '2019-09-17 16:29:26', '2019-09-17 16:29:08', '2019-09-17 16:29:26'),
-('f7b8469a-b0cf-412b-aaa4-af9d7fe61cbc', 'App\\Notifications\\MyNotification', 25, 'App\\User', '{\"title\":\"Entrenaste ?\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24,25]}', 0, 0, 'Entrenaste ?', NULL, '2019-09-17 16:29:08', '2019-09-17 16:29:08');
+('ee94cb86-a49a-4bc8-b0ee-34206a5b98ec', 'App\\Notifications\\MyNotification', 39, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39]}', 0, 0, 'Recuerda', '2019-11-19 00:51:50', '2019-11-09 20:43:31', '2019-11-19 00:51:50'),
+('f7b8469a-b0cf-412b-aaa4-af9d7fe61cbc', 'App\\Notifications\\MyNotification', 25, 'App\\User', '{\"title\":\"Entrenaste ?\",\"data\":\"Hola !, ya fuiste a entrenar hoy?, vamos animo !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,24,25]}', 0, 0, 'Entrenaste ?', NULL, '2019-09-17 16:29:08', '2019-09-17 16:29:08'),
+('f8b54750-7924-4b87-b7f4-41ce1df2bd49', 'App\\Notifications\\MyNotification', 36, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14'),
+('faa67012-898e-46a0-a332-8bc4967a16a0', 'App\\Notifications\\MyNotification', 42, 'App\\User', '{\"title\":\"Recuerda\",\"data\":\"Dejanos todas tus duda, comentarios o sugerencias en \\\"Mi Chat\\\" !!\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42]}', 0, 0, 'Recuerda', NULL, '2019-11-09 20:43:31', '2019-11-09 20:43:31'),
+('fe9466ba-a634-4dbd-bd34-b033f431450e', 'App\\Notifications\\MyNotification', 45, 'App\\User', '{\"title\":\"Consultame\",\"data\":\"Hola!, recuerda dejarnos tus dudas o comentarios en MI CHAT. Consultas sobre rutinas, ejercicios, menus o sobre la plataforma en si!.\",\"movie_id\":\"0\",\"tv_id\":\"0\",\"notifiable_id\":[[\"0\"],1,33,34,35,36,37,38,39,40,41,42,43,44,45]}', 0, 0, 'Consultame', NULL, '2019-10-26 13:13:14', '2019-10-26 13:13:14');
 
 -- --------------------------------------------------------
 
@@ -1382,9 +1747,10 @@ CREATE TABLE `packages` (
 --
 
 INSERT INTO `packages` (`id`, `plan_id`, `name`, `currency`, `amount`, `mycolor`, `interval`, `interval_count`, `trial_period_days`, `status`, `screens`, `delete_status`, `created_at`, `updated_at`) VALUES
-(1, 'Training + Nutrition', '{\"en\":\"Training + Nutrition\"}', 'CLP', 49000.00, 'platinum', 'month', 3, NULL, 1, 1, 1, '2019-08-27 21:44:53', '2019-09-23 18:59:18'),
-(2, 'Training + Nutrition + Healthy body', '{\"en\":\"Training + Nutrition + Healthy body\"}', 'CLP', 59000.00, 'black', 'month', 3, NULL, 1, 1, 1, '2019-08-27 21:46:11', '2019-09-23 18:57:18'),
-(3, 'Training', '{\"en\":\"Training\"}', 'CLP', 39900.00, 'gold', 'month', 3, NULL, 1, 1, 1, '2019-08-27 21:46:52', '2019-09-23 18:58:44');
+(1, 'Training + Nutrition', '{\"en\":\"PLATINUM\"}', 'CLP', 49990.00, 'platinum', 'month', 3, NULL, 1, 1, 1, '2019-08-27 21:44:53', '2019-10-17 12:23:37'),
+(2, 'Training + Nutrition + Healthy body', '{\"en\":\"BLACK\"}', 'CLP', 59990.00, 'black', 'month', 3, NULL, 1, 1, 1, '2019-08-27 21:46:11', '2019-10-17 12:24:15'),
+(3, 'Training', '{\"en\":\"GOLD\"}', 'CLP', 39990.00, 'gold', 'month', 3, NULL, 1, 1, 1, '2019-08-27 21:46:52', '2019-10-17 12:24:40'),
+(4, 'training + healthy body', '{\"en\":\"PLATINUM T-HB\"}', 'CLP', 49990.00, 'platinum', 'month', 3, NULL, 1, 1, 1, '2019-11-06 18:27:34', '2019-11-06 18:27:45');
 
 -- --------------------------------------------------------
 
@@ -1406,12 +1772,14 @@ CREATE TABLE `package_menu` (
 
 INSERT INTO `package_menu` (`id`, `menu_id`, `package_id`, `created_at`, `updated_at`) VALUES
 (8, 1, 'plan entrenamiento', '2019-08-27 16:43:59', '2019-08-27 16:43:59'),
-(27, 1, 'Training + Nutrition', '2019-09-23 12:59:18', '2019-09-23 12:59:18'),
-(28, 2, 'Training + Nutrition', '2019-09-23 12:59:18', '2019-09-23 12:59:18'),
-(29, 1, 'Training', '2019-09-23 12:59:37', '2019-09-23 12:59:37'),
-(30, 1, 'Training + Nutrition + Healthy body', '2019-09-23 12:59:49', '2019-09-23 12:59:49'),
-(31, 2, 'Training + Nutrition + Healthy body', '2019-09-23 12:59:49', '2019-09-23 12:59:49'),
-(32, 3, 'Training + Nutrition + Healthy body', '2019-09-23 12:59:49', '2019-09-23 12:59:49');
+(33, 1, 'Training + Nutrition', '2019-10-17 12:23:37', '2019-10-17 12:23:37'),
+(34, 2, 'Training + Nutrition', '2019-10-17 12:23:37', '2019-10-17 12:23:37'),
+(38, 1, 'Training + Nutrition + Healthy body', '2019-10-17 12:24:15', '2019-10-17 12:24:15'),
+(39, 2, 'Training + Nutrition + Healthy body', '2019-10-17 12:24:15', '2019-10-17 12:24:15'),
+(40, 3, 'Training + Nutrition + Healthy body', '2019-10-17 12:24:15', '2019-10-17 12:24:15'),
+(41, 1, 'Training', '2019-10-17 12:24:40', '2019-10-17 12:24:40'),
+(42, 1, 'training + healthy body', '2019-11-06 18:27:34', '2019-11-06 18:27:34'),
+(43, 3, 'training + healthy body', '2019-11-06 18:27:34', '2019-11-06 18:27:34');
 
 -- --------------------------------------------------------
 
@@ -1465,7 +1833,44 @@ INSERT INTO `paypal_subscriptions` (`id`, `user_id`, `payment_id`, `user_name`, 
 (5, 27, 'by admin', 'kimi linda', 2, 59000.00, 1, 'by Admin', '2019-09-23 19:00:05', '2019-12-23 19:00:05', '2019-08-27 21:48:22', '2019-09-23 19:00:05'),
 (6, 30, 'by admin', 'JOSE MANUEL GOMEZ L.', 2, 59000.00, 1, 'by Admin', '2019-09-24 21:56:11', '2019-12-24 21:56:11', '2019-09-24 21:56:11', '2019-09-24 21:56:11'),
 (7, 31, 'by admin', 'Juan Jose Zunino', 1, 49000.00, 1, 'by Admin', '2019-09-26 16:25:12', '2019-12-26 16:25:12', '2019-09-26 16:20:22', '2019-09-26 16:25:12'),
-(8, 32, 'by admin', 'Josefina Hernandez Z.', 1, 49000.00, 1, 'by Admin', '2019-09-29 19:44:52', '2019-12-29 19:44:52', '2019-09-29 19:44:52', '2019-09-29 19:44:52');
+(8, 32, 'by admin', 'Josefina Hernandez Z.', 1, 49000.00, 1, 'by Admin', '2019-09-29 19:44:52', '2019-12-29 19:44:52', '2019-09-29 19:44:52', '2019-09-29 19:44:52'),
+(9, 33, 'by admin', 'M. Angeles Rodriguez B.', 2, 59990.00, 1, 'by Admin', '2019-10-17 12:25:02', '2020-01-17 12:25:02', '2019-10-16 13:31:39', '2019-10-17 12:25:02'),
+(10, 34, 'by admin', 'Maria Jesus Roman', 1, 49990.00, 1, 'by Admin', '2019-10-17 12:25:29', '2020-01-17 12:25:29', '2019-10-17 12:25:29', '2019-10-17 12:25:29'),
+(11, 35, 'by admin', 'Claudia Fredes R.', 3, 39990.00, 1, 'by Admin', '2019-10-17 12:25:47', '2020-01-17 12:25:47', '2019-10-17 12:25:47', '2019-10-17 12:25:47'),
+(12, 36, 'by admin', 'Ignacio del rio', 1, 49990.00, 1, 'by Admin', '2019-10-17 12:26:04', '2020-01-17 12:26:04', '2019-10-17 12:26:04', '2019-10-17 12:26:04'),
+(13, 37, 'by admin', 'Camila Alfaro', 3, 39990.00, 1, 'by Admin', '2019-10-17 12:26:26', '2020-01-17 12:26:26', '2019-10-17 12:26:26', '2019-10-17 12:26:26'),
+(14, 38, 'by admin', 'Rosemarie Flores', 2, 59990.00, 1, 'by Admin', '2019-10-17 12:27:54', '2020-01-17 12:27:54', '2019-10-17 12:27:54', '2019-10-17 12:27:54'),
+(15, 39, 'by admin', 'Claudio Araneda', 2, 59990.00, 1, 'by Admin', '2019-10-17 12:28:04', '2020-01-17 12:28:04', '2019-10-17 12:28:04', '2019-10-17 12:28:04'),
+(16, 40, 'by admin', 'Bastian Montaño J.', 2, 59990.00, 1, 'by Admin', '2019-10-17 12:28:23', '2020-01-17 12:28:23', '2019-10-17 12:28:23', '2019-10-17 12:28:23'),
+(17, 41, 'by admin', 'Camila Pino S.', 1, 49990.00, 1, 'by Admin', '2019-10-17 12:28:48', '2020-01-17 12:28:48', '2019-10-17 12:28:48', '2019-10-17 12:28:48'),
+(18, 42, 'by admin', 'Barbara Carrasquel', 1, 49990.00, 1, 'by Admin', '2019-10-17 12:29:07', '2020-01-17 12:29:07', '2019-10-17 12:29:07', '2019-10-17 12:29:07'),
+(19, 43, 'by admin', 'Raimundo Salazar', 1, 49990.00, 1, 'by Admin', '2019-10-17 12:29:32', '2020-01-17 12:29:32', '2019-10-17 12:29:32', '2019-10-17 12:29:32'),
+(20, 44, 'by admin', 'Diego Carrillo', 2, 59990.00, 1, 'by Admin', '2019-10-17 12:29:49', '2020-01-17 12:29:49', '2019-10-17 12:29:49', '2019-10-17 12:29:49'),
+(21, 45, 'by admin', 'Herman Orellana', 1, 49990.00, 1, 'by Admin', '2019-10-17 12:30:31', '2020-01-17 12:30:31', '2019-10-17 12:30:31', '2019-10-17 12:30:31'),
+(22, 46, 'by admin', 'Karyna Vielma', 1, 49990.00, 1, 'by Admin', '2019-10-26 11:55:26', '2020-01-26 11:55:26', '2019-10-17 12:30:44', '2019-10-26 11:55:26'),
+(23, 48, 'by admin', 'Alejandra Riesco', 3, 39990.00, 1, 'by Admin', '2019-10-27 20:38:16', '2020-01-27 20:38:16', '2019-10-27 20:38:16', '2019-10-27 20:38:16'),
+(24, 47, 'by admin', 'Gunther Preisler', 3, 39990.00, 1, 'by Admin', '2019-10-27 20:38:23', '2020-01-27 20:38:23', '2019-10-27 20:38:23', '2019-10-27 20:38:23'),
+(25, 50, 'by admin', 'Enrique Castro O.', 4, 49990.00, 1, 'by Admin', '2019-11-06 18:28:35', '2020-02-06 18:28:35', '2019-11-06 18:28:35', '2019-11-06 18:28:35'),
+(26, 51, 'by admin', 'Vanessa Ventura', 2, 59990.00, 1, 'by Admin', '2019-11-14 16:31:15', '2020-02-14 16:31:15', '2019-11-14 16:31:15', '2019-11-14 16:31:15'),
+(27, 52, 'by admin', 'Angie Harlowe', 1, 49990.00, 1, 'by Admin', '2019-11-14 16:51:41', '2020-02-14 16:51:41', '2019-11-14 16:51:41', '2019-11-14 16:51:41'),
+(28, 57, 'by admin', 'Carlos Saez', 3, 39990.00, 1, 'by Admin', '2019-11-18 03:58:57', '2020-02-18 03:58:57', '2019-11-18 03:58:57', '2019-11-18 03:58:57'),
+(29, 53, 'by admin', 'Tomas Zaror', 3, 39990.00, 1, 'by Admin', '2019-11-18 03:59:06', '2020-02-18 03:59:06', '2019-11-18 03:59:06', '2019-11-18 03:59:06'),
+(30, 54, 'by admin', 'Paula Jara', 2, 59990.00, 1, 'by Admin', '2019-11-18 03:59:24', '2020-02-18 03:59:24', '2019-11-18 03:59:24', '2019-11-18 03:59:24'),
+(31, 55, 'by admin', 'Sergio Diaz', 3, 39990.00, 1, 'by Admin', '2019-11-18 03:59:34', '2020-02-18 03:59:34', '2019-11-18 03:59:34', '2019-11-18 03:59:34'),
+(32, 56, 'by admin', 'Catalina Flores', 1, 49990.00, 1, 'by Admin', '2019-11-18 03:59:52', '2020-02-18 03:59:52', '2019-11-18 03:59:52', '2019-11-18 03:59:52'),
+(33, 57, 'by admin', 'Carlos Saez', 3, 39990.00, 1, 'by Admin', '2019-11-18 04:00:06', '2020-02-18 04:00:06', '2019-11-18 04:00:06', '2019-11-18 04:00:06'),
+(34, 63, 'by admin', 'Nicole Fuentes', 1, 49990.00, 1, 'by Admin', '2019-11-18 04:00:20', '2020-02-18 04:00:20', '2019-11-18 04:00:20', '2019-11-18 04:00:20'),
+(35, 62, 'by admin', 'Matias Jimenez', 4, 49990.00, 1, 'by Admin', '2019-11-18 04:00:31', '2020-02-18 04:00:31', '2019-11-18 04:00:31', '2019-11-18 04:00:31'),
+(36, 61, 'by admin', 'Denise Konsens', 1, 49990.00, 1, 'by Admin', '2019-11-18 04:00:43', '2020-02-18 04:00:43', '2019-11-18 04:00:43', '2019-11-18 04:00:43'),
+(37, 60, 'by admin', 'Soraya Herrera', 1, 49990.00, 1, 'by Admin', '2019-11-18 04:00:54', '2020-02-18 04:00:54', '2019-11-18 04:00:54', '2019-11-18 04:00:54'),
+(38, 59, 'by admin', 'Pablo Vasquez', 2, 59990.00, 1, 'by Admin', '2019-11-18 04:01:05', '2020-02-18 04:01:05', '2019-11-18 04:01:05', '2019-11-18 04:01:05'),
+(39, 64, 'by admin', 'Jose Bustamante', 1, 49990.00, 1, 'by Admin', '2019-11-18 21:26:16', '2020-02-18 21:26:16', '2019-11-18 21:26:16', '2019-11-18 21:26:16'),
+(40, 65, 'by admin', 'Camila Crisostomo', 1, 49990.00, 1, 'by Admin', '2019-11-18 22:29:23', '2020-02-18 22:29:23', '2019-11-18 22:29:23', '2019-11-18 22:29:23'),
+(41, 66, 'by admin', 'Rocio Ubiergo', 3, 39990.00, 1, 'by Admin', '2019-11-18 22:29:38', '2020-02-18 22:29:38', '2019-11-18 22:29:38', '2019-11-18 22:29:38'),
+(42, 67, 'by admin', 'Lorenzo Cena', 2, 59990.00, 1, 'by Admin', '2019-11-18 22:34:47', '2020-02-18 22:34:47', '2019-11-18 22:34:47', '2019-11-18 22:34:47'),
+(43, 68, 'by admin', 'Yennifer Ignao M.', 1, 49990.00, 1, 'by Admin', '2019-11-19 13:31:42', '2020-02-19 13:31:42', '2019-11-19 13:31:42', '2019-11-19 13:31:42'),
+(44, 69, 'by admin', 'Javiera Anabalon', 1, 49990.00, 1, 'by Admin', '2019-11-19 13:31:47', '2020-02-19 13:31:47', '2019-11-19 13:31:47', '2019-11-19 13:31:47'),
+(45, 70, 'by admin', 'Josefina Linetzky', 1, 49990.00, 1, 'by Admin', '2019-11-19 13:53:13', '2020-02-19 13:53:13', '2019-11-19 13:53:13', '2019-11-19 13:53:13');
 
 -- --------------------------------------------------------
 
@@ -1600,6 +2005,22 @@ CREATE TABLE `questions` (
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `updated_at` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `questions`
+--
+
+INSERT INTO `questions` (`id`, `user_id`, `question`, `answer`, `status`, `created_at`, `updated_at`) VALUES
+(8, 46, 'Hola!! Si tengo opción de ir un día adicional al gym, que hago?? Repito una de las rutinas??? \r\nGracias \r\nSaludos', 'Hola!! El trabajo  de fuerza es bastante agresivo y estresante para el cuerpo, por eso la recomendacion es seguir la planificacion. En caso de tener ganas de hacer algo extra a lo planificado se recomienda asistir a clases grupales o hacer \"cardios\" en que no se involucren pesos. Saludos Sindy !!', 1, '2019-11-01 18:03:35', '2019-11-01 21:39:07'),
+(10, 41, 'hola que tal, una consulta, los datos a ingresar en MI PROGRESO, ¿es cada vez que ejercito, es una vez al mes?', 'Hola Camila!. Es cada vez que realizas el ejercicio!. Saludos =)', 1, '2019-11-05 22:00:10', '2019-11-06 00:07:25'),
+(11, 59, 'Hola! Hoy recibí mi plan de entrenamiento, tengo un par de dudas. Solo me aparecen día 1, día 3 y día 5, entiendo que solo serían 3 veces por semana de entrenamiento? Luego vuelvo a repetir los mismos ejercicios durante un mes? O se va actualizando cada semana. 2.- Heatlhy body lo puedo realizar todos los días? Antes o después del entrenamiento? 3.- El código para comprar en Under Armour, no lo encuentro, como debo hacerlo para comprar online. \r\n\r\nGracias!!', 'Hola Pablo como estas?.\r\n\r\n1) Si, tu planificacion es 3 dias a la semana, por un mes, luego cambiamos planificacion. Se planifica mensualmente.\r\n\r\n2) Lo puedes realizar cuando quieras!, cuantos dias quieras.\r\n\r\n3) MOTION-BLACK\r\n\r\nSaludos!!', 1, '2019-11-18 12:45:26', '2019-11-18 15:22:35'),
+(13, 62, 'hola!, en mis sesiones sale dia 1-2-4-5, serán 4 dias en total, o faltara un dia?.\r\nLo otro, yo tengo discopatia lumbar (irradiacion nervio ciatico), para no usar carga aial estaba usando frontsquat, en motion me evaluaron el frontsquat y ahora en la planificacion sale sentadilla trasera, estara bien?\r\nLo otro, los ejercicios de CORE los puedo hacer al final?  o estan ahi a modo de calentamiento?', 'Hola Matias! como estas?:\r\n\r\n1) Son 4 entrenamientos semanales, dia 3 es dia de descanso.\r\n2) Correcto, ahora mismo reemplazaremos eso!, disculpa.\r\n3) Dejalos para el final de la rutina!, y no esta demas decir que los puedes hacer todos los dias!.\r\n\r\nSaludos!', 1, '2019-11-18 18:21:53', '2019-11-18 21:12:12'),
+(14, 61, 'Preguntas:\r\n\r\n1) En el desayuno si yo entreno Am por lo general el ideal es que me coma ese desayuno digamos 7 AM y luego como post entrenamiento un batido de proteina o espero simplemente el snack antes de almuerzo? Lo otro que otra opción puede ser para remplazar el desayuno por una versión avena con algo ( me refiero a una opción dulce jaja) pero que porción de avena remplaza esa porción de cereal.\r\n\r\n2) Las opciones de comidas y almuerzos yo puedo variar esas porciones de verduras con cualquier proteina que se me da? osea en una sale medio tomate- proteina y arroz yo esa puedo cambiar el tomate por cualquier mix de verduras que se dio en otra opción como zanahoria con betarraga. La idea es mantener esas cantidades de verduras, carbo y todo el resto?. \r\n\r\n3) Las proteinas y Carbo se pesan despúes de estar cocinados o crudos?\r\n\r\n4) Si un día no entrene debería bajarle a algo en la alimentación?\r\n\r\nLo otro consejo para que puedan arreglarlo: En el celular se puede desplegar hacia el lado muy bien las opciones de comida o entrenamiento, formato PC no se puede :).\r\n\r\nGracias!!\r\nSaludos,', 'Hola Denise! como estas?:\r\n\r\n1) Si, entrenas y comes el snack o colacion AM !. \r\n2) No entendi muy bien... =(\r\n3) Claro!, puedes ir variando las opciones de verduras, la idea es mantener si o si las cantidades de macronutrientes (proteinas, carbohidratos y grasas).\r\n4) Se pesan ya cocinados!, TODO.\r\n5) No haremos aun dieta flexible, manten constante la ingesta calorica descrita en el menu.\r\n6) Intenta reactualizando la pagina en tu navegador!.', 1, '2019-11-18 20:39:44', '2019-11-18 21:20:06'),
+(15, 46, 'Hola! Este mes podré ir 3 días al gym, me pueden cambiar la rutina de acuerdo a esto\r\nGracias', 'Hola Sindy!, enseguida!\r\n\r\nUn abrazo =)', 1, '2019-11-18 21:07:54', '2019-11-18 21:12:49'),
+(16, 39, 'Hola como estas ! La pauta de mi señora cambio mucho este mes sin embargo la mia se mantiene igual . O aun no la ajustan ?', 'Hola Claudio! Como estas? Cuentame como te ha ido con la rutina. \r\n\r\nSaludos', 1, '2019-11-19 00:46:20', '2019-11-19 03:33:05'),
+(17, 46, 'Muchas gracias!! Los días 1 y 3 son los mismos del mes pasado cierto???\r\nSaludos ;)', 'Hola Sindy!, son parecidos!. Antes eran 2 dias generales. Ahora son dos dias especificos y el tercero es general. Se reparte el volumen distinto!\r\n\r\nCuentame como te va!\r\n\r\nSaludos', 1, '2019-11-19 00:46:53', '2019-11-19 03:31:46'),
+(18, 65, 'Hola consulta a qué se refieren con repeticiones en reserva', 'Hola Camila! como estas?, mira...\r\nEl RIR son las repeticiones que no hacemos dentro de una serie, las que dejamos \"guardadas\". Es decir, las repeticiones que en un ejercicio nos quedan por realizar para llegar al fallo muscular. \r\n-	Ejemplo 1:  RIR 3 quiere decir que pudiéramos realizar 3 repetición más de las realizadas (hacemos 12 repeticiones cuando podríamos haber realizado 15). Esfuerzo moderado-alto.\r\n\r\n-	Ejemplo 2: RIR 0 quiere decir que no nos dejamos nada en reserva o guardado, lo diste todo. Se llega al fallo técnico y muscular. Máximo esfuerzo.\r\n\r\n\r\n•	A mayor el número del RIR, menor es la percepción del esfuerzo.\r\n•	A menor el numero del RIR, mayor es la percepción del esfuerzo.\r\n\r\n¿Como encontrar el RIR?\r\nTienes que hacer series de aproximación (de a poco incrementando el peso) y son en esas series en las que sentirás con que peso tendrías que trabajar para mantenerte en el RIR indicado. \r\n\r\nSaludos!', 1, '2019-11-19 11:46:36', '2019-11-19 13:21:37'),
+(19, 69, 'Hola, tengo dudas con respecto al batido de proteína, lo tomo luego de entrenar o no importa en que momento del día lo tome? lo otro con respecto a esto, es si lo considero como una colación y no como nada más en esa hora, o me tomo el batido y además alguna de las colaciones (PM 0 AM dependiendo de la hora de entreno). \r\nTambién tengo una duda con el entrenamiento, sigo el orden de los ejercicios tal cual o da lo mismo el orden en que los realice?. \r\nGracias.', 'Hola Javiera! Como estas?.\r\n1) tomalo despues de entrenar, esta contabilizado como colacion Am.\r\n2) idealmente sigue el orden, sobretodo los primeros ejercicios ( sentadilla y estocadas), el orden en los ultimo ejercicios no es tam relevante.\r\n\r\nSaludos!!', 1, '2019-11-19 14:44:18', '2019-11-19 17:54:58');
 
 -- --------------------------------------------------------
 
@@ -1799,16 +2220,43 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `image`, `email`, `password`, `google_id`, `facebook_id`, `gitlab_id`, `dob`, `mobile`, `stripe_id`, `card_brand`, `card_last_four`, `trial_ends_at`, `is_admin`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', NULL, 'admin@mediacity.co.in', '$2y$10$1w2kbraQWFVkZVcyAwXmgeGhD4QYxTcg9Hx12KYtNN821CuOMtyda', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 'mopvdeHmKQ0Dm6ANO6UvSJNKVm0cE7Xz8tf80tQuN8Y1Rc4BfqKjHeEaSMhX', '2018-04-24 07:56:34', '2018-04-24 07:56:34'),
-(24, 'Jorge Caca', NULL, 'jorge@caca.com', '$2y$10$AnaSIa0OtRknN.pC17mY8e8yreDNk/aqB/ebDfPa2eyOuXqyQSvVa', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'rTsjc0ZvoQpvTdLIimgfsGppKJ7EYVxFj4Dd69HKqoat2J1OPGGf3335m6o9', '2019-08-27 21:29:37', '2019-08-28 00:00:17'),
-(25, 'Martina Dovic Z.', NULL, 'martinadzaf@uolmail.com', '$2y$10$EEyjTuuwup6tfCVRRxd3WuLNw9twH.guNPpIMAAIHuVGgHsC2fLGm', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'OgkBxh2HriMbSzJivllGE4TnkMsRCvHE8qtMobBofwA5NBkNuQzDRLJwg4qS', '2019-08-27 21:30:03', '2019-10-01 20:15:54'),
-(26, 'Diosito Borges', NULL, 'diosito@caca.com', '$2y$10$5dS7IbOvX3vjHxUxSlLbDOdG0fTK..sR2uCwhABstQcDs7KSbtO8.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'FBUiQtumBIrp6XTYBmBh8obPDtpA99VErMLc1fkvhfXwIho4I2zgr5ICFHjQ', '2019-08-27 21:30:31', '2019-08-28 00:00:46'),
-(27, 'Kimi Linda', NULL, 'kimilinda@amor.com', '$2y$10$bLH7K9eKx4LYl19OGtHJGeh4b.Sx6hUD4wUlHKLs3RTmfIs2DtzYm', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'po1KLVTQ64h48YnuMXfvLdlxNIRWxmRgvZw8D9GZofV4vODY2j1NGaydELfm', '2019-08-27 21:31:06', '2019-08-28 00:00:01'),
-(28, 'Jose Pelado', NULL, 'pelao@caca.com', '$2y$10$x/SJzlbmrLPWWnO9X1iyj.7N0nv4KQ2LOthEEyQ10R0BlTywNVpI6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'N0YhAomapcyLlSKhjA7dSvIzFJwcfD8OTSbdsb1EtGClzUKuWUOdE05hwJbE', '2019-08-27 21:31:33', '2019-08-27 23:59:39'),
-(29, 'Enrique Castro Olave', NULL, 'enriquecastroolave@gmail.com', '$2y$10$c3z9wPKFfFHUbmNFLDcvyeHjGHVvVfn6OQor9SLa3fhpDZiweJXVa', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'vPMqQCtCIt01Qngpm4inOzaOCs3vFruQJqdW9Mvv5TFmxoZXChh16U0KB0Kx', '2019-09-23 20:49:25', '2019-09-23 20:49:25'),
-(30, 'JOSE MANUEL GOMEZ L.', NULL, 'JGOMEZ@MOTIONCENTER.CL', '$2y$10$m8JPqz78GSDlFB.qDoldNOr4/7ZYZbW8NiVshXKjEjZlPNqmL.Q/i', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'SgdUtPp6Tzb9oyMnmsnxQFxv6d9h0ZS410OIWQWrOl3FHUHhavSvkxSIUQOL', '2019-09-24 21:55:57', '2019-09-24 21:55:57'),
-(31, 'Juan Jose Zunino', NULL, 'jjzunino@underarmour.cl', '$2y$10$6uHUDfsLWagqycTJ7W0UG.HYc5amIoDaUltoI1X5eWzvDdXPyVpWy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, '7GYPugzVFHL5CAMcUufktzZJq4YOPUGCb94zCtQbwjzrbuqdXDHrmNqUESI6', '2019-09-26 16:19:51', '2019-09-26 16:19:51'),
-(32, 'Josefina Hernandez Z.', NULL, 'jherndzaf@uolmail.com', '$2y$10$YaHAxQQ2PXZLdiuZYyShnuyRFjJtkwJOpxrxIO6pVdO32c0.XAhc2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, '9tCCuc5rFdgTGqSU69zEzT4UVAlG4PvxYE7SkriNKxm8kYZqA8e3ISP9njwE', '2019-09-29 19:44:25', '2019-09-29 19:44:25');
+(1, 'Admin', NULL, 'admin@mediacity.co.in', '$2y$10$1w2kbraQWFVkZVcyAwXmgeGhD4QYxTcg9Hx12KYtNN821CuOMtyda', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 'EFZsoyzn0MGbAP6GKzuZQiQZTsX7GPV0e1QMatEsE4GDKIpKBZNsm8b7yZ5V', '2018-04-24 07:56:34', '2018-04-24 07:56:34'),
+(33, 'M.Angeles Rodriguez', NULL, 'mangeles.rodriguez.b@gmail.com', '$2y$10$z9zKBmy8jzSJKdDfdF2.q.3k/9ZF88F72G446JfrZ9R76aRGkJc7q', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-16 13:31:11', '2019-10-17 16:43:15'),
+(34, 'Maria Jesus Roman', NULL, 'mjromanh@gmail.com', '$2y$10$ShI1RYGEAvy/avpcsJAQA.8ITLse1Nr4Bbev32r1Bn.5g1tGDBTxy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-17 12:00:50', '2019-10-17 12:00:50'),
+(36, 'Ignacio del rio', NULL, 'ignacio.delrio.moya@gmail.com', '$2y$10$XShD9RA3PQNLlA4fNqqTeei9WZpbxVXvXKw98cbqTtraXTzu040yu', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-17 12:02:55', '2019-10-17 12:02:55'),
+(37, 'Camila Alfaro', NULL, 'camila.aldi@gmail.com', '$2y$10$7MeQ1jFbHmTDVnxPAXJlWuoGx7.DE0rS4iUbIzjkkfaqoLvOnTAXO', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-17 12:03:36', '2019-10-17 12:03:36'),
+(38, 'Rosemarie Flores', NULL, 'rosemarieflores.corvalan@gmail.com', '$2y$10$G9D/HoLIbHurgf9rD9Q9auZJdhmqFWfml00u5SwhMSYi9nggGak66', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'tGFB9FN3mjFh1NtNIh4UdNM7nzR1P82n9e5qxfpi8T9Hr4a6ZJKAqcUJAUgw', '2019-10-17 12:05:08', '2019-10-17 12:05:08'),
+(39, 'Claudio Araneda', NULL, 'araneda.claudio@gmail.com', '$2y$10$XOTkPoxg5rTFNWIWS.77Bez2VSbcqqU3SEZPfphb9vSQRkvkuT4kK', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'fQmw2D8kfqNaxKawJsAf9WU35Gdd0ElsWfXM3Y9D8dCLjghikROr7cI70Yt6', '2019-10-17 12:06:31', '2019-10-17 12:06:31'),
+(40, 'Bastian Montaño J.', NULL, 'bastian.montano.jara@gmail.com', '$2y$10$ETByf/FRywCC4GI.iE5ituV3T3z5LWNcb53ohpXCwpWkCz2tKIP/a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'x7Vb7znqohZsxgnaHUuI4n14lHJiX3BoirGCQik5apF5HECGXaeNLvCKAtLh', '2019-10-17 12:07:41', '2019-10-17 12:07:41'),
+(41, 'Camila Pino S.', NULL, 'camila.pino.s@gmail.com', '$2y$10$45DNjZONGgU885yL6Iua1ehDqoIAGEEu6R5eyYkiGUjcYhFWyXNH6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-17 12:09:45', '2019-10-17 12:09:45'),
+(42, 'Barbara Carrasquel', NULL, 'bcarrasquelz@gmail.com', '$2y$10$k2Z0FdS9w4UbzsnSnh.kWOV6le7vOfK62L3SmiS9ymfJY29q3OvE6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-17 12:10:27', '2019-10-17 12:10:27'),
+(43, 'Raimundo Salazar', NULL, 'raisalaza@gmail.com', '$2y$10$IZHoHy.mv2ye4C52SlT1RebLXq9tQzzVBqGvsnVWKPQxSqVs0xWNG', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'rEuKiMJYLSZ5gnWqo5RQPR0HWQh28q5FJhq0c7MUMmmZ7kpveMIgsK0zbxYl', '2019-10-17 12:11:40', '2019-10-22 14:54:44'),
+(44, 'Diego Carrillo', NULL, 'diegocarrillo.cw@gmail.com', '$2y$10$XqBpfnE73Gxy8BlaTWHBK.cUXa.oemoJs.QKTVOZn2QzNs6ENudC6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-17 12:12:03', '2019-10-17 12:12:03'),
+(45, 'Herman Orellana', NULL, 'horellana@geholab.cl', '$2y$10$cmxLos9YU1bKFtLYejRcZ.SyHNCIx0rGzgpffacIRSMP2bwmJemcy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-17 12:12:41', '2019-10-17 20:57:55'),
+(46, 'Sindy Olea', NULL, 'sindyolea@gmail.com', '$2y$10$1jPiKaud3d7XfeouVX6b0.QHqFCPmC/WVNrS4Bn77OgK9fTh6AI6.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-26 11:54:21', '2019-10-26 11:54:21'),
+(47, 'Gunther Preisler', NULL, 'guntherpreisler@gmail.com', '$2y$10$IG9mEowm5Mi3hkrLH6gCru9D6YNal7AzJwo4B3E.xub8C/Tat2osq', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-27 20:37:11', '2019-10-27 20:37:11'),
+(48, 'Alejandra Riesco', NULL, 'alejandra.riesco@gmail.com', '$2y$10$2Iz01fwnkjA.He/NdP5MvutpFGyO5KVZF.Z6n8On.qwuXWSK1XBFu', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-10-27 20:37:49', '2019-10-27 20:37:49'),
+(50, 'Enrique Castro O.', NULL, 'enriquecastroolave@gmail.com', '$2y$10$7jIZuVEtQl62IBQd.FPtbuXOhsELW0tyds38qF6qJgERKj3A/9a6C', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'xtxVICKFeSWZwSLqD0jjx4oz3NChNQ0anKHxXFBXdOMhv1GQnplXOQfQkFj7', '2019-11-06 18:28:21', '2019-11-06 18:28:21'),
+(51, 'Vanessa Ventura', NULL, 'vane@sohogallery.cl', '$2y$10$m.VPDT06U0sdmuxunhwR2enzAcjdRtR/YVNuKDvBNUCLudHaNc7F2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-14 16:30:45', '2019-11-14 16:30:45'),
+(52, 'Angie Harlowe', NULL, 'angieharlowe@gmail.com', '$2y$10$6sPM04X8tlsbBucQ2ahg4uUsmxNLc9uG8w4FnJiC/Uu8FsowTfl2W', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-14 16:49:33', '2019-11-14 16:49:33'),
+(53, 'Tomas Zaror', NULL, 'tzaror@gmail.com', '$2y$10$dn2eUq7mPwbc/vafjAIdZ.RQRD8VG1rZRvfZ1XGZc66P7j3u5I1aG', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'MhG6kkQJFh2thlU78OT9VMSHZlxMsEdFU0raw2A4TjzCvcXGnpPEa2uSEm5q', '2019-11-18 03:20:24', '2019-11-18 03:20:24'),
+(54, 'Paula Jara', NULL, 'paujara@gmail.com', '$2y$10$AhHZyAJUE7MjcxSV4otqD..HrAjVMAgTMqBAPrUpPUcID0yIZSNkO', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 03:24:20', '2019-11-18 11:41:49'),
+(55, 'Sergio Diaz', NULL, 'sergio.fonoaudiologo@gmail.com', '$2y$10$0nk3WQC/Qu0tY5B3/ROII.ZVXrvH.L6vkiIk4QAIj51rd1CkVOLjC', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 03:28:15', '2019-11-18 03:28:15'),
+(56, 'Catalina Flores', NULL, 'cflorescox@gmail.com', '$2y$10$nmJlWva5eNaelr4lMwCFMOHDU6Al2T07diZ68mA21FJqUjI1cgedS', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 03:29:52', '2019-11-18 03:29:52'),
+(57, 'Carlos Saez', NULL, 'carlos.saezw@gmail.com', '$2y$10$bh3j1CZLtlrqmkqvKNW2Ue0ebkaiHsaQQewhdhxZfNpgrC3kLjXA2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 03:30:52', '2019-11-18 03:30:52'),
+(58, 'Cesar Loyola', NULL, 'lv.cesar@gmail.com', '$2y$10$Fs6/36Inychxa2cQ3JECb.9dtjvZS8.pFtShqSTH/c7tS0cPCyRp6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 03:32:07', '2019-11-18 03:35:23'),
+(59, 'Pablo Vasquez', NULL, 'vasquezgallardop@gmail.com', '$2y$10$5aqcg06SAXsjTqYo9uRIDOsU4owDwi8hTvL.RPwk9vk3Z6Ih5XQsq', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 03:34:35', '2019-11-18 12:28:56'),
+(60, 'Soraya Herrera', NULL, 'sora.herrerab@gmail.com', '$2y$10$.VvtP5x5Ngh20t/8yTf/TeqD4BRntyZXeG9hfJdU.BPxT/PnrBp2q', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 03:37:29', '2019-11-18 03:37:29'),
+(61, 'Denise Konsens', NULL, 'konsensdenise@gmail.com', '$2y$10$U/PnwmsxrophgBBsYb.44uD0gb46Vsb7Zq5/10vGsjb3Fv8ackCsi', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, '15Vs84KgvTqnXVLR8A0WjPQoJNqbKkQDS2vUCOXegdZSvIVsUSSRkWRTxOd4', '2019-11-18 03:38:24', '2019-11-18 03:38:24'),
+(62, 'Matias Jimenez', NULL, 'matias.jimenez96@hotmail.com', '$2y$10$jjRnOkk1eFpN3jYSIEfwnuaWQdQ./r5gYPBUJPL06DPAYgq0h52L6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 03:39:23', '2019-11-18 03:39:23'),
+(63, 'Nicole Fuentes', NULL, 'SNFNEEDHAM@GMAIL.COM', '$2y$10$UfJ58H.vtu1RLOeHVy8Lm.8Ov6dW8qwFNaBzKTabQ08KwPwwtkJ.C', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 03:40:38', '2019-11-18 12:01:09'),
+(64, 'Jose Bustamante', NULL, 'JOSE@MAJEN.CL', '$2y$10$MyDdO2zZPvfXzXedUGUbxumPqk3Ccjde/HhEleLnRRVU/qQqQTNI2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 21:26:06', '2019-11-18 21:26:06'),
+(65, 'Camila Crisostomo', NULL, 'CAMILACBISSOTTO@GMAIL.COM', '$2y$10$rgwU7jNw3W/iUeIQG.8Wvuieg73CamxoRqroOny.yAmTUDXnVUCEi', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 22:28:30', '2019-11-18 22:28:30'),
+(66, 'Rocio Ubiergo', NULL, 'ROCIO.UC23@GMAIL.COM', '$2y$10$5Sre3yckgbyjU3bBH4sFne5oaeCbD6YYy7b9Or/f3P2yYs0yWUeou', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'm7Sxefbmhxn7tuKMDO6b97ElPGNoyUovVWyw14mFZvHS4nKnHQH0LeZa800E', '2019-11-18 22:29:05', '2019-11-18 22:29:05'),
+(67, 'Lorenzo Cena', NULL, 'LCENA23@GMAIL.COM', '$2y$10$M1YT2U/m2GQe.REcqUfLA.b4g7WPFXb9Q5MSSMmscysHfppYHKcra', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-18 22:34:08', '2019-11-18 22:34:08'),
+(68, 'Yennifer Ignao M.', NULL, 'YENNIFER.IGNAO@GMAIL.COM', '$2y$10$oa0.mpUc2Al5Rk2YmDKgLeYDgBUgTjx8ijRy5ZrXolmDAXJHiPVDK', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 'Zo02chmLZgVEvEYcUNf7Mk9rf7zpTmQfg2PsGiFDYdbbuMRhakWPPClcGhjx', '2019-11-19 13:29:55', '2019-11-19 13:29:55'),
+(69, 'Javiera Anabalon', NULL, 'JAVIANABALON@GMAIL.COM', '$2y$10$j1cy95GwoM.qEKve5B6M0OmayNMGFvckH20CGec8LbaNfiCp4RSjq', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-19 13:31:05', '2019-11-19 13:31:05'),
+(70, 'Josefina Linetzky', NULL, 'josefinalinetzky@hotmail.com', '$2y$10$09MlzsR395MbZvXKaX5wVekyUU2vB5HDk8kglwNDaYfc0gIxWuk0S', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, '2019-11-19 13:52:58', '2019-11-19 13:52:58');
 
 -- --------------------------------------------------------
 
@@ -1960,7 +2408,117 @@ INSERT INTO `videolinks` (`id`, `movie_id`, `episode_id`, `iframeurl`, `ready_ur
 (207, 162, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-09-25 05:09:29', '2019-09-25 05:09:29'),
 (208, 163, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-09-25 05:10:35', '2019-09-25 05:10:35'),
 (209, 164, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-09-25 05:11:12', '2019-09-25 05:11:12'),
-(215, 170, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-14 17:54:57', '2019-10-14 17:54:57');
+(215, 170, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-14 17:54:57', '2019-10-14 17:54:57'),
+(216, 171, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:24:43', '2019-10-17 13:24:43'),
+(217, 172, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:25:20', '2019-10-17 13:25:20'),
+(218, 173, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:26:04', '2019-10-17 13:26:04'),
+(219, 174, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:26:43', '2019-10-17 13:26:43'),
+(220, 175, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:27:35', '2019-10-17 13:27:35'),
+(221, 176, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:28:00', '2019-10-17 13:28:00'),
+(222, 177, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:28:28', '2019-10-17 13:28:28'),
+(223, 178, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:28:58', '2019-10-17 13:28:58'),
+(224, 179, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:45:05', '2019-10-17 13:45:05'),
+(225, 180, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:50:28', '2019-10-17 13:50:28'),
+(226, 181, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:59:09', '2019-10-17 13:59:09'),
+(227, 182, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 13:59:40', '2019-10-17 13:59:40'),
+(228, 183, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 14:07:19', '2019-10-17 14:07:19'),
+(229, 184, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 14:14:10', '2019-10-17 14:14:10'),
+(230, 185, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 14:17:57', '2019-10-17 14:17:57'),
+(231, 186, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 14:20:35', '2019-10-17 14:20:35'),
+(232, 187, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-17 14:22:34', '2019-10-17 14:22:34'),
+(233, 188, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:26:17', '2019-10-18 11:26:17'),
+(234, 189, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:28:09', '2019-10-18 11:28:09'),
+(235, 190, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:28:55', '2019-10-18 11:28:55'),
+(236, 191, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:29:37', '2019-10-18 11:29:37'),
+(237, 192, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:30:08', '2019-10-18 11:30:08'),
+(238, 193, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:30:58', '2019-10-18 11:30:58'),
+(239, 194, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:31:23', '2019-10-18 11:31:23'),
+(240, 195, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:32:07', '2019-10-18 11:32:07'),
+(241, 196, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:32:37', '2019-10-18 11:32:37'),
+(242, 197, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:32:57', '2019-10-18 11:32:57'),
+(243, 198, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 11:33:21', '2019-10-18 11:33:21'),
+(244, 199, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 18:27:35', '2019-10-18 18:27:35'),
+(245, 200, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 18:27:59', '2019-10-18 18:27:59'),
+(246, 201, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 18:49:48', '2019-10-18 18:49:48'),
+(247, 202, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 19:39:33', '2019-10-18 19:39:33'),
+(248, 203, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 19:41:27', '2019-10-18 19:41:27'),
+(249, 204, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 19:42:37', '2019-10-18 19:42:37'),
+(250, 205, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 19:44:36', '2019-10-18 19:44:36'),
+(251, 206, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 19:46:16', '2019-10-18 19:46:16'),
+(252, 207, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 19:47:35', '2019-10-18 19:47:35'),
+(253, 208, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 19:48:04', '2019-10-18 19:48:04'),
+(254, 209, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:14:06', '2019-10-18 21:14:06'),
+(255, 210, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:25:46', '2019-10-18 21:25:46'),
+(256, 211, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:26:09', '2019-10-18 21:26:09'),
+(257, 212, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:27:35', '2019-10-18 21:27:35'),
+(258, 213, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:29:41', '2019-10-18 21:29:41'),
+(259, 214, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:30:33', '2019-10-18 21:30:33'),
+(260, 215, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:31:25', '2019-10-18 21:31:25'),
+(261, 216, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:39:16', '2019-10-18 21:39:16'),
+(262, 217, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:41:12', '2019-10-18 21:41:12'),
+(263, 218, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:43:07', '2019-10-18 21:43:07'),
+(264, 219, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 21:52:36', '2019-10-18 21:52:36'),
+(265, 220, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 22:09:25', '2019-10-18 22:09:25'),
+(266, 221, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 22:10:10', '2019-10-18 22:10:10'),
+(267, 222, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 22:11:07', '2019-10-18 22:11:07'),
+(268, 223, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 22:36:10', '2019-10-18 22:36:10'),
+(269, 224, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 22:38:21', '2019-10-18 22:38:21'),
+(270, 225, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-18 22:39:23', '2019-10-18 22:39:23'),
+(271, 226, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-22 15:12:31', '2019-10-22 15:12:31'),
+(272, 227, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-22 15:13:42', '2019-10-22 15:13:42'),
+(273, 228, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-22 15:35:01', '2019-10-22 15:35:01'),
+(274, 229, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-22 15:35:59', '2019-10-22 15:35:59'),
+(275, 230, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:32:53', '2019-10-24 19:32:53'),
+(276, 231, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:33:14', '2019-10-24 19:33:14'),
+(277, 232, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:33:35', '2019-10-24 19:33:35'),
+(278, 233, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:33:53', '2019-10-24 19:33:53'),
+(279, 234, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:34:14', '2019-10-24 19:34:14'),
+(280, 235, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:34:30', '2019-10-24 19:34:30'),
+(281, 236, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:39:40', '2019-10-24 19:39:40'),
+(282, 237, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:40:35', '2019-10-24 19:40:35'),
+(283, 238, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:41:03', '2019-10-24 19:41:03'),
+(284, 239, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:42:00', '2019-10-24 19:42:00'),
+(285, 240, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:42:23', '2019-10-24 19:42:23'),
+(286, 241, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-24 19:42:52', '2019-10-24 19:42:52'),
+(287, 242, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-25 16:42:52', '2019-10-25 16:42:52'),
+(288, 243, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-25 16:43:16', '2019-10-25 16:43:16'),
+(289, 244, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-25 16:43:40', '2019-10-25 16:43:40'),
+(290, 245, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-25 16:44:01', '2019-10-25 16:44:01'),
+(291, 246, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-25 18:08:18', '2019-10-25 18:08:18'),
+(292, 247, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-25 18:09:55', '2019-10-25 18:09:55'),
+(293, 248, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-26 12:14:23', '2019-10-26 12:14:23'),
+(294, 249, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-26 12:14:47', '2019-10-26 12:14:47'),
+(295, 250, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-26 12:20:20', '2019-10-26 12:20:20'),
+(296, 251, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-28 02:16:30', '2019-10-28 02:16:30'),
+(297, 252, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-28 02:16:55', '2019-10-28 02:16:55'),
+(298, 253, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-28 02:17:17', '2019-10-28 02:17:17'),
+(299, 254, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-29 23:05:18', '2019-10-29 23:05:18'),
+(300, 255, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-29 23:05:41', '2019-10-29 23:05:41'),
+(301, 256, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-10-29 23:06:09', '2019-10-29 23:06:09'),
+(302, 257, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 01:08:09', '2019-11-06 01:08:09'),
+(303, 258, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 01:08:30', '2019-11-06 01:08:30'),
+(304, 259, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 01:08:58', '2019-11-06 01:08:58'),
+(305, 260, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 01:09:21', '2019-11-06 01:09:21'),
+(306, 261, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 01:12:38', '2019-11-06 01:12:38'),
+(307, 262, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 01:24:17', '2019-11-06 01:24:17'),
+(308, 263, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 11:38:54', '2019-11-06 11:38:54'),
+(309, 264, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 11:40:03', '2019-11-06 11:40:03'),
+(310, 265, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 11:40:51', '2019-11-06 11:40:51'),
+(311, 266, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 11:42:15', '2019-11-06 11:42:15'),
+(312, 267, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-06 11:43:12', '2019-11-06 11:43:12'),
+(313, 268, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-14 23:46:21', '2019-11-14 23:46:21'),
+(314, 269, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-15 02:28:30', '2019-11-15 02:28:30'),
+(315, 270, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-15 02:52:58', '2019-11-15 02:52:58'),
+(316, 271, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-18 02:59:16', '2019-11-18 02:59:16'),
+(317, 272, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-18 03:00:48', '2019-11-18 03:00:48'),
+(318, 273, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-18 03:02:05', '2019-11-18 03:02:05'),
+(319, 274, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-18 21:53:41', '2019-11-18 21:53:41'),
+(320, 275, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-18 21:54:01', '2019-11-18 21:54:01'),
+(321, 276, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-18 21:54:29', '2019-11-18 21:54:29'),
+(322, 277, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-18 21:54:51', '2019-11-18 21:54:51'),
+(323, 278, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-19 18:36:28', '2019-11-19 18:36:28'),
+(324, 279, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-19 18:36:55', '2019-11-19 18:36:55'),
+(325, 280, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2019-11-19 18:37:20', '2019-11-19 18:37:20');
 
 -- --------------------------------------------------------
 
@@ -2112,7 +2670,83 @@ INSERT INTO `views` (`id`, `viewable_type`, `viewable_id`, `visitor`, `collectio
 (205, 'App\\Movie', 29, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-04 22:31:28'),
 (206, 'App\\Movie', 144, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-04 22:32:23'),
 (207, 'App\\Movie', 144, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-04 22:32:54'),
-(208, 'App\\Movie', 138, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-06 01:35:23');
+(208, 'App\\Movie', 138, 'G6az5dXt2yb7AkHrguW000w59c91EV4Cfrq5mRa21Raa1ePIRD1E47L4sqk4MVU6rwOSskkPax9wNxiR', NULL, '2019-10-06 01:35:23'),
+(209, 'App\\Movie', 170, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-17 13:23:39'),
+(210, 'App\\Movie', 179, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-17 13:45:14'),
+(211, 'App\\Movie', 181, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-17 14:01:21'),
+(212, 'App\\Movie', 145, 'eezzKrO8nZaqZoDeAbH2FAvMBb7paq3FDWyQe2JUHxxEM2cJf6a5XWXvakGFEpze4WMzxFomkpDyN8gH', NULL, '2019-10-17 15:55:48'),
+(213, 'App\\Movie', 145, '091vduOrEHu0QZttpfHUA0rG46igAhGWWVqEH6fVhBzYP60M9W7TuxrTJ5w8plFZIgwpbcq9fAnKGyh3', NULL, '2019-10-17 15:55:49'),
+(214, 'App\\Movie', 140, 'YJMtVrkRlYXXyGrskTtnPtFjRDQW1bP5NVwlNz7eJ1eptS050Yk2EggJuyaD5klXumAvjQ6LRcMqoPMl', NULL, '2019-10-17 20:34:03'),
+(215, 'App\\Movie', 140, 'etre52T00SHyc0mz4S1e1MfzOG5Cph5dky7vkMvYM23H9xwAbBiUKkfY3vmmrMD3cPlIDj3fFCqTmv41', NULL, '2019-10-17 20:34:03'),
+(216, 'App\\Movie', 140, '6BpjDz3bIz0AwaANAU9v1J3ZjbwfFak9URbjkYNv7XOvm3U06Dp22Zx2NXvcofplc4skOXE49G04CQWw', NULL, '2019-10-17 20:34:03'),
+(217, 'App\\Movie', 141, 'LjYD2W2NaiOONbwFPyOME8GlRhJ55mVhwgRlyjLViuxLKjRjJ7H4icJIKNgnx7AktvasnhC602cZESDZ', NULL, '2019-10-18 00:34:50'),
+(218, 'App\\Movie', 138, 'LjYD2W2NaiOONbwFPyOME8GlRhJ55mVhwgRlyjLViuxLKjRjJ7H4icJIKNgnx7AktvasnhC602cZESDZ', NULL, '2019-10-18 00:39:51'),
+(219, 'App\\Movie', 145, 's1q3zRWJ76iLy2PuvimRekTL6j0Un3uTp5fwDcNuAqlEjknNg2CDczZKeU8clQeJBGSVcbVQNc4RBaBN', NULL, '2019-10-18 13:15:14'),
+(220, 'App\\Movie', 142, 'Tr4QLrWVa0CssFma3gy160ENFkr5fabtewHXfNUPWZloEMjUgtljBccgizdv7sUC0UFfFQGw9dbRx6zX', NULL, '2019-10-18 13:20:40'),
+(221, 'App\\Movie', 219, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-18 21:53:23'),
+(222, 'App\\Movie', 225, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-18 22:39:49'),
+(223, 'App\\Movie', 138, 'Tr4QLrWVa0CssFma3gy160ENFkr5fabtewHXfNUPWZloEMjUgtljBccgizdv7sUC0UFfFQGw9dbRx6zX', NULL, '2019-10-19 23:15:26'),
+(224, 'App\\Movie', 141, 'rltFYmNUBEvSkS0vBRvDTuFkpIyTikMMOPbsw8C3wkInIhA8Zwj7QtbD6WfNP9pDu533P9WWfZRNQmM4', NULL, '2019-10-22 13:42:28'),
+(225, 'App\\Movie', 141, 'SQzcWe5SrKBO6rMO8sTVYTjNvfqo8W6ctClqOjyPIteKWPGJniWLxwGzlJ88Z8NNGZnMlWAox4rbw7kZ', NULL, '2019-10-22 13:42:28'),
+(226, 'App\\Movie', 229, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-22 15:40:01'),
+(227, 'App\\Movie', 229, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-22 15:46:31'),
+(228, 'App\\Movie', 139, '2EmbMxJXv52pGxdk7m3V98wUvxnnTohpDUbSV5fI2ct93jLqxLxWlE0PvofrLunr45dRiz9SQmlJTWIF', NULL, '2019-10-22 22:37:34'),
+(229, 'App\\Movie', 139, 's1q3zRWJ76iLy2PuvimRekTL6j0Un3uTp5fwDcNuAqlEjknNg2CDczZKeU8clQeJBGSVcbVQNc4RBaBN', NULL, '2019-10-22 23:38:35'),
+(230, 'App\\Movie', 141, 's1q3zRWJ76iLy2PuvimRekTL6j0Un3uTp5fwDcNuAqlEjknNg2CDczZKeU8clQeJBGSVcbVQNc4RBaBN', NULL, '2019-10-22 23:39:42'),
+(231, 'App\\Movie', 141, 'Cv4BRvx3pric9IRATLWHRA8DJMXd5BkZ9r99Q0hMYATlIFJRW11WE23LpB0HIyBSRqkc6CywFfMvxPgU', NULL, '2019-10-24 14:09:18'),
+(232, 'App\\Movie', 138, 'Cv4BRvx3pric9IRATLWHRA8DJMXd5BkZ9r99Q0hMYATlIFJRW11WE23LpB0HIyBSRqkc6CywFfMvxPgU', NULL, '2019-10-24 14:09:30'),
+(233, 'App\\Movie', 139, 'Cv4BRvx3pric9IRATLWHRA8DJMXd5BkZ9r99Q0hMYATlIFJRW11WE23LpB0HIyBSRqkc6CywFfMvxPgU', NULL, '2019-10-24 14:11:57'),
+(234, 'App\\Movie', 140, 'Cv4BRvx3pric9IRATLWHRA8DJMXd5BkZ9r99Q0hMYATlIFJRW11WE23LpB0HIyBSRqkc6CywFfMvxPgU', NULL, '2019-10-24 14:13:21'),
+(235, 'App\\Movie', 140, 'Cv4BRvx3pric9IRATLWHRA8DJMXd5BkZ9r99Q0hMYATlIFJRW11WE23LpB0HIyBSRqkc6CywFfMvxPgU', NULL, '2019-10-24 14:13:22'),
+(236, 'App\\Movie', 141, 'Cv4BRvx3pric9IRATLWHRA8DJMXd5BkZ9r99Q0hMYATlIFJRW11WE23LpB0HIyBSRqkc6CywFfMvxPgU', NULL, '2019-10-24 14:15:09'),
+(237, 'App\\Movie', 142, 'Cv4BRvx3pric9IRATLWHRA8DJMXd5BkZ9r99Q0hMYATlIFJRW11WE23LpB0HIyBSRqkc6CywFfMvxPgU', NULL, '2019-10-24 14:19:30'),
+(238, 'App\\Movie', 145, 'Cv4BRvx3pric9IRATLWHRA8DJMXd5BkZ9r99Q0hMYATlIFJRW11WE23LpB0HIyBSRqkc6CywFfMvxPgU', NULL, '2019-10-24 14:21:51'),
+(239, 'App\\Movie', 145, 'Cv4BRvx3pric9IRATLWHRA8DJMXd5BkZ9r99Q0hMYATlIFJRW11WE23LpB0HIyBSRqkc6CywFfMvxPgU', NULL, '2019-10-24 14:21:51'),
+(240, 'App\\Movie', 246, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-25 18:08:28'),
+(241, 'App\\Movie', 247, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-25 18:10:05'),
+(242, 'App\\Movie', 141, 't8BaRb45vt2HNg8tLgrki5OCcWJpLxbmKraPetZ5mf1zTE8Xc6VgmsvJLNFkQXtlTQpoVhXwBncrQRrt', NULL, '2019-10-26 13:09:37'),
+(243, 'App\\Movie', 145, 't8BaRb45vt2HNg8tLgrki5OCcWJpLxbmKraPetZ5mf1zTE8Xc6VgmsvJLNFkQXtlTQpoVhXwBncrQRrt', NULL, '2019-10-26 13:24:18'),
+(244, 'App\\Movie', 253, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-10-28 02:24:13'),
+(245, 'App\\Movie', 138, '2EmbMxJXv52pGxdk7m3V98wUvxnnTohpDUbSV5fI2ct93jLqxLxWlE0PvofrLunr45dRiz9SQmlJTWIF', NULL, '2019-10-31 14:37:59'),
+(246, 'App\\Movie', 138, 'AzuwZ9THOK6wqX6BUS7D1xSJtOT4IPsGktxiT6IIQxchp5CD3Bu85883N4TCtoPImQJA8NkQFyyfCa99', NULL, '2019-11-05 22:00:33'),
+(247, 'App\\Movie', 138, 'pCFXQ3XutabMjhkPRxqiIjyKwpORv5Ei45NMiJMOEWaZz3MjJefB1Q5wGKaq7Ztc3F7aa4Zr5dObGF3s', NULL, '2019-11-15 01:49:04'),
+(248, 'App\\Movie', 145, 'l9DLkqStluHtm8lnaup6pL0WWlhmE6WekFQtD9rjfUjZTbCkvNpHbNmqknFfSrzRJTC9mvfSsQf5Z5dy', NULL, '2019-11-18 10:22:56'),
+(249, 'App\\Movie', 142, 'Tr4QLrWVa0CssFma3gy160ENFkr5fabtewHXfNUPWZloEMjUgtljBccgizdv7sUC0UFfFQGw9dbRx6zX', NULL, '2019-11-18 11:31:57'),
+(250, 'App\\Movie', 138, 'p2FL8C2hUSa7StfeEqMTiefFBo9PtwN4RD1i3Iyj6IhX3u8e4axGqUuKyAIpaunChh5TPmu3GjYkRjXP', NULL, '2019-11-18 12:46:30'),
+(251, 'App\\Movie', 138, 'T8O6EPXlJ0R6WjvnbvlxDkp7hNawaGn3OkjhQXmfX6xJG63K2Jxk4REEAVNe65IxZaseJ7q2WviKE4ch', NULL, '2019-11-18 15:50:05'),
+(252, 'App\\Movie', 141, 'i0B4YkJC1anvaeYANqnVoDUWx3ME5hw8vQbYpFtS9EvTopC5CXjMeKZqHzHjiqoaxnHdJ11FGvOstEEB', NULL, '2019-11-18 17:35:13'),
+(253, 'App\\Movie', 140, 'i0B4YkJC1anvaeYANqnVoDUWx3ME5hw8vQbYpFtS9EvTopC5CXjMeKZqHzHjiqoaxnHdJ11FGvOstEEB', NULL, '2019-11-18 17:37:42'),
+(254, 'App\\Movie', 138, 'i0B4YkJC1anvaeYANqnVoDUWx3ME5hw8vQbYpFtS9EvTopC5CXjMeKZqHzHjiqoaxnHdJ11FGvOstEEB', NULL, '2019-11-18 17:43:29'),
+(255, 'App\\Movie', 138, 'l9DLkqStluHtm8lnaup6pL0WWlhmE6WekFQtD9rjfUjZTbCkvNpHbNmqknFfSrzRJTC9mvfSsQf5Z5dy', NULL, '2019-11-18 19:36:18'),
+(256, 'App\\Movie', 138, 'l9DLkqStluHtm8lnaup6pL0WWlhmE6WekFQtD9rjfUjZTbCkvNpHbNmqknFfSrzRJTC9mvfSsQf5Z5dy', NULL, '2019-11-18 19:36:18'),
+(257, 'App\\Movie', 139, 'l9DLkqStluHtm8lnaup6pL0WWlhmE6WekFQtD9rjfUjZTbCkvNpHbNmqknFfSrzRJTC9mvfSsQf5Z5dy', NULL, '2019-11-18 19:41:42'),
+(258, 'App\\Movie', 140, 'l9DLkqStluHtm8lnaup6pL0WWlhmE6WekFQtD9rjfUjZTbCkvNpHbNmqknFfSrzRJTC9mvfSsQf5Z5dy', NULL, '2019-11-18 19:42:48'),
+(259, 'App\\Movie', 141, 'l9DLkqStluHtm8lnaup6pL0WWlhmE6WekFQtD9rjfUjZTbCkvNpHbNmqknFfSrzRJTC9mvfSsQf5Z5dy', NULL, '2019-11-18 19:44:31'),
+(260, 'App\\Movie', 142, 'l9DLkqStluHtm8lnaup6pL0WWlhmE6WekFQtD9rjfUjZTbCkvNpHbNmqknFfSrzRJTC9mvfSsQf5Z5dy', NULL, '2019-11-18 19:47:00'),
+(261, 'App\\Movie', 142, 'l9DLkqStluHtm8lnaup6pL0WWlhmE6WekFQtD9rjfUjZTbCkvNpHbNmqknFfSrzRJTC9mvfSsQf5Z5dy', NULL, '2019-11-18 19:47:59'),
+(262, 'App\\Movie', 143, 'l9DLkqStluHtm8lnaup6pL0WWlhmE6WekFQtD9rjfUjZTbCkvNpHbNmqknFfSrzRJTC9mvfSsQf5Z5dy', NULL, '2019-11-18 19:48:04'),
+(263, 'App\\Movie', 141, 'Tr4QLrWVa0CssFma3gy160ENFkr5fabtewHXfNUPWZloEMjUgtljBccgizdv7sUC0UFfFQGw9dbRx6zX', NULL, '2019-11-19 00:47:25'),
+(264, 'App\\Movie', 141, 'XuNia8kuOh4Q3f83L84mYkTj3ZsulIrxSVmiWf58JnDFzHUdKiVtOi5vXO56VJuRQuxOGE0ozfmsXrH4', NULL, '2019-11-19 13:53:07'),
+(265, 'App\\Movie', 139, 'mfwAhsRmuH1af9xc2gfrvrU8iJ4Jn3yxavKUT0sGjNVas6c0CQA8lW1qTfGe6KAzhlOLV9b6Lslx2OQX', NULL, '2019-11-19 14:07:30'),
+(266, 'App\\Movie', 140, 'mfwAhsRmuH1af9xc2gfrvrU8iJ4Jn3yxavKUT0sGjNVas6c0CQA8lW1qTfGe6KAzhlOLV9b6Lslx2OQX', NULL, '2019-11-19 14:08:25'),
+(267, 'App\\Movie', 138, 'Qae55q1SZuQJe0OxGuAgrYtPAin0BI7RCxOvUqI8ymVR6QceHBBW5A2unOL3kzlWX605Uo6nJkb8monK', NULL, '2019-11-19 14:10:01'),
+(268, 'App\\Movie', 221, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-11-19 14:41:25'),
+(269, 'App\\Movie', 141, '8onrHPD1hQyWQhSQm3oNffGRiVcpVLJKyJ2b6Xgw8l7SK2E58wuJFyeMFFOnamaguYTbp3zjBdnCVI2r', NULL, '2019-11-19 15:27:27'),
+(270, 'App\\Movie', 138, '8onrHPD1hQyWQhSQm3oNffGRiVcpVLJKyJ2b6Xgw8l7SK2E58wuJFyeMFFOnamaguYTbp3zjBdnCVI2r', NULL, '2019-11-19 15:30:14'),
+(271, 'App\\Movie', 139, '8onrHPD1hQyWQhSQm3oNffGRiVcpVLJKyJ2b6Xgw8l7SK2E58wuJFyeMFFOnamaguYTbp3zjBdnCVI2r', NULL, '2019-11-19 15:32:30'),
+(272, 'App\\Movie', 140, '8onrHPD1hQyWQhSQm3oNffGRiVcpVLJKyJ2b6Xgw8l7SK2E58wuJFyeMFFOnamaguYTbp3zjBdnCVI2r', NULL, '2019-11-19 15:33:36'),
+(273, 'App\\Movie', 138, 'NUKmyjMlxsxszf1Yl6N4L54631VUcExWdFhSUxSplBNuWmHLGS8ARKHMa7PCCshZynvQS2w6devd8LyU', NULL, '2019-11-19 20:43:30'),
+(274, 'App\\Movie', 243, 'LIuL8yI1g0arDvGdAl5UCxYQDCAFjoIGjg45X4Jl4eQD6Rn0XZIM2eoUqZplLQiVg4yzWqfiGEw24mUn', NULL, '2019-11-19 21:20:21'),
+(275, 'App\\Movie', 278, 'LIuL8yI1g0arDvGdAl5UCxYQDCAFjoIGjg45X4Jl4eQD6Rn0XZIM2eoUqZplLQiVg4yzWqfiGEw24mUn', NULL, '2019-11-19 21:27:16'),
+(276, 'App\\Movie', 278, 'LIuL8yI1g0arDvGdAl5UCxYQDCAFjoIGjg45X4Jl4eQD6Rn0XZIM2eoUqZplLQiVg4yzWqfiGEw24mUn', NULL, '2019-11-19 22:10:17'),
+(277, 'App\\Movie', 268, 'LIuL8yI1g0arDvGdAl5UCxYQDCAFjoIGjg45X4Jl4eQD6Rn0XZIM2eoUqZplLQiVg4yzWqfiGEw24mUn', NULL, '2019-11-19 23:08:12'),
+(278, 'App\\Movie', 191, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-11-19 23:16:45'),
+(279, 'App\\Movie', 192, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-11-19 23:16:46'),
+(280, 'App\\Movie', 193, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-11-19 23:16:48'),
+(281, 'App\\Movie', 194, 'SLOWlOAtpnaGmYhRU1p0wlv3IBCQhPIELvdZTSkPEFS1zBLkf1QRKamEsVs26ozfv73ulYAyxqplQlIc', NULL, '2019-11-19 23:16:50'),
+(282, 'App\\Movie', 243, 'LIuL8yI1g0arDvGdAl5UCxYQDCAFjoIGjg45X4Jl4eQD6Rn0XZIM2eoUqZplLQiVg4yzWqfiGEw24mUn', NULL, '2019-11-20 01:52:17'),
+(283, 'App\\Movie', 171, 'LIuL8yI1g0arDvGdAl5UCxYQDCAFjoIGjg45X4Jl4eQD6Rn0XZIM2eoUqZplLQiVg4yzWqfiGEw24mUn', NULL, '2019-11-20 11:42:46'),
+(284, 'App\\Movie', 279, 'LIuL8yI1g0arDvGdAl5UCxYQDCAFjoIGjg45X4Jl4eQD6Rn0XZIM2eoUqZplLQiVg4yzWqfiGEw24mUn', NULL, '2019-11-20 13:04:08');
 
 -- --------------------------------------------------------
 
@@ -2150,7 +2784,192 @@ CREATE TABLE `wishlist_admins` (
 --
 
 INSERT INTO `wishlist_admins` (`id`, `user_group_id`, `video_group_id`, `day`, `created_at`, `updated_at`) VALUES
-(141, 4, '[\"48\"]', 1, '2019-10-15 09:39:03', '2019-10-15 09:39:03');
+(191, 8, '[\"56\",\"47\"]', 1, '2019-10-17 18:14:51', '2019-10-17 18:14:51'),
+(198, 8, '[\"39\"]', 6, '2019-10-17 18:23:33', '2019-10-17 18:23:33'),
+(199, 11, '[\"49\",\"47\"]', 1, '2019-10-17 18:42:34', '2019-10-17 18:42:34'),
+(200, 11, '[\"50\",\"40\"]', 2, '2019-10-17 18:42:44', '2019-10-17 18:42:44'),
+(201, 11, '[\"38\"]', 3, '2019-10-17 18:42:55', '2019-10-17 18:42:55'),
+(202, 11, '[\"51\",\"45\"]', 4, '2019-10-17 18:43:01', '2019-10-17 18:43:01'),
+(203, 11, '[\"52\",\"43\"]', 5, '2019-10-17 18:43:11', '2019-10-17 18:43:11'),
+(204, 11, '[\"39\"]', 6, '2019-10-17 18:43:17', '2019-10-17 18:43:17'),
+(205, 16, '[\"53\",\"47\"]', 1, '2019-10-17 18:46:12', '2019-10-17 18:46:12'),
+(207, 16, '[\"54\",\"43\"]', 3, '2019-10-17 18:46:28', '2019-10-17 18:46:28'),
+(208, 16, '[\"39\"]', 4, '2019-10-17 18:46:31', '2019-10-17 18:46:31'),
+(209, 16, '[\"55\",\"43\"]', 5, '2019-10-17 18:46:37', '2019-10-17 18:46:37'),
+(210, 16, '[\"39\"]', 6, '2019-10-17 18:46:46', '2019-10-17 18:46:46'),
+(211, 16, '[\"46\"]', 2, '2019-10-17 18:47:00', '2019-10-17 18:47:00'),
+(213, 19, '[\"50\",\"40\"]', 2, '2019-10-17 19:13:13', '2019-10-17 19:13:13'),
+(217, 19, '[\"45\"]', 6, '2019-10-17 19:13:39', '2019-10-17 19:13:39'),
+(218, 18, '[\"49\",\"47\"]', 1, '2019-10-17 19:33:00', '2019-10-17 19:33:00'),
+(219, 18, '[\"50\",\"40\"]', 2, '2019-10-17 19:33:07', '2019-10-17 19:33:07'),
+(220, 18, '[\"44\"]', 3, '2019-10-17 19:33:13', '2019-10-17 19:33:13'),
+(221, 18, '[\"51\",\"45\"]', 4, '2019-10-17 19:33:16', '2019-10-17 19:33:16'),
+(222, 18, '[\"52\",\"44\"]', 5, '2019-10-17 19:33:21', '2019-10-17 19:33:21'),
+(223, 18, '[\"45\"]', 6, '2019-10-17 19:33:34', '2019-10-17 19:33:34'),
+(226, 20, '[\"38\"]', 3, '2019-10-17 19:54:42', '2019-10-17 19:54:42'),
+(230, 20, '[\"45\"]', 6, '2019-10-17 19:55:50', '2019-10-17 19:55:50'),
+(232, 15, '[\"50\",\"58\"]', 2, '2019-10-18 11:36:35', '2019-10-18 11:36:35'),
+(236, 15, '[\"60\"]', 6, '2019-10-18 11:37:07', '2019-10-18 11:37:07'),
+(239, 14, '[\"58\"]', 2, '2019-10-18 11:45:25', '2019-10-18 11:45:25'),
+(242, 14, '[\"55\",\"59\"]', 5, '2019-10-18 11:45:39', '2019-10-18 11:45:39'),
+(243, 14, '[\"60\"]', 6, '2019-10-18 11:45:42', '2019-10-18 11:45:42'),
+(249, 13, '[\"39\"]', 6, '2019-10-18 11:49:26', '2019-10-18 11:49:26'),
+(252, 9, '[\"53\",\"47\"]', 1, '2019-10-18 12:12:39', '2019-10-18 12:12:39'),
+(254, 9, '[\"64\"]', 4, '2019-10-18 12:12:50', '2019-10-18 12:12:50'),
+(255, 9, '[\"54\",\"63\"]', 3, '2019-10-18 12:12:56', '2019-10-18 12:12:56'),
+(256, 9, '[\"55\",\"62\"]', 5, '2019-10-18 12:13:04', '2019-10-18 12:13:04'),
+(257, 9, '[\"64\"]', 6, '2019-10-18 12:13:10', '2019-10-18 12:13:10'),
+(262, 20, '[\"47\",\"65\"]', 1, '2019-10-18 18:53:17', '2019-10-18 18:53:17'),
+(263, 20, '[\"40\",\"66\"]', 2, '2019-10-18 18:53:28', '2019-10-18 18:53:28'),
+(272, 14, '[\"50\",\"59\",\"72\"]', 3, '2019-10-18 22:33:05', '2019-10-18 22:33:05'),
+(273, 14, '[\"60\",\"70\"]', 4, '2019-10-18 22:33:19', '2019-10-18 22:33:19'),
+(274, 14, '[\"49\",\"47\",\"73\"]', 1, '2019-10-18 22:40:55', '2019-10-18 22:40:55'),
+(278, 19, '[\"44\",\"72\"]', 3, '2019-10-18 22:43:34', '2019-10-18 22:43:34'),
+(279, 19, '[\"49\",\"47\",\"73\"]', 1, '2019-10-18 22:43:47', '2019-10-18 22:43:47'),
+(280, 15, '[\"59\",\"72\"]', 3, '2019-10-18 22:44:28', '2019-10-18 22:44:28'),
+(283, 15, '[\"52\",\"59\",\"68\"]', 5, '2019-10-18 22:44:45', '2019-10-18 22:44:45'),
+(284, 8, '[\"54\",\"43\",\"72\"]', 3, '2019-10-18 22:45:50', '2019-10-18 22:45:50'),
+(286, 8, '[\"39\",\"67\",\"69\"]', 4, '2019-10-18 22:46:15', '2019-10-18 22:46:15'),
+(287, 8, '[\"57\",\"43\",\"68\"]', 5, '2019-10-18 22:46:24', '2019-10-18 22:46:24'),
+(288, 20, '[\"45\",\"76\"]', 4, '2019-10-22 15:49:52', '2019-10-22 15:49:52'),
+(289, 20, '[\"43\",\"77\"]', 5, '2019-10-22 15:49:56', '2019-10-22 15:49:56'),
+(291, 15, '[\"47\",\"74\"]', 1, '2019-10-22 15:50:12', '2019-10-22 15:50:12'),
+(293, 15, '[\"60\",\"67\",\"69\",\"75\"]', 4, '2019-10-22 15:50:28', '2019-10-22 15:50:28'),
+(308, 17, '[\"44\"]', 3, '2019-10-25 18:13:31', '2019-10-25 18:13:31'),
+(311, 17, '[\"45\"]', 6, '2019-10-25 18:14:04', '2019-10-25 18:14:04'),
+(313, 22, '[\"46\"]', 2, '2019-10-26 11:59:04', '2019-10-26 11:59:04'),
+(317, 22, '[\"39\"]', 6, '2019-10-26 11:59:24', '2019-10-26 11:59:24'),
+(320, 23, '[\"82\"]', 1, '2019-10-28 01:48:30', '2019-10-28 01:48:30'),
+(321, 23, '[\"83\"]', 4, '2019-10-28 01:48:36', '2019-10-28 01:48:36'),
+(331, 24, '[\"87\"]', 1, '2019-10-29 23:51:43', '2019-10-29 23:51:43'),
+(332, 24, '[\"88\"]', 3, '2019-10-29 23:51:51', '2019-10-29 23:51:51'),
+(333, 24, '[\"89\"]', 5, '2019-10-29 23:52:15', '2019-10-29 23:52:15'),
+(334, 17, '[\"47\",\"78\",\"90\"]', 1, '2019-11-06 11:49:22', '2019-11-06 11:49:22'),
+(335, 17, '[\"58\",\"79\",\"91\"]', 2, '2019-11-06 11:49:26', '2019-11-06 11:49:26'),
+(336, 17, '[\"45\",\"80\",\"92\"]', 4, '2019-11-06 11:49:31', '2019-11-06 11:49:31'),
+(337, 17, '[\"38\",\"81\",\"93\"]', 5, '2019-11-06 11:49:44', '2019-11-06 11:49:44'),
+(373, 26, '[\"39\"]', 6, '2019-11-14 16:44:47', '2019-11-14 16:44:47'),
+(377, 26, '[\"47\",\"78\"]', 1, '2019-11-14 16:46:16', '2019-11-14 16:46:16'),
+(378, 26, '[\"40\",\"79\"]', 2, '2019-11-14 16:46:22', '2019-11-14 16:46:22'),
+(379, 26, '[\"39\",\"69\",\"80\"]', 4, '2019-11-14 16:46:32', '2019-11-14 16:46:32'),
+(380, 26, '[\"38\",\"67\",\"81\"]', 5, '2019-11-14 16:46:45', '2019-11-14 16:46:45'),
+(382, 27, '[\"47\",\"53\"]', 1, '2019-11-14 16:50:15', '2019-11-14 16:50:15'),
+(384, 27, '[\"40\"]', 2, '2019-11-14 16:50:24', '2019-11-14 16:50:24'),
+(385, 27, '[\"43\",\"54\"]', 3, '2019-11-14 16:50:28', '2019-11-14 16:50:28'),
+(386, 27, '[\"39\"]', 4, '2019-11-14 16:50:33', '2019-11-14 16:50:33'),
+(388, 27, '[\"39\"]', 6, '2019-11-14 16:50:50', '2019-11-14 16:50:50'),
+(389, 27, '[\"38\",\"55\"]', 5, '2019-11-14 16:51:10', '2019-11-14 16:51:10'),
+(392, 26, '[\"43\",\"94\"]', 3, '2019-11-18 03:18:37', '2019-11-18 03:18:37'),
+(395, 28, '[\"94\"]', 3, '2019-11-18 04:10:00', '2019-11-18 04:10:00'),
+(396, 28, '[\"83\"]', 5, '2019-11-18 04:10:10', '2019-11-18 04:10:10'),
+(402, 29, '[\"58\",\"79\"]', 2, '2019-11-18 04:12:57', '2019-11-18 04:12:57'),
+(405, 29, '[\"38\",\"81\"]', 5, '2019-11-18 04:13:18', '2019-11-18 04:13:18'),
+(406, 29, '[\"45\"]', 6, '2019-11-18 04:13:25', '2019-11-18 04:13:25'),
+(407, 29, '[\"43\",\"72\"]', 3, '2019-11-18 04:14:18', '2019-11-18 04:14:18'),
+(408, 29, '[\"45\",\"69\",\"80\"]', 4, '2019-11-18 04:14:31', '2019-11-18 04:14:31'),
+(409, 30, '[\"82\"]', 1, '2019-11-18 04:15:35', '2019-11-18 04:15:35'),
+(410, 30, '[\"94\"]', 3, '2019-11-18 04:15:40', '2019-11-18 04:15:40'),
+(411, 30, '[\"83\"]', 5, '2019-11-18 04:15:46', '2019-11-18 04:15:46'),
+(413, 31, '[\"47\",\"53\"]', 1, '2019-11-18 04:18:18', '2019-11-18 04:18:18'),
+(417, 31, '[\"43\",\"54\"]', 3, '2019-11-18 04:18:42', '2019-11-18 04:18:42'),
+(418, 31, '[\"39\"]', 4, '2019-11-18 04:18:45', '2019-11-18 04:18:45'),
+(419, 31, '[\"39\"]', 6, '2019-11-18 04:18:54', '2019-11-18 04:18:54'),
+(420, 31, '[\"38\",\"55\"]', 5, '2019-11-18 04:18:57', '2019-11-18 04:18:57'),
+(421, 31, '[\"46\"]', 2, '2019-11-18 04:19:20', '2019-11-18 04:19:20'),
+(423, 33, '[\"47\",\"53\"]', 1, '2019-11-18 04:24:40', '2019-11-18 04:24:40'),
+(426, 33, '[\"58\"]', 2, '2019-11-18 04:24:59', '2019-11-18 04:24:59'),
+(429, 33, '[\"45\"]', 6, '2019-11-18 04:25:12', '2019-11-18 04:25:12'),
+(432, 33, '[\"43\",\"54\",\"72\"]', 3, '2019-11-18 04:26:00', '2019-11-18 04:26:00'),
+(433, 33, '[\"60\",\"69\"]', 4, '2019-11-18 04:26:11', '2019-11-18 04:26:11'),
+(435, 33, '[\"44\",\"55\",\"67\",\"68\"]', 5, '2019-11-18 04:26:32', '2019-11-18 04:26:32'),
+(441, 34, '[\"39\"]', 6, '2019-11-18 04:27:53', '2019-11-18 04:27:53'),
+(444, 34, '[\"58\",\"79\"]', 2, '2019-11-18 04:29:54', '2019-11-18 04:29:54'),
+(445, 34, '[\"43\",\"94\"]', 3, '2019-11-18 04:29:58', '2019-11-18 04:29:58'),
+(446, 34, '[\"45\",\"80\"]', 4, '2019-11-18 04:30:04', '2019-11-18 04:30:04'),
+(447, 34, '[\"44\",\"81\"]', 5, '2019-11-18 04:30:15', '2019-11-18 04:30:15'),
+(452, 35, '[\"72\"]', 3, '2019-11-18 04:32:47', '2019-11-18 04:32:47'),
+(462, 36, '[\"47\",\"78\"]', 1, '2019-11-18 04:36:04', '2019-11-18 04:36:04'),
+(463, 36, '[\"58\",\"79\"]', 2, '2019-11-18 04:36:10', '2019-11-18 04:36:10'),
+(464, 36, '[\"43\",\"94\"]', 3, '2019-11-18 04:36:14', '2019-11-18 04:36:14'),
+(465, 36, '[\"60\",\"80\"]', 4, '2019-11-18 04:36:21', '2019-11-18 04:36:21'),
+(466, 36, '[\"44\",\"81\"]', 5, '2019-11-18 04:36:30', '2019-11-18 04:36:30'),
+(467, 36, '[\"45\",\"94\"]', 6, '2019-11-18 04:36:49', '2019-11-18 04:36:49'),
+(469, 37, '[\"58\"]', 2, '2019-11-18 04:38:37', '2019-11-18 04:38:37'),
+(471, 37, '[\"45\"]', 4, '2019-11-18 04:38:44', '2019-11-18 04:38:44'),
+(473, 37, '[\"45\"]', 6, '2019-11-18 04:38:56', '2019-11-18 04:38:56'),
+(474, 37, '[\"47\",\"53\"]', 1, '2019-11-18 04:39:11', '2019-11-18 04:39:11'),
+(475, 37, '[\"43\",\"54\"]', 3, '2019-11-18 04:39:21', '2019-11-18 04:39:21'),
+(476, 37, '[\"38\",\"55\"]', 5, '2019-11-18 04:39:32', '2019-11-18 04:39:32'),
+(478, 13, '[\"47\",\"78\"]', 1, '2019-11-18 04:41:22', '2019-11-18 04:41:22'),
+(479, 13, '[\"40\",\"79\"]', 2, '2019-11-18 04:41:27', '2019-11-18 04:41:27'),
+(480, 13, '[\"38\",\"72\"]', 3, '2019-11-18 04:41:31', '2019-11-18 04:41:31'),
+(481, 13, '[\"39\",\"67\",\"69\",\"80\"]', 4, '2019-11-18 04:41:48', '2019-11-18 04:41:48'),
+(482, 13, '[\"55\",\"43\",\"68\",\"81\"]', 5, '2019-11-18 04:41:57', '2019-11-18 04:41:57'),
+(484, 34, '[\"47\",\"78\"]', 1, '2019-11-18 12:09:21', '2019-11-18 12:09:21'),
+(489, 9, '[\"47\",\"78\"]', 2, '2019-11-18 15:43:48', '2019-11-18 15:43:48'),
+(491, 32, '[\"49\"]', 1, '2019-11-18 16:33:38', '2019-11-18 16:33:38'),
+(492, 32, '[\"50\"]', 2, '2019-11-18 16:33:42', '2019-11-18 16:33:42'),
+(493, 32, '[\"94\"]', 3, '2019-11-18 16:33:49', '2019-11-18 16:33:49'),
+(494, 32, '[\"51\"]', 4, '2019-11-18 16:33:55', '2019-11-18 16:33:55'),
+(495, 32, '[\"52\"]', 5, '2019-11-18 16:34:00', '2019-11-18 16:34:00'),
+(496, 32, '[\"94\"]', 6, '2019-11-18 16:34:03', '2019-11-18 16:34:03'),
+(500, 29, '[\"47\",\"78\"]', 1, '2019-11-18 16:35:05', '2019-11-18 16:35:05'),
+(501, 28, '[\"82\"]', 1, '2019-11-18 16:35:28', '2019-11-18 16:35:28'),
+(503, 22, '[\"47\",\"53\"]', 1, '2019-11-18 21:20:57', '2019-11-18 21:20:57'),
+(504, 22, '[\"43\",\"54\"]', 3, '2019-11-18 21:21:02', '2019-11-18 21:21:02'),
+(505, 22, '[\"39\"]', 4, '2019-11-18 21:21:04', '2019-11-18 21:21:04'),
+(506, 22, '[\"43\",\"55\"]', 5, '2019-11-18 21:21:11', '2019-11-18 21:21:11'),
+(508, 38, '[\"47\",\"65\"]', 1, '2019-11-18 21:27:15', '2019-11-18 21:27:15'),
+(512, 38, '[\"58\",\"66\"]', 2, '2019-11-18 21:27:34', '2019-11-18 21:27:34'),
+(513, 38, '[\"43\"]', 3, '2019-11-18 21:27:37', '2019-11-18 21:27:37'),
+(514, 38, '[\"60\",\"76\"]', 4, '2019-11-18 21:27:41', '2019-11-18 21:27:41'),
+(515, 38, '[\"45\"]', 6, '2019-11-18 21:27:52', '2019-11-18 21:27:52'),
+(516, 38, '[\"44\",\"77\"]', 5, '2019-11-18 21:27:57', '2019-11-18 21:27:57'),
+(518, 35, '[\"98\"]', 5, '2019-11-18 22:03:36', '2019-11-18 22:03:36'),
+(519, 35, '[\"70\",\"97\"]', 4, '2019-11-18 22:03:41', '2019-11-18 22:03:41'),
+(520, 35, '[\"96\"]', 2, '2019-11-18 22:03:45', '2019-11-18 22:03:45'),
+(521, 35, '[\"95\"]', 1, '2019-11-18 22:03:49', '2019-11-18 22:03:49'),
+(523, 39, '[\"40\"]', 2, '2019-11-18 22:40:07', '2019-11-18 22:40:07'),
+(527, 39, '[\"39\"]', 6, '2019-11-18 22:40:21', '2019-11-18 22:40:21'),
+(528, 39, '[\"45\"]', 4, '2019-11-18 22:40:44', '2019-11-18 22:40:44'),
+(529, 39, '[\"47\",\"53\"]', 1, '2019-11-18 22:40:57', '2019-11-18 22:40:57'),
+(530, 39, '[\"43\",\"54\"]', 3, '2019-11-18 22:41:00', '2019-11-18 22:41:00'),
+(531, 39, '[\"38\",\"55\"]', 5, '2019-11-18 22:41:05', '2019-11-18 22:41:05'),
+(532, 40, '[\"78\"]', 1, '2019-11-18 22:43:00', '2019-11-18 22:43:00'),
+(533, 40, '[\"79\"]', 2, '2019-11-18 22:43:05', '2019-11-18 22:43:05'),
+(534, 40, '[\"94\"]', 3, '2019-11-18 22:43:09', '2019-11-18 22:43:09'),
+(535, 40, '[\"80\"]', 4, '2019-11-18 22:43:14', '2019-11-18 22:43:14'),
+(536, 40, '[\"81\"]', 5, '2019-11-18 22:43:20', '2019-11-18 22:43:20'),
+(538, 41, '[\"58\"]', 2, '2019-11-18 22:44:43', '2019-11-18 22:44:43'),
+(543, 41, '[\"60\"]', 6, '2019-11-18 22:45:18', '2019-11-18 22:45:18'),
+(550, 41, '[\"38\",\"72\",\"85\"]', 3, '2019-11-18 22:46:46', '2019-11-18 22:46:46'),
+(551, 41, '[\"60\",\"70\"]', 4, '2019-11-18 22:46:55', '2019-11-18 22:46:55'),
+(553, 41, '[\"44\",\"67\",\"68\",\"86\"]', 5, '2019-11-18 22:47:17', '2019-11-18 22:47:17'),
+(554, 41, '[\"47\",\"73\",\"84\"]', 1, '2019-11-18 22:49:03', '2019-11-18 22:49:03'),
+(557, 43, '[\"47\",\"53\"]', 1, '2019-11-19 13:34:13', '2019-11-19 13:34:13'),
+(560, 43, '[\"58\"]', 2, '2019-11-19 13:34:31', '2019-11-19 13:34:31'),
+(561, 43, '[\"43\",\"54\"]', 3, '2019-11-19 13:34:35', '2019-11-19 13:34:35'),
+(562, 43, '[\"60\"]', 4, '2019-11-19 13:34:40', '2019-11-19 13:34:40'),
+(564, 43, '[\"45\"]', 6, '2019-11-19 13:34:59', '2019-11-19 13:34:59'),
+(566, 43, '[\"44\",\"55\"]', 5, '2019-11-19 13:35:19', '2019-11-19 13:35:19'),
+(567, 42, '[\"47\",\"78\"]', 1, '2019-11-19 13:48:03', '2019-11-19 13:48:03'),
+(572, 42, '[\"43\"]', 3, '2019-11-19 13:48:26', '2019-11-19 13:48:26'),
+(573, 42, '[\"39\",\"80\"]', 4, '2019-11-19 13:48:36', '2019-11-19 13:48:36'),
+(574, 42, '[\"38\",\"81\"]', 5, '2019-11-19 13:48:45', '2019-11-19 13:48:45'),
+(575, 42, '[\"39\"]', 6, '2019-11-19 13:48:51', '2019-11-19 13:48:51'),
+(577, 42, '[\"46\",\"79\"]', 2, '2019-11-19 13:48:59', '2019-11-19 13:48:59'),
+(580, 44, '[\"47\",\"78\"]', 1, '2019-11-19 13:54:14', '2019-11-19 13:54:14'),
+(585, 44, '[\"40\",\"79\"]', 2, '2019-11-19 13:54:54', '2019-11-19 13:54:54'),
+(586, 44, '[\"43\",\"94\"]', 3, '2019-11-19 13:54:57', '2019-11-19 13:54:57'),
+(588, 44, '[\"38\",\"81\"]', 5, '2019-11-19 13:55:07', '2019-11-19 13:55:07'),
+(589, 44, '[\"39\"]', 6, '2019-11-19 13:55:32', '2019-11-19 13:55:32'),
+(591, 44, '[\"39\",\"80\"]', 4, '2019-11-19 13:56:08', '2019-11-19 13:56:08'),
+(592, 12, '[\"94\"]', 6, '2019-11-19 14:15:47', '2019-11-19 14:15:47'),
+(593, 12, '[\"99\"]', 1, '2019-11-19 18:43:45', '2019-11-19 18:43:45'),
+(594, 12, '[\"100\"]', 3, '2019-11-19 18:43:52', '2019-11-19 18:43:52'),
+(595, 12, '[\"101\"]', 5, '2019-11-19 18:43:56', '2019-11-19 18:43:56'),
+(600, 19, '[\"51\",\"45\",\"70\"]', 4, '2019-11-20 14:17:34', '2019-11-20 14:17:34'),
+(602, 19, '[\"52\",\"44\",\"68\",\"71\"]', 5, '2019-11-20 14:17:43', '2019-11-20 14:17:43');
 
 -- --------------------------------------------------------
 
@@ -2171,7 +2990,41 @@ CREATE TABLE `wishlist_user_groups` (
 --
 
 INSERT INTO `wishlist_user_groups` (`id`, `title`, `user_id`, `created_At`, `updated_At`) VALUES
-(4, 'Admin', '[\"1\"]', '2019-08-30 13:43:03', '2019-08-30 13:43:03');
+(4, 'Admin', '[\"1\"]', '2019-08-30 13:43:03', '2019-08-30 13:43:03'),
+(8, 'M. Angeles Rodriguez', '[\"33\"]', '2019-10-16 13:42:41', '2019-10-16 13:42:41'),
+(9, 'M. Jesus Roman', '[\"34\"]', '2019-10-17 12:31:50', '2019-10-17 12:31:50'),
+(11, 'Ignacio del rio', '[\"36\"]', '2019-10-17 12:32:15', '2019-10-17 12:32:15'),
+(12, 'Camila Alfaro', '[\"37\"]', '2019-10-17 12:32:30', '2019-10-17 12:32:30'),
+(13, 'Rosemarie Flores', '[\"38\"]', '2019-10-17 12:32:53', '2019-10-17 12:32:53'),
+(14, 'Claudio Araneda', '[\"39\"]', '2019-10-17 12:33:08', '2019-10-17 12:33:08'),
+(15, 'Bastian Montaño', '[\"40\"]', '2019-10-17 12:33:25', '2019-10-17 12:33:25'),
+(16, 'Camila Pino', '[\"41\"]', '2019-10-17 12:33:38', '2019-10-17 12:33:38'),
+(17, 'Barbara Carrasquel', '[\"42\"]', '2019-10-17 12:34:01', '2019-10-17 12:34:01'),
+(18, 'Raimundo Salazar', '[\"43\"]', '2019-10-17 12:34:20', '2019-10-17 12:34:20'),
+(19, 'Diego Carrillo', '[\"44\"]', '2019-10-17 12:34:35', '2019-10-17 12:34:35'),
+(20, 'Herman Orellana', '[\"45\"]', '2019-10-17 12:34:49', '2019-10-17 12:34:49'),
+(22, 'Sindy Olea', '[\"46\"]', '2019-10-26 11:58:34', '2019-10-26 11:58:34'),
+(23, 'Alejandra Riesco', '[\"48\"]', '2019-10-27 20:40:02', '2019-10-27 20:40:02'),
+(24, 'Gunther Preisler', '[\"47\"]', '2019-10-27 20:40:18', '2019-10-27 20:40:18'),
+(26, 'Vanessa Ventura', '[\"51\"]', '2019-11-14 16:32:33', '2019-11-14 16:32:33'),
+(27, 'Angie Harlowe', '[\"52\"]', '2019-11-14 16:49:54', '2019-11-14 16:49:54'),
+(28, 'Tomas Zaror', '[\"53\"]', '2019-11-18 04:02:09', '2019-11-18 04:02:09'),
+(29, 'Paula Jara', '[\"54\"]', '2019-11-18 04:02:24', '2019-11-18 04:02:24'),
+(30, 'Sergio Diaz', '[\"55\"]', '2019-11-18 04:02:38', '2019-11-18 04:02:38'),
+(31, 'Catalina Flores', '[\"56\"]', '2019-11-18 04:03:03', '2019-11-18 04:03:03'),
+(32, 'Carlos Saez', '[\"57\"]', '2019-11-18 04:03:17', '2019-11-18 04:03:17'),
+(33, 'Pablo Vasquez', '[\"59\"]', '2019-11-18 04:03:39', '2019-11-18 04:03:39'),
+(34, 'Nicole Fuentes', '[\"63\"]', '2019-11-18 04:03:59', '2019-11-18 04:03:59'),
+(35, 'Matias Jimenez', '[\"62\"]', '2019-11-18 04:04:13', '2019-11-18 04:04:13'),
+(36, 'Denise Konsens', '[\"61\"]', '2019-11-18 04:04:28', '2019-11-18 04:04:28'),
+(37, 'Soraya Herrera', '[\"60\"]', '2019-11-18 04:04:45', '2019-11-18 04:04:45'),
+(38, 'Jose Bustamante', '[\"64\"]', '2019-11-18 21:26:37', '2019-11-18 21:26:37'),
+(39, 'Camila Crisostomo', '[\"65\"]', '2019-11-18 22:30:01', '2019-11-18 22:30:01'),
+(40, 'Rocio Ubiergo', '[\"66\"]', '2019-11-18 22:30:12', '2019-11-18 22:30:12'),
+(41, 'Lorenzo Cena', '[\"67\"]', '2019-11-18 22:35:07', '2019-11-18 22:35:07'),
+(42, 'Javiera Anabalon', '[\"69\"]', '2019-11-19 13:32:16', '2019-11-19 13:32:16'),
+(43, 'Yennifer Ignao', '[\"68\"]', '2019-11-19 13:32:31', '2019-11-19 13:32:31'),
+(44, 'Josefina Linetzky', '[\"70\"]', '2019-11-19 13:53:48', '2019-11-19 13:53:48');
 
 -- --------------------------------------------------------
 
@@ -2193,51 +3046,67 @@ CREATE TABLE `wishlist_video_groups` (
 --
 
 INSERT INTO `wishlist_video_groups` (`id`, `title`, `movie_id`, `tv_id`, `created_at`, `updated_at`) VALUES
-(2, 'Pre kine rodilla', '[\"3\",\"13\"]', NULL, '2019-08-29 13:36:18', '2019-08-29 13:36:18'),
-(4, '1500 calorias', '[\"5\"]', NULL, '2019-08-29 13:49:32', '2019-09-03 15:34:44'),
-(5, '1300 calorias', '[\"6\",\"21\"]', NULL, '2019-08-29 20:03:04', '2019-09-03 15:34:51'),
-(6, 'Pre kine cadera', NULL, NULL, '2019-08-30 19:14:40', '2019-08-30 19:14:40'),
-(7, 'Pre kine tobillo', NULL, NULL, '2019-08-30 19:15:20', '2019-08-30 19:15:20'),
-(8, 'Pre kine cervical', NULL, NULL, '2019-08-30 19:16:43', '2019-09-03 15:44:56'),
-(9, 'Pre kine lumbar', '[\"18\"]', NULL, '2019-08-30 19:16:51', '2019-09-03 15:45:03'),
-(10, 'EyT/H/B/1', '[\"53\",\"58\",\"59\",\"69\",\"71\",\"72\",\"77\"]', NULL, '2019-08-30 19:17:47', '2019-09-26 13:23:12'),
-(11, 'EyT/H/B/2', '[\"7\",\"11\"]', NULL, '2019-08-30 19:17:57', '2019-09-03 15:36:50'),
-(12, 'EyT/H/B/3', '[\"1\",\"3\",\"7\",\"10\",\"11\"]', NULL, '2019-08-30 19:18:08', '2019-09-03 15:37:06'),
-(13, 'EyT/H/A/1', '[\"53\",\"54\",\"58\",\"59\",\"69\",\"71\",\"72\",\"75\",\"77\",\"82\"]', NULL, '2019-08-30 19:18:36', '2019-09-20 13:35:57'),
-(14, 'EyT/H/A/2', NULL, NULL, '2019-08-30 19:18:51', '2019-09-03 15:43:33'),
-(15, 'EyT/H/A/3', NULL, NULL, '2019-08-30 19:18:55', '2019-09-03 15:43:17'),
-(16, 'TyE/H/B/1', '[\"55\",\"62\",\"65\",\"66\",\"70\",\"74\",\"79\",\"81\"]', NULL, '2019-08-30 19:21:38', '2019-09-26 13:24:15'),
-(17, 'TyE/H/B/2', '[\"12\",\"15\"]', NULL, '2019-08-30 19:21:57', '2019-09-03 15:42:57'),
-(18, 'TyE/H/B/3', NULL, NULL, '2019-08-30 19:22:03', '2019-09-03 15:41:42'),
-(19, 'TyE/H/A/1', NULL, NULL, '2019-08-30 19:22:19', '2019-09-03 15:42:06'),
-(20, 'TyE/H/A/2', NULL, NULL, '2019-08-30 19:22:24', '2019-09-03 15:39:48'),
-(21, 'TyE/H/A/3', NULL, NULL, '2019-08-30 19:22:31', '2019-09-03 15:39:14'),
-(22, 'CORE 1', NULL, NULL, '2019-08-30 20:43:42', '2019-08-30 20:43:42'),
-(23, 'CORE 2', NULL, NULL, '2019-08-30 20:43:49', '2019-08-30 20:43:49'),
-(24, 'HIIT 1', NULL, NULL, '2019-08-30 20:43:57', '2019-08-30 20:43:57'),
-(25, 'HIIT 2', NULL, NULL, '2019-08-30 20:44:03', '2019-08-30 20:44:03'),
-(26, 'LIS 1', NULL, NULL, '2019-08-30 20:44:21', '2019-08-30 20:44:21'),
-(27, 'LIS 2', NULL, NULL, '2019-08-30 20:44:25', '2019-08-30 20:44:25'),
-(28, 'MOVILIDAD 1', NULL, NULL, '2019-08-30 20:44:56', '2019-08-30 20:44:56'),
-(29, 'MOVILIDAD 2', NULL, NULL, '2019-08-30 20:45:09', '2019-08-30 20:45:09'),
-(30, 'FLEXIBILIDAD 1', '[\"17\"]', NULL, '2019-08-30 20:45:18', '2019-08-30 21:32:48'),
-(31, 'FLEXIBILIDAD 2', NULL, NULL, '2019-08-30 20:45:28', '2019-08-30 20:45:28'),
-(32, '1700 calorias', NULL, NULL, '2019-08-30 20:45:56', '2019-09-03 15:40:53'),
-(33, '1900 calorias', NULL, NULL, '2019-08-30 20:46:03', '2019-09-03 15:40:15'),
-(34, '2100 calorias', NULL, NULL, '2019-08-30 20:46:13', '2019-09-03 15:40:07'),
-(35, '2300 calorias', NULL, NULL, '2019-08-30 20:46:22', '2019-09-03 15:40:28'),
-(36, '2500 calorias', NULL, NULL, '2019-08-30 20:46:32', '2019-09-03 15:40:43'),
-(37, '1200', '[\"23\",\"24\",\"25\",\"26\",\"27\",\"28\",\"29\"]', NULL, '2019-09-16 23:34:18', '2019-09-17 00:00:48'),
 (38, 'Colaciones de 200 cals', '[\"89\",\"151\",\"152\",\"153\",\"154\"]', NULL, '2019-09-18 00:29:10', '2019-09-25 01:58:59'),
 (39, 'Almuerzos o cenas de 400 cals', '[\"96\",\"97\",\"163\",\"164\"]', NULL, '2019-09-18 00:29:54', '2019-09-25 02:12:15'),
 (40, 'Desayunos de 400 cals', '[\"92\",\"146\",\"147\",\"148\"]', NULL, '2019-09-18 00:30:25', '2019-09-25 02:15:08'),
-(42, 'test2', '[\"55\",\"62\",\"70\",\"74\",\"80\"]', NULL, '2019-09-24 12:45:08', '2019-09-24 12:45:08'),
 (43, 'Colaciones de 100 cals', '[\"83\",\"84\",\"85\",\"86\",\"87\",\"88\"]', NULL, '2019-09-25 00:23:19', '2019-09-25 01:59:17'),
 (44, 'Colaciones de 300 cals', '[\"155\",\"156\",\"157\",\"158\",\"159\",\"160\"]', NULL, '2019-09-25 02:05:21', '2019-09-25 02:05:21'),
 (45, 'Almuerzos o cenas de 500 cals', '[\"94\",\"95\",\"161\",\"162\"]', NULL, '2019-09-25 02:12:53', '2019-09-25 02:12:53'),
 (46, 'Desayunos de 300 cals', '[\"91\",\"93\",\"149\",\"150\"]', NULL, '2019-09-25 02:15:58', '2019-09-25 02:15:58'),
-(47, 'Capsulas nutricion', '[\"138\",\"139\",\"145\"]', NULL, '2019-09-26 13:21:57', '2019-09-26 13:21:57'),
-(48, 'Rutina PP, dia 2  de 3, mujer.', '[\"51\",\"170\"]', NULL, '2019-10-14 14:55:22', '2019-10-14 14:55:22');
+(47, 'Capsulas nutricion', '[\"138\",\"139\",\"145\",\"140\",\"141\",\"142\",\"143\",\"144\"]', NULL, '2019-09-26 13:21:57', '2019-10-17 18:24:56'),
+(49, 'Rutina PP, dia 1 de 4, hombre.', '[\"51\",\"54\",\"56\",\"59\",\"64\",\"71\",\"77\",\"78\",\"175\",\"179\"]', NULL, '2019-10-17 13:32:14', '2019-10-17 13:45:44'),
+(50, 'Rutina PP, dia 2 de 4, hombre.', '[\"62\",\"63\",\"67\",\"68\",\"73\",\"74\",\"79\",\"176\",\"180\",\"181\",\"182\"]', NULL, '2019-10-17 14:02:50', '2019-10-17 14:02:50'),
+(51, 'Rutina PP, dia 3 de 4, hombre.', '[\"51\",\"52\",\"53\",\"58\",\"64\",\"69\",\"72\",\"75\",\"82\",\"177\"]', NULL, '2019-10-17 14:04:30', '2019-10-17 14:04:30'),
+(52, 'Rutina PP, dia 4 de 4, hombre.', '[\"62\",\"65\",\"67\",\"68\",\"70\",\"74\",\"80\",\"81\",\"178\",\"183\"]', NULL, '2019-10-17 14:08:58', '2019-10-17 14:08:58'),
+(53, 'Rutina PP, dia 1 de 3, mujer.', '[\"51\",\"54\",\"56\",\"60\",\"64\",\"71\",\"75\",\"78\",\"171\"]', NULL, '2019-10-17 14:11:08', '2019-10-17 14:11:08'),
+(54, 'Rutina PP, dia 2 de 3, mujer.', '[\"61\",\"62\",\"66\",\"67\",\"68\",\"70\",\"74\",\"79\",\"170\",\"184\"]', NULL, '2019-10-17 14:15:13', '2019-10-17 14:15:13'),
+(55, 'Rutina PP, dia 3 de 3, mujer.', '[\"57\",\"62\",\"69\",\"81\",\"172\",\"185\",\"186\",\"187\",\"76\",\"82\"]', NULL, '2019-10-17 14:23:39', '2019-10-28 02:18:22'),
+(56, 'Rutina PP, dia 1 de 3, mujer(sin estocadas).', '[\"51\",\"54\",\"60\",\"64\",\"71\",\"75\",\"77\",\"78\",\"173\"]', NULL, '2019-10-17 14:44:20', '2019-10-17 14:44:20'),
+(57, 'Rutina PP, dia 3 de 3, mujer(sin estocadas).', '[\"51\",\"62\",\"69\",\"81\",\"174\",\"185\",\"186\",\"187\",\"76\",\"82\"]', NULL, '2019-10-17 14:45:24', '2019-10-28 02:18:47'),
+(58, 'Desayunos de 500 cals', '[\"195\",\"196\",\"197\",\"198\"]', NULL, '2019-10-18 11:34:09', '2019-10-18 11:34:09'),
+(59, 'Colaciones de 400 cals', '[\"188\",\"189\",\"190\"]', NULL, '2019-10-18 11:34:59', '2019-10-18 11:34:59'),
+(60, 'Almuerzos o cenas de 600 cals', '[\"191\",\"192\",\"193\",\"194\"]', NULL, '2019-10-18 11:35:45', '2019-10-18 11:35:45'),
+(61, 'Desayunos de 300 cals (vegetariano)', '[\"150\",\"155\",\"156\",\"157\"]', NULL, '2019-10-18 12:08:35', '2019-10-18 12:08:35'),
+(62, 'Colaciones de 100 cals (vegetariana)', '[\"84\",\"87\",\"88\"]', NULL, '2019-10-18 12:10:12', '2019-10-18 12:10:12'),
+(63, 'Colaciones de 200 cals (vegetariana)', '[\"89\",\"151\",\"152\",\"153\"]', NULL, '2019-10-18 12:11:10', '2019-10-18 12:11:10'),
+(64, 'Almuerzos o cenas de 400 cals (vegetariano)', '[\"96\",\"97\"]', NULL, '2019-10-18 12:12:23', '2019-10-18 12:12:23'),
+(65, 'Rutina PP, dia 1 de 4, hombre. CASA', '[\"51\",\"54\",\"56\",\"64\",\"76\",\"77\",\"78\",\"199\",\"201\"]', NULL, '2019-10-18 18:51:32', '2019-10-18 18:51:32'),
+(66, 'Rutina PP, dia 2 de 4, hombre. CASA', '[\"63\",\"65\",\"67\",\"68\",\"70\",\"73\",\"74\",\"80\",\"180\",\"184\",\"200\"]', NULL, '2019-10-18 18:52:36', '2019-10-18 18:52:36'),
+(67, 'Movilidad columna toracica  y hombro(1)', '[\"209\",\"216\",\"218\"]', NULL, '2019-10-18 21:56:55', '2019-10-18 21:56:55'),
+(68, 'Fortalecimiento rotadores hombro', '[\"202\",\"203\",\"204\"]', NULL, '2019-10-18 21:58:25', '2019-10-18 21:58:25'),
+(69, 'Estabilidad columna lumbar (1)', '[\"210\",\"213\",\"215\"]', NULL, '2019-10-18 22:03:57', '2019-10-18 22:04:58'),
+(70, 'Estabilidad columna lumbar (2)', '[\"211\",\"214\",\"215\"]', NULL, '2019-10-18 22:04:26', '2019-10-18 22:04:26'),
+(71, 'Movilidad columna toracica  y hombro(2)', '[\"209\",\"217\",\"219\"]', NULL, '2019-10-18 22:06:30', '2019-10-18 22:06:30'),
+(72, 'Fortalecimiento abductores cadera', '[\"220\",\"221\",\"222\"]', NULL, '2019-10-18 22:08:14', '2019-10-18 22:13:20'),
+(73, 'Tobillo', '[\"223\",\"224\",\"225\"]', NULL, '2019-10-18 22:40:41', '2019-10-18 22:40:41'),
+(74, 'Rutina PP, dia 1 de 4, hombre (sin estocadas).', '[\"51\",\"54\",\"59\",\"64\",\"69\",\"71\",\"77\",\"78\",\"179\",\"226\"]', NULL, '2019-10-22 15:16:02', '2019-10-22 15:16:02'),
+(75, 'Rutina PP, dia 3 de 4, hombre (sin estocadas).', '[\"51\",\"52\",\"53\",\"59\",\"64\",\"69\",\"72\",\"75\",\"82\",\"227\"]', NULL, '2019-10-22 15:17:25', '2019-10-22 15:17:25'),
+(76, 'Rutina PP, dia 3 de 4, hombre. CASA', '[\"51\",\"52\",\"53\",\"58\",\"61\",\"76\",\"201\",\"228\",\"272\"]', NULL, '2019-10-22 15:37:52', '2019-11-19 14:45:29'),
+(77, 'Rutina PP, dia 4 de 4, hombre. CASA', '[\"63\",\"65\",\"67\",\"68\",\"70\",\"73\",\"74\",\"80\",\"81\",\"229\"]', NULL, '2019-10-22 15:49:10', '2019-10-22 15:49:10'),
+(78, 'Rutina PP, dia 1 de 4, mujer, fitness.', '[\"51\",\"54\",\"56\",\"60\",\"64\",\"71\",\"77\",\"78\",\"179\",\"242\"]', NULL, '2019-10-25 16:53:29', '2019-10-25 16:53:29'),
+(79, 'Rutina PP, dia 2 de 4, mujer, fitness.', '[\"61\",\"62\",\"63\",\"67\",\"68\",\"73\",\"74\",\"79\",\"81\",\"182\",\"243\"]', NULL, '2019-10-25 16:54:55', '2019-10-25 16:54:55'),
+(80, 'Rutina PP, dia 3 de 4, mujer, fitness.', '[\"51\",\"52\",\"53\",\"58\",\"69\",\"72\",\"75\",\"82\",\"187\",\"244\"]', NULL, '2019-10-25 16:57:08', '2019-10-25 16:57:08'),
+(81, 'Rutina PP, dia 4 de 4, mujer, fitness.', '[\"60\",\"62\",\"65\",\"68\",\"70\",\"74\",\"80\",\"81\",\"184\",\"245\",\"247\"]', NULL, '2019-10-25 18:11:30', '2019-10-25 18:11:30'),
+(82, 'Rutina FB, dia 1 de 2, mujer.', '[\"51\",\"54\",\"56\",\"60\",\"62\",\"64\",\"71\",\"75\",\"78\",\"248\",\"250\"]', NULL, '2019-10-26 12:31:09', '2019-10-26 12:31:09'),
+(83, 'Rutina FB, dia 2 de 2, mujer.', '[\"51\",\"61\",\"66\",\"67\",\"68\",\"74\",\"179\",\"184\",\"249\",\"63\",\"70\",\"80\"]', NULL, '2019-10-26 12:32:27', '2019-10-29 23:17:48'),
+(84, 'Rutina PP, dia 1 de 3, hombre.', '[\"51\",\"54\",\"56\",\"60\",\"64\",\"71\",\"75\",\"78\",\"251\"]', NULL, '2019-10-28 02:20:22', '2019-10-28 02:20:22'),
+(85, 'Rutina PP, dia 2 de 3, hombre.', '[\"61\",\"62\",\"66\",\"67\",\"68\",\"74\",\"79\",\"182\",\"184\",\"252\"]', NULL, '2019-10-28 02:22:03', '2019-10-28 02:22:03'),
+(86, 'Rutina PP, dia 3 de 3, hombre.', '[\"51\",\"62\",\"69\",\"76\",\"81\",\"82\",\"185\",\"186\",\"187\",\"253\"]', NULL, '2019-10-28 02:23:05', '2019-10-28 02:23:05'),
+(87, 'Rutina PP, dia 1 de 3, hombre (2).', '[\"51\",\"54\",\"56\",\"60\",\"64\",\"71\",\"75\",\"78\",\"254\"]', NULL, '2019-10-29 23:08:17', '2019-10-29 23:08:17'),
+(88, 'Rutina PP, dia 2 de 3, hombre (2).', '[\"61\",\"63\",\"66\",\"67\",\"68\",\"70\",\"74\",\"79\",\"184\",\"255\"]', NULL, '2019-10-29 23:10:21', '2019-10-29 23:10:21'),
+(89, 'Rutina PP, dia 3 de 3, hombre (2).', '[\"51\",\"59\",\"62\",\"69\",\"76\",\"81\",\"185\",\"201\",\"221\",\"256\"]', NULL, '2019-10-29 23:11:40', '2019-10-29 23:11:40'),
+(90, 'Rutina gemelos, dia 1 de 4.', '[\"257\",\"263\",\"264\",\"267\"]', NULL, '2019-11-06 11:46:57', '2019-11-06 11:46:57'),
+(91, 'Rutina gemelos, dia 2 de 4.', '[\"258\",\"265\",\"266\"]', NULL, '2019-11-06 11:47:41', '2019-11-06 11:47:41'),
+(92, 'Rutina gemelos, dia 3 de 4.', '[\"259\",\"263\",\"264\",\"267\"]', NULL, '2019-11-06 11:48:26', '2019-11-06 11:48:26'),
+(93, 'Rutina gemelos, dia 4 de 4.', '[\"260\",\"265\",\"266\"]', NULL, '2019-11-06 11:48:57', '2019-11-06 11:48:57'),
+(94, 'Rutina CORE y Gluteos metabolico TR', '[\"52\",\"61\",\"68\",\"247\",\"268\",\"269\",\"270\",\"271\",\"272\",\"273\"]', NULL, '2019-11-15 02:55:31', '2019-11-18 03:17:03'),
+(95, 'Rutina PP, dia 1 de 4, hombre, menor carga axial.', '[\"51\",\"54\",\"56\",\"59\",\"60\",\"64\",\"71\",\"78\",\"179\",\"274\"]', NULL, '2019-11-18 21:55:53', '2019-11-18 21:55:53'),
+(96, 'Rutina PP, dia 2 de 4, hombre, menor carga axial.', '[\"62\",\"63\",\"67\",\"68\",\"73\",\"74\",\"79\",\"180\",\"181\",\"182\",\"275\"]', NULL, '2019-11-18 21:56:55', '2019-11-18 21:56:55'),
+(97, 'Rutina PP, dia 3 de 4, hombre, menor carga axial.', '[\"51\",\"53\",\"58\",\"64\",\"69\",\"72\",\"75\",\"82\",\"270\",\"276\"]', NULL, '2019-11-18 22:01:44', '2019-11-18 22:01:44'),
+(98, 'Rutina PP, dia 4 de 4, hombre, menor carga axial.', '[\"62\",\"65\",\"68\",\"70\",\"74\",\"80\",\"81\",\"183\",\"247\",\"277\"]', NULL, '2019-11-18 22:03:09', '2019-11-18 22:03:09'),
+(99, 'Rutina PP, dia 1 de 3, mujer. MES 2', '[\"51\",\"53\",\"58\",\"61\",\"64\",\"72\",\"179\",\"247\",\"278\"]', NULL, '2019-11-19 18:39:37', '2019-11-19 18:39:37'),
+(100, 'Rutina PP, dia 2 de 3, mujer. MES 2', '[\"60\",\"63\",\"65\",\"74\",\"78\",\"80\",\"182\",\"184\",\"270\",\"279\"]', NULL, '2019-11-19 18:40:56', '2019-11-19 18:40:56'),
+(101, 'Rutina PP, dia 3 de 3, mujer. MES 2', '[\"56\",\"62\",\"69\",\"75\",\"81\",\"82\",\"186\",\"187\",\"269\",\"280\"]', NULL, '2019-11-19 18:42:06', '2019-11-19 18:42:06');
 
 --
 -- Índices para tablas volcadas
@@ -2644,7 +3513,7 @@ ALTER TABLE `coupon_codes`
 -- AUTO_INCREMENT de la tabla `directors`
 --
 ALTER TABLE `directors`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `donater_lists`
@@ -2668,7 +3537,7 @@ ALTER TABLE `excersices`
 -- AUTO_INCREMENT de la tabla `exercise_reports`
 --
 ALTER TABLE `exercise_reports`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- AUTO_INCREMENT de la tabla `faqs`
@@ -2692,7 +3561,7 @@ ALTER TABLE `front_slider_updates`
 -- AUTO_INCREMENT de la tabla `genres`
 --
 ALTER TABLE `genres`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT de la tabla `header_translations`
@@ -2704,7 +3573,7 @@ ALTER TABLE `header_translations`
 -- AUTO_INCREMENT de la tabla `home_sliders`
 --
 ALTER TABLE `home_sliders`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `home_translations`
@@ -2716,7 +3585,7 @@ ALTER TABLE `home_translations`
 -- AUTO_INCREMENT de la tabla `landing_pages`
 --
 ALTER TABLE `landing_pages`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `languages`
@@ -2728,13 +3597,13 @@ ALTER TABLE `languages`
 -- AUTO_INCREMENT de la tabla `menus`
 --
 ALTER TABLE `menus`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `menu_videos`
 --
 ALTER TABLE `menu_videos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=198;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=329;
 
 --
 -- AUTO_INCREMENT de la tabla `migrations`
@@ -2746,7 +3615,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT de la tabla `movies`
 --
 ALTER TABLE `movies`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=171;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=281;
 
 --
 -- AUTO_INCREMENT de la tabla `movie_series`
@@ -2758,31 +3627,31 @@ ALTER TABLE `movie_series`
 -- AUTO_INCREMENT de la tabla `multiplescreens`
 --
 ALTER TABLE `multiplescreens`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=140;
 
 --
 -- AUTO_INCREMENT de la tabla `my_progresses`
 --
 ALTER TABLE `my_progresses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT de la tabla `packages`
 --
 ALTER TABLE `packages`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `package_menu`
 --
 ALTER TABLE `package_menu`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT de la tabla `paypal_subscriptions`
 --
 ALTER TABLE `paypal_subscriptions`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT de la tabla `permissions`
@@ -2818,7 +3687,7 @@ ALTER TABLE `pricing_texts`
 -- AUTO_INCREMENT de la tabla `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
@@ -2866,19 +3735,19 @@ ALTER TABLE `tv_series`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT de la tabla `videolinks`
 --
 ALTER TABLE `videolinks`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=216;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=326;
 
 --
 -- AUTO_INCREMENT de la tabla `views`
 --
 ALTER TABLE `views`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=209;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=285;
 
 --
 -- AUTO_INCREMENT de la tabla `wishlists`
@@ -2890,19 +3759,19 @@ ALTER TABLE `wishlists`
 -- AUTO_INCREMENT de la tabla `wishlist_admins`
 --
 ALTER TABLE `wishlist_admins`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=142;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=603;
 
 --
 -- AUTO_INCREMENT de la tabla `wishlist_user_groups`
 --
 ALTER TABLE `wishlist_user_groups`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT de la tabla `wishlist_video_groups`
 --
 ALTER TABLE `wishlist_video_groups`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
 
 --
 -- Restricciones para tablas volcadas
@@ -2920,58 +3789,6 @@ ALTER TABLE `episodes`
 ALTER TABLE `home_sliders`
   ADD CONSTRAINT `home_sliders_movie_id_foreign` FOREIGN KEY (`movie_id`) REFERENCES `movies` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `home_sliders_tv_series_id_foreign` FOREIGN KEY (`tv_series_id`) REFERENCES `tv_series` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `menu_videos`
---
-ALTER TABLE `menu_videos`
-  ADD CONSTRAINT `menu_videos_menu_id_foreign` FOREIGN KEY (`menu_id`) REFERENCES `menus` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `menu_videos_movie_id_foreign` FOREIGN KEY (`movie_id`) REFERENCES `movies` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `menu_videos_tv_series_id_foreign` FOREIGN KEY (`tv_series_id`) REFERENCES `tv_series` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `model_has_permissions`
---
-ALTER TABLE `model_has_permissions`
-  ADD CONSTRAINT `model_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `model_has_roles`
---
-ALTER TABLE `model_has_roles`
-  ADD CONSTRAINT `model_has_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `movie_series`
---
-ALTER TABLE `movie_series`
-  ADD CONSTRAINT `movie_series_movie_id_foreign` FOREIGN KEY (`movie_id`) REFERENCES `movies` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `role_has_permissions`
---
-ALTER TABLE `role_has_permissions`
-  ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `seasons`
---
-ALTER TABLE `seasons`
-  ADD CONSTRAINT `seasons_tv_series_id_foreign` FOREIGN KEY (`tv_series_id`) REFERENCES `tv_series` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `videolinks`
---
-ALTER TABLE `videolinks`
-  ADD CONSTRAINT `videolinks_episode_id_foreign` FOREIGN KEY (`episode_id`) REFERENCES `episodes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `videolinks_movie_id_foreign` FOREIGN KEY (`movie_id`) REFERENCES `movies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `wishlists`
---
-ALTER TABLE `wishlists`
-  ADD CONSTRAINT `wishlists_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
